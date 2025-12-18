@@ -1,14 +1,75 @@
+<!-- 홈페이지 확인하고 싶으면 파일 위치에서 더블클릭
+     페이지 위치를 못 찾으면 파일명 위에서 우클릭, explorer 열기 -->
+
 <!-- HTML의 기본 구성 -->
 <!DOCTYPE html>
 
 <!-- html 태그는 페이지당 하나만 있는게 좋다 -->
 <html>
-    <!-- head 태그는 페이지의 정보가 있다 -->
+    <!-- head 태그는 페이지의 정보가 있다. 태그는 1개만 -->
     <head>
-        <title>최민수</title>
+        <title>점심시간이 언제?</title> <!-- 페이지 상단바에 뜨는 이름 지정, 태그는 1개만 -->
     </head>
-    <!-- body 태그 안에는 보여줄 내용을 적는다 -->
+    <!-- body 태그 안에는 보여줄 내용을 적는다. 태그는 1개만 -->
     <body>
-        아무거나
+        <div> alt shift 위아래 복사 / alt 줄 위아래 이동 / ctrl x 다 지움 </div>
+        <h1 title="타이틀임다"> h1 heading tag </h1> <!-- 헤딩 태그. 제목을 의미 -->
+        <!-- 속성은 어디서도 쓸 수 있는 속성이 있고, 특정 태그에서만 쓸 수 있는 속성도 있음 -->
+         <!-- TITLE은 아무데나 써도 되는 속성, 툴팁 달기 -->
+        <h2> h2 헤딩 태그 </h2>
+        <h3> h3 헤딩 태그 </h3>
+        <h4> h4 헤딩 태그 </h4>
+        <h5> h5 헤딩 태그 </h5>
+        <h6> h6 헤딩 태그 </h6> <!-- 엔터만 쳐도 사이사이 공백이 있는 것으로 인식됨 -->
+        <h7> h7 헤딩 태그 는 없음. 그냥 기본 폰트로 입력되는 거임. h7 태그 이해하지 못함. </h7>
+        <p>단락1</p>
+        <p>단락2<br> <!-- 엔터, break line의 약자, 종료 태그 없음 -->
+            다음             줄 <!-- 공백이 여러개여도 1개만 인식 -->
+        </p>
+        <hr> <!-- 수평선, 종료 태그 없음 -->
+        0123<abc>한글 <!-- 태그로 인식돼서 안 나옴 --> <br>
+        &lt;abc&gt; &copy;는 카피라이트 기호 &amp;는 앰퍼샌드 기호 &nbsp;는 공백 문자 <br>
+        1    2&nbsp;&nbsp;&nbsp;3 <!-- &nbsp; 여러개 써서 공백 늘릴 수 있음 --> <br>
+        <pre>1
+2<br>
+3
+        <!-- 태그는 안 보임 -->
+4
+        </pre> <!-- 개발자의 포맷 그대로 출력, 오히려 불편해서 잘 쓰이진 않음 -->
+        <hr>
+        <strong>굵은 글씨-강조</strong><br>
+        <em>이탤릭체-강조</em><br>
+        <strong><em>태그 안에 태그가 들어갈 수 있다</em></strong><br>
+        <small>작은 글씨</small><br>
+        <del>취소선-삭제</del><br>
+        <ins>밑줄-추가</ins><br>
+        윗첨자<sup title="주석달기좋아보임">[1]</sup><br> <!-- super -->
+        아랫첨자<sub>아랫첨자</sub><br> <!-- sub -->
+        <mark>형광펜-하이라이팅</mark><br>
+        &nbsp;<br>
+        <hr>
+        &nbsp;<br>
+        점심시간 이후 <br>
+        &nbsp;<br>
+        <img src="https://images-ext-1.discordapp.net/external/92ryxV5NRs-ojC84fwn55O5OBMYM_rRT7-go5Vd8Luw/https/www.fitpetmall.com/wp-content/uploads/2023/10/shutterstock_1844153299-1024x683-1.png"
+            title="귀여운 고양이 사진"
+            alt="고양이가 뛰는 사진"
+            ><br>
+            &nbsp;<br>
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA4MDlfMTUy%2FMDAxNzIzMTkzOTU1ODkz.pBLkXEuK7dmIgV34JAKmt2LOjOluHB6k-_T2i4CQ9Xsg.dRsjGByR67t2jtjsvYM82M0T42GB9Z0wnZ-9iyllAx8g.JPEG%2F1E7A3564.JPG&type=sc960_832"
+            title="이거는 강아지 사진"
+            alt="귀여운 포메 사진"
+            >
+        <img src="푸들사진.jpg"
+            title="다운 받은 사진은 파일명 적으면 돼요"
+            alt="같은 폴더 안에"
+        >
+        <!-- 뭘 복사하는지 알고, 붙여넣은 후에도 뭘 수정해야 하는지 이해해야 됨 
+
+        개발 표준
+        한 페이지에 h1이 하나만 있는 게 좋음 
+        h1, h2 없이 h3만 있는 건 안 좋음 
+        스크린 리더 등을 고려하여 태그를 활용해 의미부여 하는 것이 중요함 -->
     </body>
 </html>
+

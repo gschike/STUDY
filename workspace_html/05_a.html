@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!!! a태그를 배워봅시당 !!!</title>
+</head>
+<body>
+    <a href="#here">여기로 가기</a>
+    <h1 id="top">맨 위</h1><br>
+    <a href="#bottom">맨밑으로 가기</a><br>
+    <!-- 해당 태그를 앞으로 "top"이라고 부를 수 있는 id를 부여 -->
+
+
+    <!-- href는 필수 속성 -->
+    <a href="http://naver.com">
+        <img src="네이버 개발로 백만장자 돼야지/검색창.png"> <!-- 보이는 글씨 -->
+    </a>
+    <br>
+    <a href="http://127.0.0.1:5500/%EB%84%A4%EC%9D%B4%EB%B2%84%20%EA%B0%9C%EB%B0%9C%EB%A1%9C%20%EB%B0%B1%EB%A7%8C%EC%9E%A5%EC%9E%90%20%EB%8F%BC%EC%95%BC%EC%A7%80/%EB%84%A4%EC%9D%B4%EB%B2%84%EA%B0%9C%EB%B0%9C%EB%A1%9C%EB%B0%B1%EB%A7%8C%EC%9E%A5%EC%9E%90%EB%90%98%EA%B8%B0.html">
+        네이버 개발로 백만장자 되기
+    </a>
+    <br><!-- ctrl 누르고 누르거나 마우스 휠로 누르면 새 탭, shift 누르고 누르면 새 창 -->
+            <!-- 탭에서 휠로 누르면 창 꺼짐, 새로고침 휠로 누르면 새 탭 -->
+    <a href="http://google.com" target="_blank"> <!-- 새탭 또는 새창에서 띄우기 -->
+        구글
+    </a>
+    <br>
+    <a href="http://comic.naver.com">
+        <img
+        src="https://image-comic.pstatic.net/webtoon/783053/thumbnail/thumbnail_IMAG21_1135578a-87ec-48ba-b2c5-c7b93b21f91c.jpg"
+        alt="네이버 웹툰">
+    </a>
+    <br>
+    <a href="01_hello.html"> 01_hello.html </a>
+    <br>
+    <a href="상대주소/detail.html" target="_blank">디테일 페이지</a>
+        <!-- 폴더명/ -->
+        <!-- 상대주소와 절대 주소의 개념 (엄청엄청 중요함)
+            상대 주소 : 내 위치를 기준으로 삼는 주소
+             - 현재 주소의 가장 마지막 '/' 이후의 주소를 변경
+                . : 내 폴더
+                .. : 부모 폴더 -->
+    <br>
+    <a href="/상대주소/main.html">절대주소로 접근</a>
+    <!--절대 주소 : 집의 번지수 등, 어느 위치에 있어도 그곳을 가리키는 것
+         - 프로토콜(http, https 등)로 시작
+         - //로 시작
+         - /로 시작
+            - ip : port/ <<< 여기를 의미
+    -->
+    <a href="tel:01063523836">전화걸기</a>
+    <br>
+    <ggg id="here">여기로</ggg>
+    <!-- br*50 -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <strong id="bottom">맨 밑에</strong>
+    <br>
+    <a href="#top">맨 위로 가기</a>
+    </body>
+</html>
