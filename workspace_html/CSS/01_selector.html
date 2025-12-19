@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style> /* style 태그 안에는 html 문법 사용 불가. CSS 문법만 사용 가능함 */
+        /* CSS 주석 */
+
+        /* 전체 선택자 */
+        * {color : red;}
+
+        /* tag 선택자 */
+        h2 {font-size : 400%;}
+        h1 {font-size : 500%;}
+            /* , 로 구분해서 여러 개 적용 가능 */
+        h1, h2 {font-size : 300%}
+
+        /* 클래스 선택자 
+           - .클래스명 {} */
+        .c1 {background-color : green}
+        .c1, bigtext { /* 클래스도 여러개 가능 */   
+            font-size : 30px /* 단위 빠뜨리면 적용 안 됨 */ }
+
+        /* id 선택자
+            - #id명 {} */
+        #i1 { /* id는 여러 개 불가능 */
+            color : rgb(0, 0, 0)}
+
+        /* 자식 선택자 : 부모 > 자식 */
+        div > strong {background-color : blue} /* div를 부모로 가진 strong */
+        
+        /* 자손 선택자 : 조상 자손(모두 다) */
+        div strong {border : 3px solid red}
+
+        /* 속성 선택자 */
+        [href] {background-color : yellow}
+        /* 속성의 값이 일치할 때 */
+        [type=text] {background-color : purple}
+        [id=i1] {background-color : lightgreen} /* #i1은 id=i1의 줄임말 */
+        /* class는 여러 개를 사용하는 경우가 있기 때문에 class=c1 이런 식으로 잘 안 씀. 가능하긴 함 */
+        
+        /* https만 잡기 위해 : https로 시작하는 것들 (like 검색처럼) **/
+        [href^=https] {background-color : pink}
+
+    </style>
+</head>
+<body>
+    <h1>hello world</h1>
+    <h2>부제목</h2>
+    <ul>
+        <li class="c1" id="i1">li 1</li>
+        <!-- id가 중복되도 괜찮지만, javascript가 이해를 못해서 한 페이지에 하나만 사용하기-->
+        <li class="c1 bigtext c2">li 2</li> <!-- 하나의 태그에 클래스 2개 이상 가능. 띄어쓰기로 구분 -->
+        <li>li 3</li>
+    </ul>
+
+    <strong>밖에 strong</strong>
+    <!-- 의미 없이 감싸주는 태그 -->
+    <div> <!-- 부모 -->
+        <strong>div 안에 strong</strong> <!-- 자식 -->
+    </div>
+    <div>
+        <a href="">
+            <strong>div > a > strong</strong>
+        </a>
+    </div>
+
+    <input type="text"><br>
+    <input type="password"><br>
+    <a href="http://~~">http</a>
+    <a href="https://~~">https</a> <!-- 두번째 것만 선택하고 싶을 때 -->
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h3 id="top">맨 위</h3>
+    <a href="#bottom">맨 아래로 가기</a>
+    <form>
+        text : <input type="text"> <!-- input은 닫는 태그가 없음 -->
+        <br>
+        text(기본값) : <input>
+        <!-- 기본값. type 속성 생략하거나 text 오타 나도 상관 없음. 하지만 웬만하면 적어주기 -->
+        <br>
+        text(value) : <input type="text" value="초기값"> <!-- value는 초기값이 적혀져 있음 -->
+        <br>
+        text(placeholder) : <input type="text" placeholder="플레이스 홀더">
+        <!-- value보다 희미하게 표시, 글씨 입력하면 자동으로 사라짐 -->
+        <br>
+        text(v-ph) : <input type="text" value="초기값" placeholder="플레이스 홀더">
+        <!-- value랑 같이 사용하면 value값 지우면 나타남 -->
+            <!-- 혹시 아이디 저장 기능이 이런 걸까? -->
+        <br>
+        text(readonly) : <input type="text" value="초기값" readonly="readonly">
+        <!-- 읽기 전용, 지울 수 없음 -->
+        <!-- 속성명만 readonly로 있어도 되는데 속성값을 넣어줘야 웹접근성 높아짐-->
+        <br>
+        text(disabled) : <input type="text" value="초기값" disabled="disabled">
+        <!-- readonly는 선택은 되는데, disabled는 아예 선택도 안 됨 -->
+        <br>
+        password : <input type="password"> <!-- 자동으로 마스킹 처리 됨 -->
+        <br>
+        password(placeholder) : <input type="password" placeholder="비밀번호">
+        <br>
+        <table>
+            <tr>
+                <td>
+                  input 안에 table 안에 input : <input type="password">  
+                </td>
+            </tr>
+        </table>
+    <hr>
+        <br>
+        <!-- cols와 rows는 창 크기 고정. 몇 글자 보여줄 건지 -->
+         <!-- wrap은 감싸다. 기본값은 on / off면 글씨가 꽉 차도 옆으로 넘어감 -->
+        <textarea cols="50" rows="10" wrap="on">미리
+            보여줄 글
+        </textarea>
+        <!-- input은 1줄만 가능, textarea는 여러 줄 입력 가능 -->
+         <!-- textarea 태그 사이에는 공백도 모두 포함됨 -->
+            <!-- placeholder는 안 돼.. -->
+        <br>
+        datalist 연습 : <input type="text" list="countries">
+        <datalist id="countries"> <!-- 위치 무관 어디있든지 아이디가 같으면 끌어옴 -->
+            <option value="가나"></option>
+            <option value="가봉"></option>
+            <option value="대한민국"></option>
+            <option value="스위스"></option>
+            <option value="브라질"></option>
+        </datalist>
+    <br>
+    <hr>
+    <br> <!-- input은 value 비워두면 아무것도 없는 버튼 생성 -->
+        input-button : <input type="button" value="버튼">
+    <br> <!-- button은 태그 사이에 -->
+        button : <button type="button">버튼태그</button>
+        <!-- 아직 인터페이스일 뿐 아무런 기능 없음 -->
+    <br>
+        button : <button type="text">버튼태그</button>
+    <br>
+        submit : 
+        <input type="text" placeholder="아이디">
+        <input type="submit" value="로그인">
+    <br> 
+        submit : <input type="submit"> <!-- value 속성이 없거나 value에 오타가 나면 제출이 기본값 -->
+    <br> <!-- button type의 기본값은 submit -->
+        b-submit : <button type="submit">보내기</button>
+    <br> <!-- 페이지에 적은 모든 걸 초기화 -->
+            <!-- 새로고침과 비슷하지만 새로고침은 서버에 재접속하는 것으로 비용 발생 -->
+        reset : <input type="reset"> <!-- value 기본값은 초기화 -->
+    <br>
+        b-reset : <button type="reset">리셋</button>
+    <br>
+        이미지 버튼으로 감싸기 <br>
+        <button type="button">
+            <img src="다운로드.jpg" width="100">
+        </button><br>
+    <hr>
+    <br>
+    checkbox :
+    <!-- value는 서버로 전송할 때 값, 중복이 없어야 하며 뭐든 상관 없음 -->
+    <input type="checkbox" value="1" checked="checked"> 샷추가
+        <!-- checked는 초기값. 기본값은 true이고 속성값이 false가 아니면 전부 true -->
+    <input type="checkbox" value="2"> 휘핑크림
+    <input type="checkbox" value="3" disabled="disabled"> 펄추가
+    <input type="checkbox" value="4"> 시럽추가
+    <br>
+    <!-- 체크박스와 달리 중복 선택이 안 됨 -->
+     <!-- select와 중복금지선택 의도는 똑같으나 인터페이스가 다름 -->
+    radio : 
+        <input type="radio" name="china" value="1" checked="checked">짜장면
+        <input type="radio" name="china" value="2" checked="checked">짬뽕
+        <input type="radio" name="china" value="3" checked="checked">탕수육
+    <br>
+    radio : <!-- 페이지에 어디에 있든지 그룹핑은 name을 기준으로 -->
+        <!-- radio는 체크가 안 된 상태를 방지하기 위해 checked 속성을 꼭 걸어놓을 것 -->
+         <!-- 한 name 안에 checked가 중복으로 있으면 마지막 checked만 -->
+        <input type="radio" name="gender" value="f" checked="checked">여자
+        <input type="radio" name="gender" value="m">남자
+    <br>
+    select : <select> <!-- 초기값은 첫번째 옵션 -->
+        <option value="1">한식</option>
+        <option value="2">양식111111111111111111</option>
+        <option value="3" selected="selected">중식</option> <!-- 초기값을 변경하려면 옵션 안에 selected 속성 -->
+        <option value="4">분식</option>
+        <option value="5">일식</option>
+        </select>
+    <br>
+    select size : <select size="3"> <!-- 이미 펼쳐진 모양으로 보임 -->
+        <option value="1">한식</option>
+        <option value="2">양식111111111111111111</option>
+        <option value="3" selected="selected">중식</option>
+        <option value="4">분식</option>
+        <option value="5">일식</option>
+        </select>
+    <br>
+    select multiple : <select size="4"  multiple="multiple">
+        <!-- ctrl이나 shift 누르고 여러개 선택 가능 -->
+        <option value="1">한식</option>
+        <option value="2">양식111111111111111111</option>
+        <option value="3" selected="selected">중식</option>
+        <option value="4">분식</option>
+        <option value="5">일식</option>
+        </select>
+    <br> <!-- 글씨 클릭해도 선택 되게 -->
+    lable 1 : <!-- label로 감싸는 경우 -->
+    <label>
+        <input type="checkbox" value="1"> 펄추가
+    </label>
+    <br>
+    label 2 : <!-- label과 별도로, id와 for 속성으로 연결 -->
+    <label for="pearl">펄추가</label>
+    <input type="checkbox" value="1" id="pearl" checked="checked">
+    <br>
+    color : <input type="color">
+    <br>
+    <hr>
+    <br>
+    date : <input type="date" value="2025-12-19"> <br>
+    time : <input type="time"><br>
+    number : <input type="number" step="10"> <!-- e와 .과 숫자만 입력 가능 -->
+        <!-- e는 제곱수 의미 --> <!-- 한글은 작성되던데...ㅎ -->
+    <!-- min, max으로 최소, 최대--> <!-- step은 키보드 등으로 이동할 때 이동할 크기 -->
+    <br>
+    range : <input
+                type="range"
+                min="10"
+                max="100"
+                step="5">
+    <br>
+    <br>
+    fieldset : <br>
+    <fieldset>
+        <legend>제목</legend>
+        내용
+    </fieldset>
+    </form>
+    <hr><hr>
+    <!--
+        -- form  속성 --
+
+        method : get, post
+        method의 기본값은 get
+
+        action : 전송할 주소
+        action의 기본값은 현재 내 주소
+    -->
+
+    <form method="get">
+        <input type="text" name="abcd"><br>
+        <input type="text" name="stayc"><br>
+        <input type="submit" value="get 연습">
+    </form>
+    <!-- /07_form.html?abcd=1234#bottom 
+        get 방식 : 주소창 ?key=value(&key=value) 형태로 보냄 
+                : 주소창에 만들어서 보내는 거 -->
+    <form method="get" action="https://search.naver.com/search.naver">
+        <input type="text" name="query"><br>
+        <input type="submit" value="네이버검색">
+    </form>
+    <form method="get" action="https://google.com/search" target="_blank">
+        <!-- target 속성을 form에 넣을 수도 있지만 잘 사용하진 않음 -->
+        <input type="text" name="q"><br> <!-- name이 틀리거나 없으면 넘어가지 않음 -->
+        <input type="submit" value="구글검색">
+    </form>
+
+    <!-- 포스트 방식 : 주소창에 없음, 회원가입 등에서 삽입, 삭제, 수정 등에 사용 -->
+     <form method="post">
+        <input type="text" name="abcd"><br>
+        <input type="text" name="stayc"><br>
+        <input type="submit" value="post 연습">
+    </form>
+    <!-- get과 post는 보안 상의 차이는 미미함
+     get : 주소창의 값들이 주소창을 통해서 전달됨
+     post : 내용물을 담아서 보내고, 주소창에는 표현되지 않음 -->
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3 id="bottom">맨 아래</h3>
+    <a href="#top">맨 위로 가기</a>
+</body>
+</html>
