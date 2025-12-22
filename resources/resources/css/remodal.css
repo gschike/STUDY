@@ -1,0 +1,541 @@
+/* ==========================================================================
+   Remodal's necessary styles
+   ========================================================================== */
+
+/* Hide scroll bar */
+
+html.remodal-is-locked {
+  overflow: hidden;
+  touch-action: none;
+}
+
+/* Anti FOUC */
+
+.remodal,
+[data-remodal-id] {
+  display: none;
+}
+
+/* Necessary styles of the overlay */
+
+.remodal-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+  display: none;
+}
+
+/* Necessary styles of the wrapper */
+
+.remodal-wrapper {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+  text-align: center;
+  -webkit-overflow-scrolling: touch;
+}
+
+.remodal-wrapper:after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.05em;
+  content: "";
+}
+
+/* Fix iPad, iPhone glitches */
+
+.remodal-overlay,
+.remodal-wrapper {
+  backface-visibility: hidden;
+}
+
+/* Necessary styles of the modal dialog */
+
+.remodal {
+  position: relative;
+  outline: none;
+  text-size-adjust: 100%;
+}
+
+.remodal-is-initialized {
+  /* Disable Anti-FOUC */
+  display: inline-block;
+}
+
+
+/* ==========================================================================
+   Remodal's default mobile first theme
+   ========================================================================== */
+
+/* Default theme styles for the background */
+
+.remodal-bg.remodal-is-opening,
+.remodal-bg.remodal-is-opened {
+  filter: blur(3px);
+}
+
+/* Default theme styles of the overlay */
+
+.remodal-overlay {
+  background: rgba(43, 46, 56, 0.9);
+}
+
+.remodal-overlay.remodal-is-opening,
+.remodal-overlay.remodal-is-closing {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.remodal-overlay.remodal-is-opening {
+  animation-name: remodal-overlay-opening-keyframes;
+}
+
+.remodal-overlay.remodal-is-closing {
+  animation-name: remodal-overlay-closing-keyframes;
+}
+
+/* Default theme styles of the wrapper */
+
+.remodal-wrapper {
+  padding: 10px 10px 0;
+}
+
+/* Default theme styles of the modal dialog */
+
+.remodal {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 35px;
+  transform: translate3d(0, 0, 0);
+  color: #2b2e38;
+  background: #fff;
+}
+
+.remodal h4 {
+	color:#fff;
+	font-size:18px;
+	margin:-10px -10px 20px;
+	background:#383d48;
+	padding:10px;
+}
+.remodal h5 {
+	color:#666;
+	font-size:12px;
+	margin:10px 0 3px 0;
+	text-align: left;
+}
+.remodal h5.txtCenter {
+	color:#666;
+	font-size:12px;
+	margin:10px 0 3px 0;
+	text-align: center;
+}
+.remodal h6 {
+	color:#383d48;
+	font-size:12px;
+	font-weight:bold;
+	margin:5px 0 0;
+	text-align: left;
+	background:#fff;
+	padding:5px;
+}
+
+div.remodal .conPop {position: relative; overflow: hidden; margin-top: 10px; margin-left: -10px; margin-right: -10px; text-align: center;}
+
+
+/* board_list */
+div.remodal .board_listP {position: relative; overflow: hidden; margin-top:5px; border-top:1px solid #333; border-bottom:1px solid #b7b7b7;}
+div.remodal .board_listP table {width:100%; vertical-align: top;}
+div.remodal .board_listP table th, div.remodal board_listP td {word-break:break-all; word-wrap:break-word;}
+div.remodal .board_listP table thead th {height:40px; border-top:1px solid #e7e7e7; color:#111; font-size:13px; background-color:#f7f7f7; letter-spacing:-1px; text-align: center;}
+div.remodal .board_listP table thead th.bg { text-align:left; padding:5px; background: #999; color: #fff; height: 15px;}
+div.remodal .board_listP table tbody th { height:30px; border-top:1px solid #e7e7e7; color:#111; background-color:#f7f7f7; letter-spacing:-1px;}
+div.remodal .board_listP table tbody td { height:30px; border-top:1px solid #e7e7e7; text-align:center; padding: 5px;}
+div.remodal .board_listP table tbody td.left { text-align:left; padding:5px; line-height:20px;}
+.overflow{ overflow-y:auto; }
+
+div.remodal .board_listP table tbody td span {float:right; margin-right:5px; vertical-align: middle;}
+div.remodal .board_listP table tbody td span a.btn01 { margin-left:5px; background: #f46b01; color: #fff; border-radius: 3px; padding: 2px 5px;}
+div.remodal .board_listP table tbody td span a.btn02 { margin-left:5px; background: #aaa; color: #fff; border-radius: 3px; padding: 2px 5px;}
+div.remodal .board_listP table tbody td span a.btn03 { width: 100px; margin-left:5px; background: #aaa; color: #fff; border-radius: 3px; padding: 2px 18px;}
+div.remodal .board_listP table tbody td a.btnFull { display: block; width: 88%; background: #383d48; color: #fff; border-radius: 3px; padding: 10px 18px;}
+div.remodal .board_listP table tbody td span a.btn01:hover,
+div.remodal .board_listP table tbody td span a.btn02:hover,
+div.remodal .board_listP table tbody td span a.btn03:hover {background: #383d48; color:#fff; text-decoration:none;}
+
+div.remodal .board_listP table thead td span a.btn03 { width: 100px; margin-left:5px; background: #aaa; color: #fff; border-radius: 3px; padding: 2px 18px;}
+div.remodal .board_listP table thead td span a.btn03:hover {text-decoration:none;}
+div.remodal .board_listP table thead td span a.btn03:hover {background: #f46b01; color:#fff; text-decoration:none;}
+
+div.remodal .board_listP table tbody th.txtr {text-align: right; }
+div.remodal .board_listP table tbody td.txtr {text-align: right; }
+
+/* Grid_list */
+div.remodal .Grid_listP {position: relative; overflow: hidden; border:1px solid #b7b7b7; border-top:1px solid #333; border-left: 0 none; }
+div.remodal .Grid_listP table {width:100%; vertical-align: top;}
+div.remodal .Grid_listP table th, div.remodal .Grid_listP td {word-break:break-all; word-wrap:break-word;}
+div.remodal .Grid_listP table thead th {height:30px; border-top:1px solid #c7c7c7; border-left:1px solid #c7c7c7; color:#111; font-size:13px; background-color:#f7f7f7; letter-spacing:-1px; padding-left: 10px; padding-right: 10px;}
+div.remodal .Grid_listP table thead td {height:30px; border-top:1px solid #c7c7c7; border-left:1px solid #c7c7c7; color:#111; font-size:13px; background-color:#fff; letter-spacing:-1px; padding-left: 10px; padding-right: 10px;}
+div.remodal .Grid_listP table tbody tr.on td,
+div.remodal .Grid_listP table tbody tr.on td a {background-color:#383d48; color: #fff;}
+div.remodal .Grid_listP table tbody tr.on td.nodata {background:0 none;}
+div.remodal .Grid_listP table tbody tr.on td a:hover {color:#fff; text-decoration:underline;} 
+div.remodal .Grid_listP table tbody th {height:30px; border-top:1px solid #c7c7c7; border-left:1px solid #c7c7c7; color:#111; background-color:#f7f7f7; letter-spacing:-1px; padding-left: 10px; padding-right: 10px;}
+div.remodal .Grid_listP table tbody td {height:30px; border-top:1px solid #c7c7c7; border-left:1px solid #c7c7c7; text-align:center; padding-left: 10px; padding-right: 10px; color: #666;}
+div.remodal .Grid_listP table tbody td a:hover{color:#383d48; text-decoration:underline;}
+div.remodal .Grid_listP .overflow{ overflow-y:auto; }
+div.remodal .Grid_listP table tbody td span {float:right; margin-right:5px; vertical-align: middle;}
+div.remodal .Grid_listP table tbody th.txtr {text-align: right; }
+div.remodal .Grid_listP table tbody td.txtr {text-align: right; }
+div.remodal .Grid_listP table tbody td.left {text-align:left;}
+div.remodal .Grid_listP table tbody th.left {text-align:left;}
+div.remodal .Grid_listP table tbody td.gray {background-color:#f7f7f7; }
+
+
+
+
+.tab_containerP { border: 1px solid #ccc; border-top: none; clear: both; float: left; background: #FFFFFF; margin: 0 0 10px 0;}
+.tab_contentP { display: none;}
+
+/* 컨텐츠 중간 버튼영역*/
+div.remodal .bottomBtn {position: relative; margin: 5px; text-align: center;}
+div.remodal .bottomBtn input { cursor: pointer; padding: 10px 25px; text-align: center; color: #fff; background: #f46b01; border: 0; border-radius: 3px;}
+
+
+
+/* search Box */
+div.remodal .borderBox { position:relative;	overflow:hidden; border:1px solid #ddd; padding:8px 5px; line-height:16px; text-align: left;}
+div.remodal .borderBox input { margin: 0;  padding: 5px 10px;}
+
+
+
+/* 보드리스트 상단 영역 */
+div.remodal .board_info { position: relative; overflow: hidden; margin: 0; padding: 0;}
+div.remodal .board_info li { list-style: none;  padding: 8px 0 3px; background:#fff; text-align:left; line-height: 22px;}
+div.remodal .board_info a.btn {font-size: 11px; color: #fff; background:#383d48; border-radius: 10px; padding: 3px 10px; line-height: 14px; }
+div.remodal .board_info span {  float:right; font-size: 11px; }
+
+
+
+/* 카카오톡문자 팝업테이블 */
+div.remodal .kakaoBoxP { position: relative; margin: 5px 0 0; border:0; text-align:center;}
+div.remodal .kakaoBoxP li { list-style: none;  padding: 3px 0; background:#fff; text-align:left; line-height: 16px;}
+div.remodal .kakaoBoxP li span { float: right;}
+div.remodal .kakaoBoxP li.btn {display: block; padding: 3px 0px; }
+div.remodal .kakaoBoxP li.btn a { display: block; height: 25px; padding: 5px; background:#fff; border: 1px solid #ccc; color: #0070c0; font-weight: nomal; line-height: 26px; text-align:center;}
+div.remodal .kakaoBoxP li.btn a:hover { text-decoration: underline;}
+
+
+
+/*안내*/
+div.remodal .information { position: relative; overflow: hidden; margin: 10px -10px;  background: #f5f5f5; padding: 10px; color: #666; }
+div.remodal .information li {line-height: 20px; font-size: 11px; text-align: left;}
+div.remodal .information li a.btnE { color: #fff; font-weight: nomal; line-height: 26px; text-align:center; background: #aaa; padding: 5px 13px; border-radius: 3px; margin-left: 5px;}
+
+
+.remodal p {
+	color:#555;
+	font-size:12px;
+	padding:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:20px;
+	margin-bottom:5px;
+	text-align:left;
+}
+
+
+.remodal.remodal-is-opening,
+.remodal.remodal-is-closing {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.remodal.remodal-is-opening {
+  animation-name: remodal-opening-keyframes;
+}
+
+.remodal.remodal-is-closing {
+  animation-name: remodal-closing-keyframes;
+}
+
+/* Vertical align of the modal dialog */
+
+.remodal,
+.remodal-wrapper:after {
+  vertical-align: middle;
+}
+
+/* Close button */
+
+
+.remodal .btnarea { margin-top: 15px;} 
+.remodal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  overflow: visible;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s;
+  text-decoration: none;
+  color: #95979c;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.remodal-close:hover,
+.remodal-close:focus {
+  color: #2b2e38;
+  text-decoration: none;
+}
+
+.remodal-close:before {
+  font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
+  font-size: 25px;
+  line-height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 35px;
+  content: "\00d7";
+  text-align: center;
+}
+
+/* Dialog buttons */
+
+.remodal-confirm,
+.remodal-cancel {
+  font: inherit;
+  display: inline-block;
+  overflow: visible;
+  min-width: 110px;
+  margin: 0;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+}
+
+.remodal-confirm {
+  color: #fff;
+  background: #f46b01;
+}
+
+.remodal-confirm:hover,
+.remodal-confirm:focus {
+  background: #f48a01;
+  color: #fff;
+  text-decoration: none;
+}
+
+.remodal-cancel {
+  color: #fff;
+  background: #aaa;
+}
+
+.remodal-cancel:hover,
+.remodal-cancel:focus {
+  background: #bbb;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Remove inner padding and border in Firefox 4+ for the button tag. */
+
+.remodal-confirm::-moz-focus-inner,
+.remodal-cancel::-moz-focus-inner,
+.remodal-close::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+
+.remodal-overlay.without-animation.remodal-is-opening,
+.remodal-overlay.without-animation.remodal-is-closing,
+.remodal.without-animation.remodal-is-opening,
+.remodal.without-animation.remodal-is-closing,
+.remodal-bg.without-animation.remodal-is-opening,
+.remodal-bg.without-animation.remodal-is-closing {
+animation: none;
+}
+
+
+
+.remodal .btn_01 {
+  color: #fff;
+  background: #666;
+  padding:5px 10px;
+  border:0;
+  height:28px;
+  margin-top: 15px;
+}
+.remodal .btn_icon {
+  color: #fff;
+  font-size:11px;
+  background: #79d331 url(../images/i_close.png) no-repeat right 4px;
+  padding:3px 7px;
+  padding-right:18px;
+  border:0;
+  height:15px;
+  min-width:60px;
+  margin-right:5px;
+  vertical-align:middle;
+}
+
+/* ------ 기호 ------ */
+.remodal-Grid { position: relative; overflow: hidden; padding:0; border-bottom: 1px solid #ccc;  border-right: 1px solid #ccc;}
+.remodal-Grid li {float: left; font-family:tahoma; border-left: 1px solid #ccc; border-top: 1px solid #ccc; width: 36px; height:34px; font-size:12px; line-height:27px; vertical-align: middle; cursor: pointer;}
+.remodal-Grid li:hover {color:#ffffff; background-color:#f46b01;} 
+
+
+
+/* ------ 캘린더 ------ */
+#apDivCalendar { width: 230px; height: 270px; border: 1px solid #ccc; background: #fff; text-align: center;font-family:tahoma; font-size:11px; line-height:16px; margin: 0; padding: 5px;} 
+#apDivCalendar div.top { position: relative; overflow: hidden; padding:5px 3px; margin: 0 auto;}
+#apDivCalendar div.top span { padding: 0 5px; font-size: 10px;}
+#apDivCalendar div.top select {border:#FFFFFF 1px solid; font-size:11px; color:#666666;}
+#apDivCalendar div.top2 { position: relative; overflow: hidden; width: 190px; border-bottom:#cccccc 1px solid; border-top:#000000 2px solid; margin: 0 auto;}
+#apDivCalendar div.top2 li { float: left; font-family:tahoma; width: 19px; padding:5px 3px;}
+
+div.calendar { position: relative; overflow: hidden; padding:3px 0;  width: 190px; margin: 0 auto;}
+div.calendar li {float: left; font-family:tahoma; width: 25px; height:21px; font-size:11px; line-height:16px;cursor: pointer;}
+div.calendar li:hover {background-color:#e7e7e7;color:#000;  } 
+div.calendar li.active {color:#ffffff; background-color:#f46b01;} 
+
+div.calendar li.Reddate { display: block; color:#fe0000; text-align:center;cursor: pointer; }
+div.calendar li.Bluedate { display: block; color:#0060BF; text-align:center; cursor: pointer;}
+
+#apDivCalendar div.bottom { position: relative; overflow: hidden;  width: 190px; border-bottom:#000 1px solid; border-top:#ccc 1px solid; padding: 7px 5px; margin: 0 auto;}
+#apDivCalendar div.bottom select {border:#FFFFFF 1px solid; font-size:11px; color:#666666;}
+#apDivCalendar div.btnarea {position: relative; overflow: hidden; margin-top: 5px;}
+
+
+#apDivCalendar .CalendarConfirm,
+#apDivCalendar .CalendarCancel {
+  font: inherit;
+  display: inline-block;
+  overflow: visible;
+  width: 50px;
+  margin: 5px 0;
+  padding: 3px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+}
+
+#apDivCalendar .CalendarConfirm {
+  color: #fff;
+  background: #f46b01;
+}
+
+#apDivCalendar .CalendarConfirm:hover,
+#apDivCalendar .CalendarConfirm:focus {
+  background: #f48a01;
+  color: #fff;
+  text-decoration: none;
+}
+
+#apDivCalendar .CalendarCancel {
+  color: #fff;
+  background: #aaa;
+}
+
+#apDivCalendar .CalendarCancel:hover,
+#apDivCalendar .CalendarCancel:focus {
+  background: #bbb;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/* Keyframes
+   ========================================================================== */
+
+@keyframes remodal-opening-keyframes {
+  from {
+    transform: scale(1.05);
+
+    opacity: 0;
+  }
+  to {
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+@keyframes remodal-closing-keyframes {
+  from {
+    transform: scale(1);
+
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.95);
+
+    opacity: 0;
+  }
+}
+
+@keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Media queries
+   ========================================================================== */
+
+@media only screen and (min-width: 641px) {
+  .remodal {
+    max-width: 650px;
+  }
+}
+
+/* IE8
+   ========================================================================== */
+
+.lt-ie9 .remodal-overlay {
+  background: #2b2e38;
+}
+
+.lt-ie9 .remodal {
+  width: 500px;
+}

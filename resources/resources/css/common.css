@@ -1,0 +1,1097 @@
+/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+   
+   
+/* default */
+html {height:100%;}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, p, table, th, td, textarea, select {margin:0; padding:0; font:12px/1.4 NanumGothic,ngwoff,ngeot,"맑은고딕","Malgun Gothic","돋움",dotum,"Tahoma","Helvetica","Arial",sans-serif; color:#555; letter-spacing:-0.5px;}
+body {/*line-height:1.3em; font-family:'Nanum Gothic'; font-size:12px; */}
+table {border-collapse:collapse; border-spacing:0;}
+ol, ul, li {list-style:none;}
+img {border:0;}
+hr, legend, caption {display:none;}
+form input, form select, form label, form img {vertical-align:middle;}
+fieldset {border:0 none;}
+a {color:#555; text-decoration:none;}
+a:hover {background:0 none; text-decoration:none;}
+a:active {background:0 none; text-decoration:none;}
+em {font-style:normal;}
+iframe {margin:0; padding:0;}
+button {margin:0; padding:0; border:0 none;}
+
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,s
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1.33em 0 0.5em;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0 0.5em;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0 0.5em;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0 0.5em;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: NanumGothic, dotum, arial, monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+
+nav dl,
+nav menu,
+nav ol,
+nav ul {
+    margin: 1em 0;
+}
+
+nav dd {
+    margin: 0 0 0 40px;
+}
+
+
+nav menu,
+nav ol,
+nav ul {
+    padding: 0 0 0 40px;
+}
+
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+form {
+    margin: 0;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+button,
+input,
+select,
+textarea {
+	outline: 0;
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+	padding:5px;
+	border:1px solid #ccc;
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+	vertical-align:middle;
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+}
+
+.line {
+    margin: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+
+
+
+/* Code Blocks */
+pre {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+    border: 3px solid #ccc;
+    padding: 0;
+    margin: 8px 0;
+}
+
+pre code {
+    word-break: normal;
+    word-wrap: normal;
+    max-height: 450px;
+    white-space: pre;
+    overflow: auto;
+}
+
+
+/* Tabs */
+ul.tabs {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+ul.tabs li {
+	display: inline-block;
+	line-height: 34px;
+}
+
+ul.tabs li a {
+	display: block;
+	line-height: 25px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #95a5a6;
+	font-weight: bold;
+	margin-bottom: 0px;
+	-webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+ul.tabs li a:hover {
+	background-color: #bdc3c7;
+	color: #ecf0f1;
+}
+
+ul.tabs li.active a {
+	color: #2c3e50;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-bottom-color: #fff;
+	margin-bottom: -1px;
+}
+
+
+/* ==========================================================================
+   layout
+   ========================================================================== */
+
+body {
+	background-color: #fff;
+	font-size: 12px;
+	color: #333;
+}
+
+.center {
+	text-align: center;
+}
+
+header {
+	position: realetive;
+	width:100%;
+	height: 180px;
+	padding: 0;
+    margin: 0;
+}
+
+h1.logo {
+	text-align: center;
+	margin: 0;
+	border-bottom: 1px solid #cacaca;
+}
+
+h1.logo a {
+	width: 350px;
+	height: 49px;
+	display: block;
+	background: url(../images/logo.png) no-repeat 20px 10px;
+	font-size: 18px;
+	color: #333;
+	padding: 30px 40px 0;
+	font-weight: bold;
+	margin: 0;
+}
+
+header .logout a {
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	width:90px;
+	height:30px;
+	vertical-align: middle;
+	background: url(../images/btn_gray.png)  repeat-x 0px;
+    display: block;
+    outline: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+	color:#fff;
+    text-decoration: none;
+}
+
+header span.i_logout {
+    font-size: 11px;
+    color: #fff;
+	line-height:30px;
+	padding: 10px 0 10px 35px;
+	background: url(../images/i_logout.png)  no-repeat 10px 8px;
+}
+
+div.wrapper {
+	position: realetive;
+	height:100%;
+	margin: 0;
+	padding: 0;
+}
+
+.gnb { 
+	height:80px;
+}
+
+.subWrap {
+	float:left;
+	position: realetive;
+	width:1030px;
+	min-height:720px;
+	height:100%;
+	padding: 0;
+	border-left:1px solid #ccc;
+}
+
+footer {
+	position:relative;
+	float:left;
+	width:100%;
+	text-align: center;
+	font-size: 10px;
+	padding: 10px 0 10px 0;
+    color: #888;
+	border-top: 1px solid #cacaca;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   SUB CONTENTS
+   ========================================================================== */
+
+
+.subCon {
+	position: relative;
+	padding:10px 30px;
+}
+.subCon h2 {
+	color:#000;
+	margin-top:0;
+	font-weight:bold;
+	padding:0 0 10px 0;
+	border-bottom:1px solid #666;
+}
+.subCon h2 span {
+	float: right;
+	color:#f36911;
+	margin-top:8px;
+	margin-left:15px;
+	font-size:11px;
+	font-weight:100;
+}
+.subCon h2 span.bk {
+	float: right;
+	color:#000;
+	margin-top:8px;
+	margin-left:15px;
+	font-size:11px;
+	font-weight:100;
+}
+.subCon h2 span.bk label {margin-left: 10px;}
+.subCon h3 {
+	color:#555;
+	margin-top:0;
+	font-weight:bold;
+	padding:10px 0 0 13px;
+	background:url(../images/i_lnb_off.png) no-repeat 0 16px; 
+}
+.subCon h3 span {
+	float: right;
+	margin-top:0;
+	font-size:11px;
+	font-weight:100;
+	padding:0 0 0 13px;
+}
+.subCon .floatRight {
+	float:right;
+	color:#888;
+	margin-top:0;
+	font-size:11px;
+	font-weight:nomal;
+	padding:0 0 0 10px;
+}
+
+
+/* 개인정보수집및동의 */
+.form_scroll {
+	position:relative;
+	margin:10px 0;
+	height:440px;
+	overflow-y: auto;
+	font-size:12px;
+	line-height:24px;
+	padding:10px;
+	border:1px solid #ccc;
+}
+.checkbox {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.checkbox label {
+  min-height: 20px;
+  padding-left: 10px;
+  margin-bottom: 0;
+  margin-top:-4px;
+  font-weight: normal;
+  cursor: pointer;
+  vertical-align:middle;
+}
+
+
+/* 회원가입 */
+.Form {
+	margin:10px 0;
+	font-size:12px;
+	line-height:24px;
+}
+.Form li {
+	padding:5px 0;
+	color:#999;
+}
+.Form li span {
+	color:#555;
+}
+.Form li span.title {
+	margin-right:20px;
+}
+.Form li img {
+	width:200px;
+	height:123px;
+	text-align:left;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.Form input {
+	width:300px;
+	height:25px;
+	padding:5px;
+	border:1px solid #ccc;
+	color:#999;
+}
+
+/* 기기정보 */
+.subWrap .subCon .conA { 
+	position: relative;
+	margin:10px 0 0;
+	overflow: hidden;
+}
+.subWrap .subCon .conB { 
+	position: relative;
+	margin:0;
+	overflow: hidden;
+}
+
+.subWrap .subCon .btnArea {
+	margin:15px 0;
+}
+.subWrap .subCon .conA .borderBox {
+	position:relative;
+	overflow:hidden;
+	border:1px solid #ddd;
+	padding:15px;
+	line-height:35px;
+}
+
+/* 검색영역 */
+.borderBox .check {	position:relative;}
+.borderBox .check li {	float:left;	padding:5px 10px 5px 0;}
+.borderBox label {  min-height: 20px;  padding-right: 10px;  margin-bottom: 0;  margin-top:-4px;  font-weight: normal;  cursor: pointer;  vertical-align:middle;}
+.borderBox input {  height:18px;  padding: 5px;}
+.borderBox .BoxinRight {  float:right;  margin-left:5px; padding-top: 1px;}
+
+
+.borderBox .btn_search {  color: #fff;  background: #383d48;  border:0;  height:30px;  padding: 5px;  min-width:90px;  margin-left:10px;  border-radius: 3px;}
+.borderBox .btn_search:hover {background: #515868;}
+.borderBox .btn_orange {  float: right; color: #fff;  background: #f36b00;  border:0;  font-size: 12px; text-align: center; height:30px;  padding: 5px; min-width:90px;  margin-left:5px;  border-radius: 3px; line-height: 20px;}
+.borderBox .btn_orange:hover {background: #f48a01;}
+.borderBox .btn_gray {  float: right; color: #fff;  background: #777;  border:0;  font-size: 12px; text-align: center; height:30px;  padding: 5px;  min-width:90px;  margin-left:5px;  border-radius: 3px;}
+.borderBox .btn_gray:hover {background: #999;}
+
+
+
+/*tabmenu*/
+ul.tabmenu {margin:10px 0 0 0; padding: 0; float: left; height:35px; border-bottom:#ccc 1px solid; border-left: 1px solid #ccc; width: 100%;}
+ul.tabmenu li {float: left; text-align:center; cursor: pointer; width:82px; height: 34px; line-height: 31px; border: 1px solid #ccc; border-left: none; font-weight: bold; background: #fafafa; overflow: hidden; position: relative;}
+ul.tabmenu li.active {background: #FFFFFF; border-bottom: 1px solid #FFFFFF;}
+
+.tab_container { width: 968px; border: 1px solid #ccc; border-top: none; clear: both; float: left; background: #FFFFFF; margin: 0 0 10px 0;}
+.tab_container2 { width: 968px; border-top: none; clear: both; float: left; background: #FFFFFF; margin: 0 0 10px 0;}
+.tab_content { display: none;}
+
+
+
+/* tab아래오는 박스 */
+div.tab_content { position: relative; overflow: hidden; margin: 0; padding: 0;}
+div.tab_content li { list-style: none;  padding: 8px 10px; background:#fff; text-align:left; line-height: 22px;}
+div.tab_content li span a {float:right; font-size: 11px; color: #fff; background:#383d48; border-radius: 10px; padding: 3px 10px; line-height: 14px; }
+div.tab_content li a.btn_search {  color: #fff;  background: #383d48;  border:0;  height:15px;  padding: 5px 10px;  width:40px;  border-radius: 3px; text-align: center;}
+
+div.tab_content li span.txtRight {float:right; font-size: 11px; color: #555; padding: 3px 10px; line-height: 20px; }
+div.tab_content li label {padding-right:10px;}
+
+div.tab_content .bottomBtn {position: relative; margin: 0; background: #383d48; text-align: center;}
+div.tab_content .bottomBtn a { display: block; cursor: pointer; padding: 12px 10px; text-align: center; color: #fff;}
+
+
+div.tab_content h4 {padding-left: 10px; line-height: 20px;}
+div.tab_content a.btnE { color: #fff; font-weight: nomal; line-height: 26px; text-align:center; background: #aaa; padding: 5px 13px; border-radius: 3px; margin-left: 5px;} 
+
+.txtLeft { position: relative; overflow: hidden; margin: 0; padding: 0;}
+.txtLeft li { height: 25px; float:left; font-size: 11px; color: #555; padding: 8px 10px; line-height: 20px; }
+.txtLeft li label {padding-right:10px;}
+.txtRight {float:right;  font-size: 11px; color: #555; padding: 8px 10px; line-height: 20px; }
+
+
+
+
+
+
+
+/* tab아래 gray 박스 */
+div.GrayBoxArea { position: relative; overflow: hidden; padding: 10px; margin: 0; background: #eee;}
+
+
+
+/* board_list */
+div.subCon .board_list {position: relative; overflow: hidden; border-top:1px solid #333; border-bottom:1px solid #b7b7b7;}
+div.subCon .board_list table {width:100%; vertical-align: top;}
+div.subCon .board_list table th, div.subCon board_list td {word-break:break-all; word-wrap:break-word;}
+div.subCon .board_list table thead th {height:40px; border-top:1px solid #c7c7c7; color:#111; font-size:13px; background-color:#f7f7f7; letter-spacing:-1px;}
+
+div.subCon .board_list table thead td {height:40px; border-top:1px solid #e7e7e7; color:#111; font-size:13px; background-color:#fff; letter-spacing:-1px;}
+div.subCon .board_list table thead th.first {border-left:0 none;}
+div.subCon .board_list table thead tr.first th {border-top:0 none;}
+div.subCon .board_list table tbody tr:hover {background-color:#383d48; color: #fff;}
+div.subCon .board_list table tbody tr:hover td {background-color:#383d48; color: #fff;}
+div.subCon .board_list table tbody tr:hover td a {background-color:#383d48; color: #fff;}
+div.subCon .board_list table tbody tr.on td,
+div.subCon .board_list table tbody tr.on td a {background-color:#383d48; color: #fff;}
+div.subCon .board_list table tbody tr.on td.nodata {background:0 none;}
+div.subCon .board_list table tbody tr.on td a:hover {color:#fff; text-decoration:underline;} 
+div.subCon .board_list table tbody td {height:40px; border-top:1px solid #e7e7e7; text-align:center;}
+div.subCon .board_list table tbody td.left {text-align:left; padding-left: 10px; padding-right: 10px;}
+div.subCon .board_list table tbody td a:hover{color:#383d48; text-decoration:underline;}
+div.subCon .board_list .overflow{ overflow-y:auto; }
+div.subCon .board_list table tbody td span {float:right; margin-right:5px; vertical-align: middle;}
+
+div.subCon .board_list table tbody td span a.del {float:right; margin-right:5px; font-family: tahoma;}
+div.subCon .board_list table tbody td span a.btn01 { margin-left:5px; background: #f46b01; color: #fff; border-radius: 3px; padding: 2px 5px;}
+div.subCon .board_list table tbody td span a.btn02 { margin-left:5px; background: #aaa; color: #fff; border-radius: 3px; padding: 2px 5px;}
+div.subCon .board_list table tbody td span a.btn03 { width: 100px; margin-left:5px; background: #aaa; color: #fff; border-radius: 3px; padding: 2px 18px;}
+div.subCon .board_list table tbody td span a.btn01:hover,
+div.subCon .board_list table tbody td span a.btn02:hover,
+div.subCon .board_list table tbody td span a.btn03:hover {background: #fff; color:#000; text-decoration:none;}
+
+div.subCon .board_list table thead td span a.btn03 { width: 100px; margin-left:5px; background: #aaa; color: #fff; border-radius: 3px; padding: 2px 18px;}
+div.subCon .board_list table thead td span a.btn03:hover {text-decoration:none;}
+div.subCon .board_list table thead td span a.btn03:hover {background: #f46b01; color:#fff; text-decoration:none;}
+
+
+
+/* Grid_list */
+.Grid_list {position: relative; overflow: hidden; border:1px solid #b7b7b7; border-top:1px solid #333; border-left: 0 none; }
+.Grid_list table {width:100%; vertical-align: top;}
+.Grid_list table th, .Grid_list td {word-break:break-all; word-wrap:break-word;}
+.Grid_list table thead th {height:40px; border-top:1px solid #c7c7c7; border-left:1px solid #c7c7c7; color:#111; font-size:13px; background-color:#f7f7f7; letter-spacing:-1px; padding-left: 10px; padding-right: 10px;}
+.Grid_list table thead td {height:40px; border-top:1px solid #c7c7c7; border-left:1px solid #c7c7c7; color:#111; font-size:13px; background-color:#fff; letter-spacing:-1px; padding-left: 10px; padding-right: 10px;}
+.Grid_list table tbody tr.on td,
+.Grid_list table tbody tr.on td a {background-color:#383d48; color: #fff;}
+.Grid_list table tbody tr.on td.nodata {background:0 none;}
+.Grid_list table tbody tr.on td a:hover {color:#fff; text-decoration:underline;} 
+.Grid_list table tbody th {height:40px; border-top:1px solid #c7c7c7; border-left:1px solid #c7c7c7; color:#111; background-color:#f7f7f7; letter-spacing:-1px; padding-left: 10px; padding-right: 10px;}
+.Grid_list table tbody td {height:40px; border-top:1px solid #c7c7c7; border-left:1px solid #c7c7c7; text-align:center; padding-left: 10px; padding-right: 10px;}
+.Grid_list table tbody td a.hover{text-decoration:underline;}
+.Grid_list table tbody td a:hover{color:#383d48; text-decoration:underline;}
+.Grid_list .overflow{ overflow-y:auto; }
+.Grid_list table tbody td span {float:right; margin-right:5px; vertical-align: middle;}
+.Grid_list table tbody th.txtr {text-align: right; }
+.Grid_list table tbody td.txtr {text-align: right; }
+.Grid_list table tbody td.left {text-align:left;}
+.Grid_list table tbody th.left {text-align:left;}
+.Grid_list table tbody td.gray {background-color:#f7f7f7; }
+.Grid_list table tbody td span a.btn01 { margin-left:5px; background: #f46b01; color: #fff; border-radius: 3px; padding: 2px 5px;}
+.Grid_list table tbody td span a.btn02 { margin-left:5px; background: #aaa; color: #fff; border-radius: 3px; padding: 2px 5px;}
+.Grid_list table tbody td span a.btn03 { width: 100px; margin-left:5px; background: #aaa; color: #fff; border-radius: 3px; padding: 2px 18px;}
+.Grid_list table tbody td span a.btn01:hover,
+.Grid_list table tbody td span a.btn02:hover,
+.Grid_list table tbody td span a.btn03:hover {background: #383d48; color:#fff; text-decoration:none;}
+
+.Grid_list table thead td span a.btn03 { width: 100px; margin-left:5px; background: #aaa; color: #fff; border-radius: 3px; padding: 2px 18px;}
+.Grid_list table thead td span a.btn03:hover {text-decoration:none;}
+.Grid_list table thead td span a.btn03:hover {background: #f46b01; color:#fff; text-decoration:none;}
+
+
+/* 보드리스트 상단 영역 */
+div.board_info { position: relative; overflow: hidden; margin: 0; padding: 8px 10px; line-height: 22px;}
+div.board_info a.btn {font-size: 11px; color: #fff; background:#383d48; border-radius: 10px; padding: 4px 10px; line-height: 16px; }
+div.board_info a.btnFile {font-size: 11px; color: #fff; background:#383d48; border-radius: 3px; padding: 6px 13px; line-height: 16px; }
+div.board_info span { float: right; font-size: 11px;}
+
+
+/* 보드리스트 상단 버튼영역 */
+div.boardTopBtn { position: relative; overflow: hidden; margin: 0; padding: 10px 0px 5px; line-height: 22px;}
+
+
+/* tork_list */
+div.talk_list {position: relative; overflow: hidden; border-top:1px solid #333;}
+div.talk_list table {width:100%; vertical-align: top;}
+div.talk_list table th, div.talk_list td {word-break:break-all; word-wrap:break-word;}
+div.talk_list table thead th {height:40px; border-top:1px solid #c7c7c7; border-bottom:1px solid #c7c7c7;border-left:1px solid #c7c7c7; color:#111; font-size:13px; background-color:#f7f7f7; letter-spacing:-1px;}
+div.talk_list table tbody td { height:40px; text-align:center; border-top: 1px solid #c7c7c7; border-bottom:1px solid #c7c7c7;border-left:1px solid #c7c7c7;}
+div.talk_list table thead th:first-child,div.talk_list table tbody td:first-child {border-left:0;}
+.tolkTemplet { position: relative;}
+div.talk_list td .talk_box { position: absolute; top: 0; left: 0; z-index: 9999; width:323px; height:380px; cursor: pointer; padding: 0;}
+div.talk_list td .talk_box:hover { width:323px;height:380px; padding: 0; background-color: rgba(0, 0, 0, 0.5);}
+
+/* 카카오톡문자 */
+div.kakaoBox { position: relative; margin: 20px 20px 10px 10px; border:1px solid #666; text-align:center;}
+div.kakaoBox li { list-style: none;  padding: 10px; background:#fff; text-align:left; line-height: 22px;}
+div.kakaoBox li:first-child { height: 25px; background:#f3e922 url(../images/kakao_01.png) no-repeat 72px 12px; font-size: 14px; color: #000; font-weight: bold; line-height: 30px; text-align:center; background-size: auto 45%;}
+.kakaoicon { position: absolute; top:-15px; right: -15px; width: 44px; height: 46px; background: url(../images/kakao_02.png) no-repeat 0 0; z-index: 999;}
+div.kakaoBox li.btn {padding: 3px 10px; }
+div.kakaoBox li.btn a { display: block; height: 25px; padding: 5px; background:#fff; border: 1px solid #ccc; color: #0070c0; font-weight: nomal; line-height: 26px; text-align:center;}
+div.kakaoBox li.btn a:hover { text-decoration: underline;}
+div.kakaoBox li:last-child {padding:3px 10px 10px;}
+
+
+
+
+/* SMS문자 */
+div.smsArea { position: relative; overflow: hidden; margin: 0; padding: 0;} 
+div.smsArea li { list-style: none;  padding: 8px 10px; background:#fff; text-align:left; line-height: 22px; border-bottom: 1px solid #ccc;}
+div.smsArea li textarea {border:0;}
+div.smsArea li span {float:right; font-size: 11px; color: #888;}
+div.smsArea li.btn01 {overflow: hidden; padding: 0; background:#eaeaea; }
+div.smsArea li.btn01 a { display: block; color: #000; font-weight: nomal; line-height: 26px; text-align:center;}
+div.smsArea li.btn01 a:hover { text-decoration: none; color: #f36b00;}
+div.smsArea li.btn01 a.btnA { float: left; background: #eaeaea url(../images/i_image.png) no-repeat 12px 10px; padding: 5px 13px 5px 37px;}
+div.smsArea li.btn01 a.btnB { float: left; background: #eaeaea url(../images/i_marking.png) no-repeat 12px 10px; padding: 5px 15px 5px 38px; border-left: 1px solid #ccc; }
+div.smsArea li.btn01 a.btnC { float: left; background: #eaeaea url(../images/i_replace.png) no-repeat 10px 10px; padding: 5px 11px 5px 33px; border-left: 1px solid #ccc; }
+
+div.smsArea li.btn02 { overflow: hidden; padding: 0; background:#f36b00;}
+div.smsArea li.btn02 a { display: block; color: #fff; font-weight: nomal; line-height: 26px; text-align:center;}
+div.smsArea li.btn02 a:hover { text-decoration: none; color: #000;}
+div.smsArea li.btn02 a.btnD { float: left; width: 37%; background: #f36b00; padding: 8px 13px;}
+div.smsArea li.btn02 a.btnE { float: left; width: 37%; background: #f36b00; padding: 8px 13px; border-left: 1px solid #fff;}
+
+div.smsArea li:last-child { border-bottom: 0px solid #ccc;}
+
+
+
+/* 컨텐츠 중간 버튼영역 */
+div.conMiddleBtn {position: relative; overflow: hidden; margin: 0; padding:20px 15px; background: #383d48; color: #fff; text-align: right; font-weight: 100;}
+div.conMiddleBtn a { margin-left: 15px; color: #383d48;  background: #fff url( ../images/i_send.png) no-repeat 20px 8px;  padding:8px 25px 8px 45px;  border:0;  height:30px;  width:94%;  border-radius: 3px; font-weight: bold;}
+
+
+/* tab아래오는 float:left 박스 */
+div.tabAreaFloatLeft { position: relative; overflow: hidden; margin: 0; border-top:0; padding: 0;}
+div.tabAreaFloatLeft li { float: left; list-style: none; width: 230px;  padding: 8px 6px; background:#fff; text-align:left; line-height: 22px; border-bottom: 0; }
+div.tabAreaFloatLeft li textarea { width: 218px; border:1px solid #ccc; border-bottom: 0;}
+div.tabAreaFloatLeft li p { margin: 0; padding: 8px 5px; text-align:left; line-height: 22px; border: 1px solid #ccc;}
+div.tabAreaFloatLeft li p span {float:right; margin: 0; font-size: 11px; padding: 3px 5px; line-height: 14px; }
+
+div.tabArea li { padding: 8px 10px;}
+
+
+/* 모니터링 차트상단 tab버튼 */
+div.chart_content { display: none; width:968px; height:350px; border: 1px solid #eee;}
+div.btnchart { position: relative; float: right; margin-left: 15px;}
+div.btnchart li { float: left; margin-left:1px; background: #aaa; color: #fff; padding: 2px 5px; cursor: pointer;}
+div.btnchart li:hover{ background: #f46b01; color:#fff; text-decoration:none;}
+div.btnchart li.on {background: #393d48; color:#fff; text-decoration:none;}
+
+div.chart_contentS { width:968px; height:360px; border: 1px solid #eee;}
+div.chart_content2 { display: none; width:968px;}
+
+#MoniterChart2, 
+#MoniterChart3, 
+#MoniterChart4, 
+#MoniterChart5, 
+#MoniterChart6, 
+#MoniterChart7 {padding-top: 10px;}
+
+
+
+
+
+/*안내*/
+div.information { position: relative; overflow: hidden; margin-top: 10px; background: #f5f5f5; padding: 10px; color: #666; }
+div.information li {line-height: 20px; font-size: 11px;}
+.txtP { color:#f46b01;}
+
+/*안내2*/
+div.information2 { position: relative; overflow: hidden; margin-top: 0px; background: #fff; padding: 10px; color: #666; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+div.information2 li {line-height: 20px; font-size: 11px; }
+.txtP { color:#f46b01;}
+
+
+
+/* pageNumber */
+.pageNumber {position: relative; overflow: hidden; margin:20px auto 10px; padding:10px 10px; text-align:center; color:#888; font-size:11px;	}
+.pageNumber a {	margin:1px;	padding:5px 10px; width:18px; height:18px; text-align:center; color:#888; border:1px solid #ccc;}
+.pageNumber a:hover,
+.pageNumber a:after,
+.pageNumber a:active {color:#383d48;border:1px solid #ccc;text-decoration:none;}
+.pageNumber a.on {	color:#fff;	border:1px solid #383d48; background: #383d48;}
+
+
+/* 컨텐츠 하단 폼영역 */
+div.conBottomForm {position: relative; overflow: hidden; margin: 0; padding:20px 15px; background: #f5f5f5; color: #555; text-align: left; font-weight: 100;}
+div.conBottomForm a { margin-left: 10px; color: #fff;  background: #383d48;  padding:8px 20px;  border:0;  height:30px;  border-radius: 3px;}
+div.conBottomForm span {float: right;}
+
+
+
+/* button */
+.buttonArea {position:relative;	margin:20px 10px;text-align:center;}
+.buttonArea2 {position:absolute; bottom: 0; margin:0;text-align:center;}
+.button-confirm,
+.button-cancel {  font: inherit;  display: inline-block;  overflow: visible;  min-width: 110px;  width: 100%; margin: 0;  padding: 12px 0;  cursor: pointer;  transition: background 0.2s;  text-align: center;  vertical-align: middle;  text-decoration: none;  border: 0;  outline: 0;}
+
+.button-confirm {  color: #fff;  background: #f46b01;}
+
+.button-confirm:hover,
+.button-confirm:focus {  background: #f38129;  color: #fff;  text-decoration:none;}
+
+.button-cancel {  color: #fff;  background: #888;}
+
+.button-cancel:hover,
+.button-cancel:focus {  background: #aaa;  color: #fff;  text-decoration:none;}
+
+/* Remove inner padding and border in Firefox 4+ for the button tag. */
+
+.button-confirm::-moz-focus-inner,
+.button-cancel::-moz-focus-inner,
+.button-close::-moz-focus-inner {  padding: 0;  border: 0;}
+
+
+.btn_01 { color: #fff;  background: #f36b00;  padding:5px 10px;  border:0;  height:30px;  border-radius: 3px;}
+.btn_02 { color: #383d48;  background: #fff;  padding:5px 10px;  border:1px solid #179957;  height:30px;  border-radius: 3px;}
+
+
+.btn_100 { color: #fff;  background: #f36b00;  padding:5px;  border:0;  height:30px;  width:94%;  border-radius: 3px;}
+
+.btn_md { color: #fff;  background: #888;  padding:3px 10px;  border:0;  height:28px;  font-size:11px;  border-radius:2px;  margin:0 0 0 5px;}
+
+.btn_mdOrange {  color: #fff;  background: #f46b01;  padding:3px 10px;  border:0;  height:28px;  font-size:11px;  border-radius:2px;  margin:0 0 0 5px;}
+
+.btn_sm {  color: #fff;  background: #888;  padding:3px 10px;  border:0;  height:20px;  font-size:11px;  border-radius:3px;  margin:0 0 0 5px;}
+
+
+.floatRight .btn_search {  float:right;  color: #fff;  background: #393d48 url(../images/i_search.png) no-repeat 5px 3px;  padding:5px;
+  border:0; height:16px;  min-width:20px;  border-radius:3px;}
+.floatRight .btn_sm {  float:right;  color: #fff;  background: #888;  padding:3px 10px;  border:0;  height:20px;  font-size:11px;  border-radius:1px;  margin:5px 0 0 5px;}
+
+
+/*설정*/
+.setBox {position:relative;overflow:hidden;margin-bottom:30px;}
+.setBox .setting_left { float:left; width:250px; text-align:center; margin-top:20px; margin-right:20px;}
+.setBox .setting {float:left;margin:0;text-align:left;width:700px;}
+.setBox .setting li {font-size:12px;color:#666;	font-weight:normal;	padding:8px 10px;line-height:20px; display: block;border-bottom:1px solid #ccc;	padding:9px 20px;}
+.setBox .setting span {	font-size:11px;	font-weight:normal;}
+.setBox .setting_con {position:relative;overflow:hidden;margin:0;text-align:left;width:100%;}
+.setBox .setting_con li {float:left;font-size:12px;	color:#555;	font-weight:normal;	padding:8px 10px;line-height:20px;display: block;	padding:9px 30px 9px 10px;width:210px;}
+.setBox .setting_con li.con {float:left;font-size:12px;	color:#999;	font-weight:normal;	padding:8px 10px;line-height:20px; display: block;
+	padding:9px 50px 9px 20px;	width:600px;}
+.setBox .button-setting { color: #fff;  background: #179957; font: inherit; display: inline-block; overflow: visible; min-width: 110px;}
+.setBox .button-setting { color: #fff;  background: #179957; font: inherit; display: inline-block; overflow: visible; min-width: 110px;
+  margin: 0; padding: 7px 0; cursor: pointer; transition: background 0.2s; text-align: center; vertical-align: middle; text-decoration: none;  border: 0;  outline: 0;  width:310px;}
+
+.setBox .button-setting:hover,
+.setBox .button-setting:focus {  background: #54aa55;  color: #fff;  text-decoration:none;}
+
+
+
+/* file input*/
+.filearticle {}
+.filearticle .file_input { width:400px;  }
+.filearticle .file_hidden { width:24px; height:24px; opacity:0; cursor:pointer;}
+.filearticle span.btn_search { overflow:hidden; display:inline-block; margin-top: 1px; width:24px; height:24px; background:#383d48 url(" ../images/btn_file.png") no-repeat left top; vertical-align:top; border-radius: 4px;}
+.filearticle span.btn_search input {overflow:hidden; display:block; width:24px; font-size:32px; font-size:12px; cursor:pointer; opacity:0; filter: alpha(opacity=0); -ms-filter: "alpha(opacity=0)"; -khtml-opacity:0; -moz-opacity:0;}
+.filearticle span.plus:hover { color: #fff;  background: #383d48; cursor:pointer;}
+.filearticle a.btnE { color: #fff; font-weight: nomal; line-height: 26px; text-align:center; background: #aaa; padding: 5px 13px; border-radius: 3px; margin-left: 5px;} floatRight
+
+
+/* accordion */
+#slideToggle {border-bottom: 1px solid #ccc; font-size: 12px;}
+#flip { padding: 10px; text-align: left; cursor: pointer;}
+#flip span.close {float:right; font-size: 11px; }
+#flip span.open {float:right; font-size: 11px; }
+
+#panel { padding: 10px; display: none;}
+#panel span {float:right; font-size: 11px; }
+
+#slideToggle2 {border-bottom: 1px solid #ccc; font-size: 12px;}
+#flip2 { padding: 10px; text-align: left; cursor: pointer;}
+#flip2 span.close2 {float:right; font-size: 11px; }
+#flip2 span.open2 {float:right; font-size: 11px; }
+
+#panel2 { padding: 10px; display: none;}
+#panel2 span {float:right; font-size: 11px; }
+
+
+
+
+/* Tooltip container */
+.tooltip {  position: relative;  display: inline-block;}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+	min-width: 100px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    background-color:#f46b01;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #f46b01 transparent transparent transparent;
+}
+

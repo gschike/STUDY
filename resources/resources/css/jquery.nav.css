@@ -1,0 +1,33 @@
+/* lnb */
+div#lnb { border-bottom: 1px solid #ccc;}
+div#lnb ul.depth1 {height: 50px;}
+div#lnb ul.depth1 li { float: left; background: url(../images/nav_line.gif) no-repeat center right;}
+div#lnb ul.depth1 li.active a {color:#f5803f;}
+div#lnb ul.depth1 li.active ul.depth2 { display: none; position: absolute; top: 100px; left: 0; width: 100%; }
+div#lnb ul.depth1 li.active ul.depth2 a { color:#3a4d50; background-color:#ecf1f4;}
+div#lnb ul.depth1 li.active ul.depth2 li.active a {color:#fff; text-decoration:underline;}
+div#lnb ul.depth1 li a {display:block; min-height:23px; padding: 13px 40px; color:#000; font-size:13px; font-weight:bold;}
+div#lnb ul.depth1 li.on a {color:#f5803f;}
+div#lnb ul.depth2 {}
+div#lnb ul.depth2 li {}
+div#lnb ul.depth2 li a {min-height:13px; padding:7px 20px 11px 15px; font-size:12px; border-bottom:0 none;}
+div#lnb ul.depth2 li a strong {float:right; min-width:13px; padding-right:5px; text-align:center;}
+div#lnb ul.depth1 li.on > ul.depth2 { position:absolute; top:130px; left:0; width: 100%; display:none; background:#f36911 url(../images/nav_bg) repeat-y 0 0;}
+div#lnb ul.depth1 li.on > ul.depth2 li { background: none; }
+div#lnb ul.depth1 li.on > ul.depth2 li a { display: block; color:#fff; padding: 13px 20px; font-size:12px; }
+div#lnb ul.depth2 li.active,
+div#lnb ul.depth2 li a:hover {color:#f5803f; text-decoration:underline;}
+div#lnb ul.depth2 li.active strong, div#lnb ul.depth2 li a:hover strong {color:#fff;}
+
+
+.dropdownBG { background: #f36911; height: 50px; } 
+.dropdownBG li { list-style: none; width: 1080px; background: #383d48; height: 50px;}
+
+div#lnb ul.depth1 li.on > ul.sm1 {padding-left: 20px;}
+div#lnb ul.depth1 li.on > ul.sm2 {padding-left: 148px;}
+div#lnb ul.depth1 li.on > ul.sm3 {padding-left: 200px;}
+div#lnb ul.depth1 li.on > ul.sm4 {padding-left: 405px;}
+div#lnb ul.depth1 li.on > ul.sm5 {padding-left: 510px;}
+div#lnb ul.depth1 li.on > ul.sm6 {padding-left: 623px;}
+div#lnb ul.depth1 li.on > ul.sm7 {padding-left: 380px;}
+

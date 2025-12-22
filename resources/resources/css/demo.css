@@ -1,0 +1,55 @@
+.dropdown.beefup {
+  border: 0;
+  border-radius: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.dropdown.beefup.is-open .beefup__head::after {
+  border-width: 0 4px 4px;
+  border-color: transparent transparent #222;
+}
+
+.dropdown .beefup__head {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2.5;
+  margin-bottom: 0;
+  padding: 0 30px 0 10px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.dropdown .beefup__head::after {
+  border-style: solid;
+  border-width: 4px 4px 0;
+  border-color: #222 transparent transparent;
+  margin-top: -2px;
+  right: 10px;
+}
+
+.dropdown .beefup__body {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}

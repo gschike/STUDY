@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단위</title>
+    <style>
+		/* 
+		pixel : 해당 디스플레이의 절대적인 크기
+		*/
+        #pixel .box1 {
+			background-color: rgb(255, 0, 0); /* 상속X */
+			/* 축약형 - 각 두 자리가 똑같다면 color: #0f0 도 가능 */
+			color: #00ff00; /* 폰트 색- 자식한테 상속됨 */
+			font-size : 16px; /* 기본 사이즈는 16px */
+			}
+		  /* rgba의 a는 alpha값 = 투명도 */
+        #pixel .box1 .box2 {
+			background-color: rgba(0, 0, 255, .5); /* 0.5=.5 */
+			color: #0000ffdf; /* #rrggbbaa */
+			font-size : 32px;
+			}
+		  #pixel .box3 { /* 상속 받은 것보다 직접 지정한 게 우선순위가 더 높음 */
+			font-size : 16px;
+		   }
+		
+		/* 
+		percent : 상대적인 크기
+		*/
+		  #percent .box1 {
+			font-size: 150%;
+		  }
+		  #percent .box1 .box2 { /* %는 '지금' 폰트 사이즈에서 변동 : box1 150%에서 또 150% */
+		  font-size: 150%;
+			}
+		  #percent .box3 {
+			font-size: 150%;
+			}
+
+		/*
+		em
+		*/
+			#em .box1 {
+			font-size: 1.5em;
+		   }
+		   #em .box1 .box2 {
+		  font-size: 1.5em;
+			}
+			#em .box3 {
+			font-size: 1rem; /* rem=rootem 원본사이즈로 돌아감 */
+			}
+
+			/* [id^=v] */
+			#v1, #v2, #v3, #v4 {
+				border: 1px solid green;
+				margin : 10px; /* 바깥 쪽 여백 사방으로 */
+			}
+
+			#v1 { /* 세로폭은 스크롤로 무한정이기 때문에 vh를 사용 */
+				/* height : 20px; */
+				height : 100vh; /* viewport height : 브라우저 사이즈에 딱 맞게 됨 */
+			}
+
+			#v2 { /* 가로폭은 한정되어 있는 경우가 많기 때문에 %를 주로 사용함 */
+				width : 50vw; /* viewport width : 브라우저에서 margin 영역을 제외하는 가로폭 */
+				height: 20px;
+			}
+
+			#v3 {
+				height: 100vmin; /* 화면의 너비와 높이 중에서 작은 값을 1/100으로 쪼갠 크기 */
+			}
+
+			#v4 {
+				height : 100vmax; /* 화면의 너비와 높이 중에서 큰 값을 1/100으로 쪼갠 크기 */
+			}
+
+
+
+    </style>
+</head>
+<body>
+	<!-- 자손 요소 -->
+    기본글씨 abc ABC Wi 123 <br>
+    <div id="pixel">
+        <div class="box1">
+            box1
+            <div class="box2">
+                box2
+                <div class="box3">
+                    box3
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="percent">
+        <div class="box1">
+            box1 150%
+            <div class="box2">
+                box2 150%
+                <div class="box3">
+                    box3 150%
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="em">
+        <div class="box1">
+            box1 1.5em
+            <div class="box2">
+                box2 1.5em
+                <div class="box3">
+                    box3 1rem
+                </div>
+            </div>
+        </div>
+    </div>
+
+	 <!-- 형제 요소 -->
+	 <div id="v1"></div>
+	 <div id="v2"></div>
+	 <div id="v3"></div>
+	 <div id="v4"></div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+</head>
+<style>
+/* 웹 폰트 다운로드 */
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: 500; /* 폰트 두께 500이 기본. 100~1000 */
+    font-display: swap;
+}
+
+    /* 폰트 적용 */
+    #p1 { 
+        font-family : 'GMarketSans', Arial; /* 띄어쓰기 없으면 따옴표 없어도 됨. 근데 습관적으로 쓰는 게 좋음 */
+    }
+
+    .style { /* inherit <> initial */
+        font-style : italic
+    }
+
+    /* font-weight : 폰트 두께, 100단위로 증감. 최대가 1000이므로 그보다 크면 기본 폰트 두께로 나옴 */
+        /* 해당 폰트가 세세한 굵기를 지원하지 않는 이상 근사치로 퉁 쳐지는 경우가 많음 */
+    .fw-100 { font-weight : 100; }
+    .fw-400 { font-weight : 400; } /* normal = 400 */
+    .fw-1000 { font-weight : 1000; }
+    .fw-2000 { font-weight : 2000; }
+    .fw-bold { font-weight : bold; } /* 700~800 ; bolder=최대치 */
+    .fake-h1 {
+        font-size : 2em;
+        font-weight : 900;
+    }
+
+</style>
+<body>
+    기본 글씨 abc 123
+    <p id="p1">
+        글씨를 좀 적습니다 abc
+        <div>
+            자식 안쪽의 글씨
+        </div>
+    </p>
+    <div class="style">
+        font-style
+    </div>
+    <div class="fw-100">100</div>
+    <div class="fw-400">400</div>
+    <div class="fw-1000">1000</div>
+    <div class="fw-2000">2000</div>
+    <div class="fw-bold">bold</div>
+    <h1>h1</h1>
+    <div class="fake-h1">fake-h1</div>
+
+</body>
+</html>
