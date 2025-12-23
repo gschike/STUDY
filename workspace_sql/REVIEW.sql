@@ -51,3 +51,53 @@ FROM emp
 GROUP BY job
 HAVING count(ename) >= 3
 ORDER BY cnt DESC;
+
+
+SELECT ename, empno, mgr,
+	CASE
+		WHEN mgr IS NULL then '0000'
+		WHEN rpad(mgr,2)=75 THEN '5555'
+		WHEN rpad(mgr,2)=76 THEN '6666'
+		WHEN rpad(mgr,2)=77 THEN '7777'
+		WHEN rpad(mgr,2)=78 THEN '8888'
+		ELSE to_char(mgr)
+	END AS chg_mgr
+FROM emp;
+	
+SELECT deptno,
+	round(avg(sal)) avg,
+	round(max(sal)) max,
+	round(min(sal)) min,
+	count(ename) cnt
+FROM emp
+GROUP BY deptno
+ORDER BY min;
+
+
+SELECT job,
+	count(ename) cnt
+FROM emp
+GROUP BY job
+HAVING count(ename)>=3
+ORDER BY cnt DESC;
+
+SELECT empno, ename,
+	rpad(substr(ename,1,2), length(ename), '*') AS masking
+FROM emp;
+
+SELECT empno, ename,
+	lpad(substr(ename,3), length(ename), '*') lpad,
+	concat('**', substr(ename,3)) concat
+FROM emp;
+
+SELECT empno, ename, job, deptno
+FROM emp
+WHERE ename LIKE '%E%';
+
+SELECT empno, ename, job, sal AS orgin,
+	CASE job
+		when 'MANAGER' THEN sal*1.5
+		ELSE sal
+		END sal
+FROM emp
+WHERE job IN ('MANAGER', 'CLERK');

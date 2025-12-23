@@ -1,0 +1,29 @@
+/* resset css */
+* {	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+table {	border-collapse: collapse;
+	border-spacing: 0;}
+
+#main {width : 1280px; margin: auto; padding: 20px; border: 1px solid black;}
+
+.logoimg {border: 1px solid black;
+		vertical-align: top;
+		padding: 0px; margin: 0px;}
+.logoimg img {display: block; margin: 0px;
+			width: 250px;
+			height: 150px;}
+
+.NavBarOutline {border: 1px solid black;
+				width: 1000px;
+				vertical-align: middle;
+				padding: 50px 100px;}
+.NavBar button {
+	border: 1px solid black;
+	width: 100px;
+	background-color: blanchedalmond;
+	padding: 3px;
+	font-size: 14px;}

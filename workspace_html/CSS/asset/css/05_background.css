@@ -1,0 +1,60 @@
+#back1 {
+   background-color: #fab;
+}
+#back2 {
+    border: 1px solid red;
+    height: 250px;
+    /* background-image: url("https://images.icon-icons.com/1861/PNG/96/phonebooth_118224.png"), url("https://mblogthumb-phinf.pstatic.net/20160427_9/gkfngkfn414_1461740691245IfBjs_JPEG/%B1%D7%B8%AE%B1%E2_%BD%AC%BF%EE_%B8%B8%C8%AD_%C4%B3%B8%AF%C5%CD_%BF%B1%B1%E2%C5%E4%B3%A2_%B8%B6%BD%C3%B8%B6%B7%CE_%BC%D5%B1%D7%B8%B2_%B0%AD%C1%C28.jpg?type=w420"); */
+    /* url, url : 겹쳐서 나옴 -> 투명 배경이면 통과돼서 보이겠지 */
+    /* background-image: url("https://images.icon-icons.com/1861/PNG/96/phonebooth_118224.png"); */
+    /* 투명 배경이어도 덮임 */
+    background-repeat: repeat-x; /* X축으로만 반복 */
+    background-repeat: repeat-y; /* y축으로만 반복 */
+    background-repeat: no-repeat; /* 반복하지 않음 */
+    background-image: url("https://mblogthumb-phinf.pstatic.net/20160427_9/gkfngkfn414_1461740691245IfBjs_JPEG/%B1%D7%B8%AE%B1%E2_%BD%AC%BF%EE_%B8%B8%C8%AD_%C4%B3%B8%AF%C5%CD_%BF%B1%B1%E2%C5%E4%B3%A2_%B8%B6%BD%C3%B8%B6%B7%CE_%BC%D5%B1%D7%B8%B2_%B0%AD%C1%C28.jpg?type=w420");
+
+    /* background-size: 100px 250px; */
+    /* background-size: 100% 50%; */
+    /* background-size: 100% 100%; */
+    
+    /* 원래 이미지 사이즈로, 빈 공간 허용하지 않음- 짤릴 수 있음 */
+    /* background-size: cover; */
+    /* 빈 공간 허용하고 이미지가 전부 다 보이도록 */
+    /* background-size: contain; */
+
+    background-size: 100px 100px;
+    /* 배경 이미지 정렬 - 좌우, 상하 정렬 순서, px이나 %도 사용 가능 / center는 하나만 쓰는 것도 가능 */
+    background-position: center;
+} 
+
+.profile {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+
+    background-image: url(https://i.pinimg.com/236x/cc/c0/00/ccc000fd81304c8331394f8bd892a16a.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: -35px 0px;
+    border-radius: 50%;
+}
+
+#back3 {
+    border: 1px solid black;
+    height: 80vh;
+    
+    background-image: url("https://lh6.googleusercontent.com/proxy/41nLT3eVRdpw7UAt5c_XpoxVLYoPAn41BR6nyHM-ksRZRqVddCXnM3jXr18nmRFghgOrQVWgFFikd7dPWBaZniSizQkqmqWQYzylElxphh7FbWEUMDDgT1dj3iXX1i3CsnHR3xE");
+    background-size: cover;
+    background-attachment: fixed; /* 외부 전체 스크롤과 연동 */
+
+    overflow: auto; /* 넘어가면 자동으로 스크롤 */
+}
+
+#back3 p {
+    height: 200vh;
+}
+
+#back4 {
+    height: 100px;
+    background: #808 url("https://images.icon-icons.com/1861/PNG/96/phonebooth_118224.png") center no-repeat;
+}
