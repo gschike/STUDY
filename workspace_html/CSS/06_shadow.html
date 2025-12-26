@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        div.red {
+            text-shadow: 10px 3px red; /* x축 y축 색깔 */
+        }
+        div.blur {
+            text-shadow: 0 0 10px red; /* x축 y축 블러 색깔 */
+            color: white;
+            font-size: 300%;
+        }
+        /* offset : 떨어져 있는 간격 */
+        div.redBox {
+            border: 1px solid black;
+            width: 100px;
+            /* box-shadow: 10px 5px red; */
+            box-shadow: 10px 5px 10px red;
+        }
+        div.redBox2 {
+            margin-top: 50px;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+                    }
+        div.redBox2:hover {
+            /* box-shadow: 10px 5px 10px 20px red; */
+            box-shadow: 0px 0px 3px 3px rgb(150, 135, 135); /* x축 y축 블러 스프레드 색깔 */
+            /* 블러는 얼마나 흐려질 것인가, 스프레드는 얼마나 퍼질 것인가 */
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        그림자 Shadow
+    </div>
+    <div class="blur">
+        그림자 Shadow
+    </div>
+    <hr>
+    <div class="redBox"> <!-- 태그, 속성은 대소문자 상관 없지만, 값은 대소문자 중요 -->
+        뚱이와 함께
+    </div>
+    <div class="redBox2">
+        뚱이와 함께
+    </div>
+</body>
+</html>

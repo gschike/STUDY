@@ -1,0 +1,24 @@
+body {margin: 0px; width: 100vw;}
+.back {width:100vw}
+
+.GNB {height: 50px; background-color: #44444e; color:white; font-size: 0px;}
+.GNB #logo {display: inline-block; margin-left: 13px; padding: 12.5px 0px; font-size: 16px; font-weight: 600;}
+.GNB .button {display: inline-block; font-size: 13px; font-weight: 600; cursor: pointer;}
+.GNB .button:hover {background-color: rgba(255, 255, 255, 0.137);}
+.GNB .button:focus {background-color: rgba(255, 255, 255, 0.404);}
+.GNB #Desktop {margin-left: 13px; padding: 10px 12px 7px; border-top: 0.5px solid rgba(255, 255, 255, 0.137);; border-bottom: 0.5px solid rgba(255, 255, 255, 0.137);; border-left:  0.5px solid rgba(255, 255, 255, 0.137);; border-top-left-radius: 4px; border-bottom-left-radius: 4px;}
+.GNB #Tablet, #Portrait {padding: 10px 12px 7px; border-top: 0.5px solid rgba(255, 255, 255, 0.137);; border-bottom: 0.5px solid rgba(255, 255, 255, 0.137);;}
+.GNB #Mobile {padding: 10px 12px 7px; border-top: 0.5px solid rgba(255, 255, 255, 0.137);; border-bottom: 0.5px solid rgba(255, 255, 255, 0.137);; border-right:  0.5px solid rgba(255, 255, 255, 0.137);; border-top-right-radius: 4px; border-bottom-right-radius: 4px;}
+.GNB #Newtap {padding: 9px 12px 8px; margin-left: 13px; border: 0.5px solid rgba(255, 255, 255, 0.137); border-radius: 4px;}
+.GNB #Newtap:hover {background-color: #0000; color: rgb(255, 153, 153);  border: 0.5px solid rgb(255, 153, 153)}
+
+.main {display: inline-block; width: 100vw; height: 535px; text-align: center; background-image: url("https://html5up.net/uploads/demos/tessellate/images/header.jpg"); background-size: cover; background-repeat: no-repeat; background-position: top left, center center;}
+.main .text {font-weight: 200; display: inline-block; color: white; margin-top: 150px;}
+.text #Welcome {font-size: 38px;}
+.text #free {font-size: 20px; margin-top: 30px;}
+.text #free span {border-bottom: .5px dashed rgba(255, 255, 255, 0.274);}
+.text #Proceed {font-weight: 300; margin: 30px auto 0px; border: 1px solid white; width: 200px; height: 26px; padding: 10px 30px; border-radius: 4px; background-color: rgba(255, 255, 255, 0.164); cursor: pointer;}
+.text #Proceed:hover {background-color: rgba(255, 255, 255, 0.24);}
+
+
+

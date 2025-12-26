@@ -1,0 +1,143 @@
+body {height: 200vh;}
+
+.thanks {
+    margin-bottom: 30px;
+}
+.thanks>div {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid lightgray;
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+/* relative: 원래 위치를 기준으로 이동 */
+    /* top, left, right, bottom 연동해서 이동 */
+    /* 원래 내가 가지고 있던 공간 유지됨 */
+.thanks .relative {
+    position: relative;
+    /* top: 20px; */
+    top: -20px;
+    left: 20px;
+    /* left: 50%; */
+    background-color: #f007;
+}
+
+/* absolute : 브라우저의 뷰포트 기준으로 */
+.thanks .absolute {
+    position: absolute;
+    /* A가 사라진 것처럼 보임 :  */
+    background-color: #ff07;
+    /* top: 0;
+    left: 0; */
+    top: 100%;
+    /* left: -350px; */
+    left: 100%;
+}
+
+/* 
+    원래 내 공간은 없어짐
+
+*/
+.thanks .abs-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* 부모(조상) 중에 relative 등 static이 아닌 것이 있으면, absolute의 기준이 부모 영역을 기준으로 동작 */
+    /* 부모 중에 없으면, 브라우저 기준 */
+.rel {
+    position: relative;
+}
+
+.parent {
+    border: 1px solid red;
+    width: 100px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    /* margin: 40px; */
+}
+.parent .child {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+.abs {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+.fixed  {
+    border: 1px solid  red;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    
+    background-color: yellowgreen;
+    color: black;
+    border-radius: 50%;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.fixed a {text-decoration: none;}
+
+.sticky {
+    height: 70px;
+    line-height: 70px;
+    background-color: gray;
+
+    position: sticky;
+    top: 8px;
+}
+
+
+/* 
+    z-index
+    - 기본값은 0
+    - 같은 값일 때, 나중에 나온 것을 위로
+    - z-index 값이 더 높은 것을 위에 보여줌
+*/
+.z1 {
+    background-color: hotpink;
+
+    top: 5px;
+    left: 20px;
+    height: 50px;
+
+    z-index: 2;
+}
+
+.z2 {
+    background-color: yellow;
+
+    top: -10px;
+    left: -10px;
+    height: 50px;
+
+    z-index: 1;
+}
+.z3 {
+    background-color: BLUE;
+
+    top: -75px;
+    left: 50px;
+    height: 50px;
+
+    z-index: 99;
+}
+
+/* 커서가 위치한 애가 맨 위로 오도록 */
+.rel:hover {
+    z-index: 999;
+    box-shadow: 0 0 10px 10px lightgray;
+    top: -2px;
+}
+
+

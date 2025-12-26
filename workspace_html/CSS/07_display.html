@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="./asset/css/07_display.css"
+</head>
+<body>
+    <!-- 블록태그 -->
+     <!-- css를 주지 않으면 height는 컨첸츠의 높이만큼 inline도 마찬가지. inline은 너비도 컨텐츠만큼 -->
+    <div id="div1">
+        a<br>
+        b
+    </div>
+
+    div.block*2
+    <div class="block">
+        첫번째 block
+    </div>
+    <div class="block">
+        두번째 block
+    </div>
+    <hr>
+
+    <!-- 인라인 -->
+    span.inline*3 <br>
+    <span class="inline">첫번째 inline</span>
+    <span class="inline">두번째 inline</span>
+    <span class="inline">세번째 inline</span>
+
+    <!-- block이 inline보다 센 요소임 : 보통 인라인 안에 블럭을 잘 놓지 않음 -->
+    <span class="inline">
+        <div class="block">inline 안의 block</div>
+    </span>
+    
+    <br><br><br><br><hr>
+
+    <div class="parent">
+        <div class="child1">목록1</div> <!-- 사이 공백 때문에 떨어져 보임 -->
+        <div class="child2">목록2</div>
+    </div>
+
+    <!-- 틀어지는 이유 : 글씨 아랫줄(baseline)을 기준으로 맞추기 때문 -->
+        <!-- margin 으로도 맞추기 어려움 -->
+    <div class="parent2">
+        <div class="child1">목록1</div> 
+        <div class="child2">
+            목록2 <br>
+            상세내용
+        </div>
+    </div>
+
+    글씨글씨
+    <div class="hide">
+        숨겨질 div
+    </div>
+    글씨글씨
+
+    <div class="table">
+        <div class="td">
+            첫 줄에 첫 칸
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -31,12 +31,12 @@
     border: 1px solid black;
     width: 200px;
     height: 200px;
+    border-radius: 50%;
 
     background-image: url(https://i.pinimg.com/236x/cc/c0/00/ccc000fd81304c8331394f8bd892a16a.jpg);
     background-repeat: no-repeat;
     background-size: 120%;
     background-position: -35px 0px;
-    border-radius: 50%;
 }
 
 #back3 {

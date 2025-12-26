@@ -1,0 +1,23 @@
+body {margin: 0px; width: 100vw;}
+.back {width: 100vw; margin: 0 auto;}
+
+.GNB {background-color: rgb(255, 255, 255); height: 70px; line-height: 70px; position: sticky; top: 0;}
+.GNB div {display: inline-block;}
+.GNB img {vertical-align: middle; cursor: pointer;}
+.GNB .logo {padding: 0px 20px;}
+.GNB .size-img img:hover {background-color: rgba(173, 216, 230, 0.397);}
+.GNB .size-img img {padding: 4px;}
+.GNB #X:hover {background-color: rgba(173, 216, 230, 0.397);}
+.GMB img#X {padding: 4px;}
+
+.main {display: inline-block; text-align: center; width: 100vw; background-color: rgb(208, 210, 211); font-size: 0px; padding: 50px 0px;}
+.main>div {display: inline-block; width: 555px; height: 694px; box-sizing: border-box; margin: 14px; background-color: white; vertical-align: top;}
+.main #image {background-size: cover; background-position: center; background-image: url("https://mblogthumb-phinf.pstatic.net/MjAyMTAyMTRfMTkg/MDAxNjEzMjgwNDA4MzM3.Jbv9WTNpuBNQjJwLm12fM3D6OykhQAlmhrKCdM3fG50g.G3-YJRLilaf8eU0GE3lgxlRsiCVW1TzpUdbyLu6MIZ4g.JPEG.obiniclon/pexels-yuliya-kosolapova-3335367.jpg?type=w800");}
+.main #text {padding: 100px 54px; text-align: left;}
+.main #text .text {text-align: left; font-size: 18px; line-height: 2em; height: 85%; overflow: auto;}
+.main #readmore {display: inline-block; border: 2px solid rgb(105, 105, 105); padding: 8px 25px 8px; font-weight: 300; cursor: pointer; margin: 25px 0px; width: 90px; height: 30px; font-size: 16px; text-align: center; font-weight: 400; color: rgb(105, 105, 105);}
+
+.FNB {display: inline-block; width: 100vw; text-align: center; background-color: rgb(58, 58, 58); color: white; padding: 50px 0px; font-size: 14px; font-weight: 400;}
+.FNB span {color: rgb(161, 205, 255); text-decoration: underline; cursor: pointer;}
+
+

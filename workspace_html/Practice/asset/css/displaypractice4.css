@@ -1,0 +1,31 @@
+body {margin: 0px; width: 100vw;}
+.back {margin: 0 auto;}
+
+/* .GNB {border: 1px solid red;} */
+.GNB {background-color: rgb(255, 255, 255); height: 70px; line-height: 70px; position: sticky; top: 0;}
+.GNB div {display: inline-block;}
+.GNB img {vertical-align: middle; cursor: pointer;}
+.GNB .logo {padding: 0px 20px;}
+.GNB .size-img img:hover {background-color: rgba(173, 216, 230, 0.397);}
+.GNB .size-img img {padding: 4px;}
+.GNB #X:hover {background-color: rgba(173, 216, 230, 0.397);}
+.GMB img#X {padding: 4px;}
+
+.main {display: inline-block; width: 100vw; text-align: center; padding: 30px 0px 70px;}
+/* .main>div {border: 1px solid blue; width: 1140px; height: 373px;} */
+.main .first {margin: 30px;}
+.main #text1 {display: inline-block; width: 450px; vertical-align: top; padding: 30px 60px;}
+.main .big {font-size: 48px; width: 450px; text-align: left;}
+.main .ex {width: 450; text-align: left;}
+.main #image1 {display: inline-block; width: 570px; height: 420px; background-size: cover; background-image: url("https://img.freepik.com/free-photo/reflection-garden-landscape-lawn-abstract-background-blue-sky-white-clouds_1417-1030.jpg?semt=ais_hybrid&w=740&q=80");}
+.main .second>div {margin: 10px 50px;}
+.main .left {display: inline-block; width: 450px;}
+.main #image2 {width: 450px; height: 266px; background-size: cover; background-image: url("https://images01.nicepage.com/bb/1d/bb1d2e5cabdda9d7e02aaf1f96309f50.jpeg");}
+.main #ps {text-align: left; padding: 5px 20px; border-left: 4px solid rgb(135, 182, 235); margin: 20px 0px; font-style: italic;}
+.main #text2 {display: inline-block; width: 450px; vertical-align: top;}
+
+.FNB {display: inline-block; width: 100vw; text-align: center; background-color: rgb(58, 58, 58); color: white; padding: 50px 0px; font-size: 14px; font-weight: 400;}
+.FNB span {color: rgb(161, 205, 255); text-decoration: underline; cursor: pointer;}
+
+
+/* 화면 세로로 나눠서 하기 */

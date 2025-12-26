@@ -1,0 +1,58 @@
+body {margin: 0 auto;
+    width: 100VW;}
+
+.main .background {
+    display: inline-block;
+
+    color: white;
+
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 700px;
+
+    background-color: lightblue;
+    background-image: url("https://png.pngtree.com/background/20250103/original/pngtree-christmas-greetings-background-with-blank-room-picture-image_15991075.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 0 auto;
+}
+
+.wrap {
+    display: block;
+
+    /* border: 2px solid blue; */
+    height: 300px;
+    width: 500px;
+
+    margin: 0 auto;
+    margin-top: 200px;
+
+    text-align: center;
+    font-weight: 100;
+
+    overflow: hidden; /* 마진 중첩 */
+}
+
+#first {
+    font-size: 35px;
+    margin-top: 50px;
+}
+#second {
+    font-size: 23px;
+    margin-top: 20px;
+}
+.link {
+    border-bottom: 1px dotted white;
+    cursor: pointer;
+}
+
+.button {
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 27px;
+    padding: 7px;
+    background-color: #ffffff3f;
+}

@@ -1,0 +1,84 @@
+#div1 {
+    border: 1px solid red;
+}
+
+.block {
+    border: 1px solid red;
+    width: 100px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+.inline {
+    border: 1px solid red;
+    /* 인라인 요소는 너비, 높이 줄 수 없음 */
+    width: 200px;
+    height: 100px;
+
+    /* margin은 상하는 적용 안 되고, 좌우만 됨. 단, 좌우 auto는 안 됨 */
+    margin: 30px 50px;
+    /* padding은 좌우는 적용됨 (제대로 떨어짐) */
+    /* 상하는 안 됨. 그러나, border는 padding 영역 밖이기 때문에 밀려남 */
+    padding: 30px 50px;
+    /* margin과 padding은 좌우만 적용 */
+    
+    background-color: green;
+}
+
+.parent {
+    border: 1px dotted #f0f;
+    /* width: 400px; */
+    /* width: 800px; */
+    text-align: center;
+}
+
+.parent > div {
+    border: 1px solid red;
+    display: inline-block;
+    /* width: 100px; */
+    width: 300px; /* 부모의 너비가 400이기 때문에 공간이 없어서 아래로 내려감 */
+    height: 50px;
+
+    margin: 30px auto;
+    /* 내부는 인라인 요소이기 때문에 margin auto는 적용되지 않음. text-align */
+        /* 글씨 취급 됨 */
+    padding: 50px;
+}
+
+.parent2 {
+    border: 1px dotted #F0F;
+
+    /* 목록 인라인 블럭 사이의 간격을 없애기 위해 :
+    폰트 사이즈는 상속 요소이기 때문에 자식도 영향 받음 -> 여기에 목록만 폰트 사이즈를 추가하면 됨 */
+    font-size: 0px;
+}
+
+.parent2 > div {
+    border: 1px solid red;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+
+    /* vertical-align : 인라인 요소에만 적용 가능 */
+        /* 단점 : 인라인하고 인라인블럭만 가능. 블럭은 불가능 */
+    vertical-align: middle;
+
+    font-size: 16px;
+}
+
+/* display: none -> 아예 없는 취급. 앞뒤의 div 줄 바꿈도 사라짐 */
+.hide:hover {display: none;}
+/* hide 사용해서 없애놨다가, 커서를 가져가거나 클릭할 때에만 나오도록 할 수 있음 */
+
+.table {
+    border: 1px solid black;
+    display: table;
+} /* table css 없어도 됨 */
+.table .td {
+    display: table-cell; /* table-cell이 있어서 인라인 요소 취급 */
+
+    border: 1px solid red;
+    height: 100px;
+
+    vertical-align: middle;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="./asset/css/08_position.css">
+</head>
+<body>
+    <!-- <div class="back"> -->
+        <div class="thanks" id="top">
+            <div>T</div>
+            <div>H</div>
+            <div>A</div>
+            <div>N</div>
+            <div>K</div>
+            <div>S</div>
+        </div>
+
+        <!-- 나중에 실습한 건데 여기에 위치함 -->
+        <div class="sticky">
+            스티키 : 메뉴1 메뉴2
+        </div>
+
+        relative
+        <div class="thanks">
+            <div>T</div>
+            <div class="relative">H</div>
+            <div>A</div>
+            <div>N</div>
+            <div>K</div>
+            <div>S</div>
+        </div>
+        
+        absolute
+        <div class="thanks">
+            <div>T</div>
+            <div class="absolute">H</div>
+            <div>A</div>
+            <div>N</div>
+            <div class="abs-bottom">K</div>
+            <div>S</div>
+        </div>
+        
+        <!-- 부모 중에 relative
+        <div class="thanks rel">
+            <div>T</div>
+            <div class="absolute">H</div>
+            <div>A</div>
+            <div>N</div>
+            <div class="abs-bottom">K</div>
+            <div>S</div>
+        </div> -->
+        <hr>
+        <div class="parent rel">
+            <div>
+                위
+            </div>
+            <div class="child abs">
+                가운데<br>
+            </div>
+            <div>
+                아래
+            </div>
+        </div>
+        <div class="fixed">
+            <a href="#top">TOP</a>
+        </div>
+
+        <div class="parent">
+            <div class="rel z1">1번</div>
+            <div class="rel z2">2번</div>
+            <div class="rel z3">3번</div>
+        </div>
+    <!-- </div> -->
+</body>
+</html>

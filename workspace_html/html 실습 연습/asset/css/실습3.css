@@ -1,0 +1,25 @@
+body {margin: 0px; width: 100vw;}
+.back {margin: 0 auto;}
+
+/* .GNB {border: 1px solid red;} */
+.GNB {background-color: rgb(255, 255, 255); height: 70px; line-height: 70px; position: sticky; top: 0;}
+.GNB div {display: inline-block;}
+.GNB img {vertical-align: middle; cursor: pointer;}
+.GNB .logo {padding: 0px 20px;}
+.GNB .size-img img:hover {background-color: rgba(173, 216, 230, 0.397);}
+.GNB .size-img img {padding: 4px;}
+.GNB #X:hover {background-color: rgba(173, 216, 230, 0.397);}
+.GMB img#X {padding: 4px;}
+
+.main {display: inline-block; width: 100vw; text-align: center;  background-color: rgb(208, 210, 211);}
+.main .text {font-size: 40px; font-weight: 700; padding: 40px 0px;}
+.main .window [id^=window] {display: inline-block; width: 367px; height: 465px; background-color: white; margin: 10px;}
+.main .window img {width: 367px;}
+.main .windowtext .name {font-size: 24px; font-weight: 500; margin: 20px;}
+.main .windowtext .price {font-size: 22px; font-weight: 700; color: red; margin: 20px;}
+.main .windowtext .view {display: inline-block; font-size: 14px; font-weight: 700; border-bottom: 1px solid red; padding: 3px;}
+.main .bottom {margin: 30px 0px 50px;}
+.main .bottom span {font-weight: 500; border-bottom: 1px solid black; cursor: pointer;}
+
+.FNB {display: inline-block; width: 100vw; text-align: center; background-color: rgb(58, 58, 58); color: white; padding: 50px 0px; font-size: 14px; font-weight: 400;}
+.FNB span {color: rgb(255, 175, 110); text-decoration: underline; cursor: pointer;}

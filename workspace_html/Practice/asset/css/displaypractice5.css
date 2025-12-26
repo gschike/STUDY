@@ -1,0 +1,105 @@
+body {margin: 0px; width: 100vw;}
+.back {margin: 0 auto;}
+
+.GNB {background-color: rgb(255, 255, 255); height: 70px; line-height: 70px; position: sticky; top: 0;}
+.GNB div {display: inline-block;}
+.GNB img {vertical-align: middle; cursor: pointer;}
+.GNB .logo {padding: 0px 20px;}
+.GNB .size-img img:hover {background-color: rgba(173, 216, 230, 0.397);}
+.GNB .size-img img {padding: 4px;}
+.GNB #X:hover {background-color: rgba(173, 216, 230, 0.397);}
+.GMB img#X {padding: 4px;}
+
+.top {background-color: rgb(207, 207, 207); height: 73px; line-height: 73px;}
+.top #design {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin: 0 30px;
+}
+
+.main {display: inline-block; width: 100vw; text-align: center; padding: 65px 0px 80px;}
+.main .left {
+    display: inline-block;
+    width: 460px;
+    text-align: left;
+    margin: 0px 25px 0px;
+}
+.main .left #image1 {
+    width: 460px;
+    height: 565px;
+    background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/0dedaa8602ba5d6d818dec9f/houseofsilencemariamarinina03.jpg");
+    background-size: cover;
+}
+.main .left #big {
+    font-size: 50px;
+    font-weight: 1000;
+}
+.main .left #ex {
+    line-height: 2em;
+}
+
+.main .right {
+    display: inline-block;
+    width: 500px;
+    text-align: left;
+    vertical-align: bottom;
+    padding: 0px 0px 40px
+}
+.main #image2 {
+    display: inline-block;
+    width: 230px;
+    height: 365px;
+    background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/42568883ba365e639e3fc0a9/0f9a91f61af2dac432841181deef820c.jpg");
+    background-size: cover;
+    margin-right: 25px;
+}
+.main #image3 {
+    display: inline-block;
+    width: 230px;
+    height: 261px;
+    background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/2dd335aa72b0516cb1df543c/22c7537e24e94a7b5fc4c74be769544a.jpg");
+    background-size: cover;
+}
+.main #image4 {
+    display: inline-block;
+    width: 427px;
+    height: 323px;
+    margin: 25px 63.5px 0px 0px;
+    background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/add58d50d86d5fb4a773eff5/0ee610f6080f69b8179888943e49b794.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.footer {
+    display: inline-block;
+    width: 100vw;
+    height: 254px;
+    background-color: rgb(48, 43, 34);
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+.footer>div {
+    /* border: 1px solid white; */
+    display: inline-block;
+    width: 360px;
+    height: 134px;
+    padding: 15px;
+    vertical-align: top;
+}
+.footer .headline {
+    font-weight: 700;
+    text-align: left;
+}
+.footer .Fex {
+    margin-top: 17px;
+    text-align: left;
+}
+
+.FNB {display: inline-block; width: 100vw; text-align: center; background-color: rgb(58, 58, 58); color: white; padding: 50px 0px; font-size: 14px; font-weight: 400;}
+.FNB span {color: rgb(161, 205, 255); text-decoration: underline; cursor: pointer;}
+
+
+

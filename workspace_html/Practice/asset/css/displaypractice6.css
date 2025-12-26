@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    width: 100vw;
+}
+
+.GNB {
+    display: inline-block;
+    width: 100vw;
+    height: 100px;
+    /* border: 1px solid red; */
+    box-sizing: border-box ;
+    text-align: center;
+
+    padding: 20px 0px;
+    position: sticky;
+    top: 0;
+
+    /* background-color: rgba(0, 0, 0, 0.425);
+    color: white; */
+}
+.GNB div {
+    border: 1px solid blue;
+    display: inline-block;
+    vertical-align: middle;
+}
+.GNB .menu div {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 60px;
+    height: 80px;
+    line-height: 80px;
+}
+.GNB .lan {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px 0px 0px 60px;
+}
+.hide {
+    /* display: none; */
+    width: 100vw;
+    height: 300px;
+    border: 1px solid red;
+    text-align: center;
+    background-color: #00000059;
+}
+.hide #start>div {
+    display: inline-block;
+    border: 1px solid blue;
+    text-align: center;
+    vertical-align: top;
+}
+#start {
+    display: inline-block;
+    border: 1px solid green;
+    width: 830px;
+    height: 100%;
+    position: relative;
+}
+#start .info {
+    position: absolute;
+    top: 10px;
+    left: 103px;
+}
+#start .project {
+    position: absolute;
+    top: 10px;
+    left: 309px;
+}
+#start .hire {
+    position: absolute;
+    top: 10px;
+    left: 520px;
+}
+#start .notice {
+    position: absolute;
+    top: 10px;
+    left: 720px;
+}
