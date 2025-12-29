@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <link rel="stylesheet" href="./asset/css/09_float.css">
+</head>
+
+<body>
+    <article>
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/43/CNBLUE_%EC%94%A8%EC%97%94%EB%B8%94%EB%A3%A8_%EC%B4%AC%EC%98%81%EC%9E%A5_%EC%8A%A4%EC%BC%80%EC%B9%98_%EC%A0%95%EC%9A%A9%ED%99%94.jpg">
+        Lipsum, dolor sit amet consectetur adipisicing elit. Accusantium animi nisi rem ullam aliquid molestiae odio,
+        quidem perferendis eius magni aliquam tenetur esse quas voluptates quod quisquam ex delectus quos!
+        Lipsum, dolor sit amet consectetur adipisicing elit. Accusantium animi nisi rem ullam aliquid molestiae odio,
+        quidem perferendis eius magni aliquam tenetur esse quas voluptates quod quisquam ex delectus quos!
+    </article>
+    <br><br><br>
+    <hr>
+    <br><br><br>
+    <!-- div.box*4 -->
+    <!-- 순서 중요 : 12 43 순서 -->
+    <!-- float에 올린 순서대로 우선순위 : 창이 줄어들면 순위가 낮은 4번이 아래로 내려감 -->
+    <div class="box left">1</div>
+    <div class="box left">2</div>
+    <div class="box right">3</div>
+    <div class="box right">4</div>
+    <div class="box right">5</div>
+    <div class="box left">6</div>
+    <div class="box left">7</div>
+
+    <!-- float 닫아주기 style="clear: left/right/both" -->
+    <!-- <div style="clear: both; border: 1px solid red;"> 글씨 몇 개!!!</div> -->
+    <div style="clear: both"></div> <!-- 이런 의미 없는 태그 싫어함 -->
+    <div> 다른 내용 </div>
+    <br><br><br>
+    <hr>
+    <br><br><br>
+    <div class="clearFix">
+        <div class="box left">div1</div>
+        <div class="box right">div2</div>
+    </div>
+    <div class="div3">div3</div>
+    <br><br><br>
+    <hr>
+    <br><br><br>
+    <div class="clearFix">
+        <div class="ham">왼쪽메뉴</div>
+        <div class="profile">프로필</div>
+        <div class="logo">로고</div>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <link rel="stylesheet" href="./asset/css/10_overflow.css">
+    <style>
+        .v {
+            /* display: none; */
+            visibility: hidden;
+            /* 공간은 남아있고, 요소는 사라짐 -> .v:hover로 나오게 할 수 없음 */
+        }
+
+        .a:hover+.v {
+            visibility: visible;
+        }
+
+        .op {
+            opacity: 0;
+        }
+
+        .op:hover {
+            opacity: 1;
+        }
+
+        .box {
+            border: 1px solid red;
+            width: 100px;
+            height: 110px;
+            margin: 10px;
+        }
+        .of-hidden {
+            overflow: hidden;
+        }
+        .of-scroll {
+            /* x나 y로 한쪽만 스크롤 주기 */
+            overflow-y: scroll;
+            width: 500px;
+            height: 200px;
+        }
+        .of-auto {
+            overflow: auto;
+            width: 500px;
+            height: 200px;
+        }
+        .parent div {
+            border: 1px solid green;
+            display: inline-block;
+            width: 100px;
+            margin: 5px;
+        }
+        .parent {
+            border: 1px dashed blue;
+            width: 300px;
+            white-space: nowrap;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Visibility</h3>
+    <div>윗줄</div>
+    <div class="a">정답보기</div>
+    <div class="v">가운데</div>
+    <div>아랫줄</div>
+    <br><br><br>
+    <div>윗줄</div>
+    <div class="op">가운데</div>
+    <div>아랫줄</div>
+
+    <br><br>
+    <hr><br><br>
+
+    <h3>Overflow</h3>
+    hidden
+    <div class="box of-hidden" title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam voluptate suscipit harum dicta porro quia
+        omnis neque, iure ducimus veritatis ipsa! Temporibus repudiandae incidunt excepturi vel eius, odit facilis ea.">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam voluptate suscipit harum dicta porro quia
+        omnis neque, iure ducimus veritatis ipsa! Temporibus repudiandae incidunt excepturi vel eius, odit facilis ea.
+    </div>
+    scroll : auto보다 scroll이 디자인적으로 더 좋은 디자인
+    <div class="box of-scroll">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam voluptate suscipit harum dicta porro quia
+        omnis neque, iure ducimus veritatis ipsa! Temporibus repudiandae incidunt excepturi vel eius, odit facilis ea.
+    </div>
+    auto
+    <div class="box of-auto">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam voluptate suscipit harum dicta porro quia
+        omnis neque, iure ducimus veritatis ipsa! Temporibus repudiandae incidunt excepturi vel eius, odit facilis ea.
+    </div>
+
+    div>div*5
+    <div class="parent">
+        <div>항목1</div>
+        <div>항목2</div>
+        <div>항목3</div>
+        <div>항목4</div>
+        <div>항목5</div>
+    </div>
+
+</body>
+
+</html>

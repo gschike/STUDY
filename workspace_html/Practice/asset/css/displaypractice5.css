@@ -1,14 +1,17 @@
 body {margin: 0px; width: 100vw;}
 .back {margin: 0 auto;}
 
-.GNB {background-color: rgb(255, 255, 255); height: 70px; line-height: 70px; position: sticky; top: 0;}
+.GNB {background-color: rgb(255, 255, 255); height: 70px; line-height: 70px; position: sticky; top: 0; text-align: center;}
+.GNB {position: relative;}
 .GNB div {display: inline-block;}
 .GNB img {vertical-align: middle; cursor: pointer;}
 .GNB .logo {padding: 0px 20px;}
+.GNB #logo {position: absolute; top: 0;  left: 0; margin: 15px;}
 .GNB .size-img img:hover {background-color: rgba(173, 216, 230, 0.397);}
 .GNB .size-img img {padding: 4px;}
 .GNB #X:hover {background-color: rgba(173, 216, 230, 0.397);}
 .GMB img#X {padding: 4px;}
+.X {position: absolute; top: 0; right: 0px; margin-right: 20px;}
 
 .top {background-color: rgb(207, 207, 207); height: 73px; line-height: 73px;}
 .top #design {

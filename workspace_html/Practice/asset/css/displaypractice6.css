@@ -2,6 +2,10 @@ body {
     margin: 0px;
     width: 100vw;
 }
+.back {
+    background-color: rgb(168, 168, 168);
+    height: 500vh;
+}
 
 .GNB {
     display: inline-block;
@@ -15,13 +19,17 @@ body {
     position: sticky;
     top: 0;
 
+    z-index: 999;
+    background-color: white;
+
     /* background-color: rgba(0, 0, 0, 0.425);
     color: white; */
 }
 .GNB div {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: inline-block;
     vertical-align: middle;
+    cursor: pointer;
 }
 .GNB .menu div {
     font-size: 20px;
@@ -35,23 +43,23 @@ body {
     font-weight: 600;
     margin: 0px 0px 0px 60px;
 }
-.hide {
-    /* display: none; */
+.GNB .hide {
+    display: none;
     width: 100vw;
-    height: 300px;
-    border: 1px solid red;
+    height: 335px;
+    /* border: 1px solid red; */
     text-align: center;
-    background-color: #00000059;
+    background-color: #ffffffad;
 }
 .hide #start>div {
     display: inline-block;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     text-align: center;
     vertical-align: top;
 }
 #start {
     display: inline-block;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 830px;
     height: 100%;
     position: relative;
@@ -61,6 +69,10 @@ body {
     top: 10px;
     left: 103px;
 }
+#start div>div {
+    display: block;
+    margin: 10px;
+}
 #start .project {
     position: absolute;
     top: 10px;
@@ -69,10 +81,39 @@ body {
 #start .hire {
     position: absolute;
     top: 10px;
-    left: 520px;
+    left: 513px;
 }
 #start .notice {
     position: absolute;
     top: 10px;
-    left: 720px;
+    left: 710px;
 }
+.GNB:hover .hide {display: block; position: absolute;}
+
+.main {
+    display: inline-block;
+    width: 100vw;
+    text-align: center;
+}
+.text {
+    margin-top: 270px;
+}
+.text [id] {
+    color: white;
+    text-shadow: 1px 1px 10px rgb(102, 102, 102);
+}
+.text #first {
+    font-size: 30pt;
+}
+.text #middle {
+    font-size: 55pt;
+    font-weight: 800;
+    margin: 25px 0;
+}
+.text #last {
+    font-size: 30pt;
+    font-weight: 600;
+}
+
+
+

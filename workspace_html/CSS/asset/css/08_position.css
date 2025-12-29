@@ -39,6 +39,7 @@ body {height: 200vh;}
 
 /* 
     원래 내 공간은 없어짐
+    - inline-block 으로 변경됨
 
 */
 .thanks .abs-bottom {

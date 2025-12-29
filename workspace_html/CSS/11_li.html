@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+    <style>
+        ul {
+            /* 점 없애기 */
+            list-style: none;
+            padding-left: 0;
+        }
+
+        table {
+            /* border: 1px solid red; */
+            /* 선 딱 붙이기 */
+            border-collapse: collapse;
+        }
+        /* 웬만하면 tr에는 좀... */
+        tr {
+            border: 1px dashed blue;
+            width: 1000px;
+            /* tr은 border와 너비 안 됨, 높이는 됨 */
+        }
+        td {
+            border: 1px dashed green;
+            width: 20px;
+            height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <hr>
+    table>tr*2>td*3
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>졸</td>
+            <td>려</td>
+            <td>용</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

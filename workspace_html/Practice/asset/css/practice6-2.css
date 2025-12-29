@@ -1,0 +1,62 @@
+.menu {
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+/* +는 바로 다음에 인접한 형제 요소 : 그 다음, 이전 형제요소는 잡히지 않음 */
+/* ~는 다음에 나오는 모든 형제 요소 */
+.submenu {
+    border: 1px solid blue;
+    display: none;
+    cursor: pointer;
+    width: 100vw;
+    background-color: var(--menucolor);
+}
+
+/* 나 완전 천재인 듯 */
+.menu:hover+.submenu, .submenu:hover {
+    display: block;
+    position: absolute;
+}
+
+ul {
+    display: inline-block;
+}
+.menu li {
+    display: inline-block;
+}
+
+
+.p1 {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.c1 {
+    border: 1px solid blue;
+    width: 100px;
+    height: 100px;
+    background-color: var(--menucolor);
+    text-align: center;
+    line-height: 100px;
+
+    position: absolute;
+    /* top: 50px;
+    left: 50px; */
+    /* -, + 양쪽에 공백 필수 */
+    top: calc((200px/2) - (100px/2));
+    left: calc((200px/2) - (100px/2));
+}
+
+/* (전역(<>지역)) 변수요소 저장 */
+:root {
+    --menucolor: rgba(255, 255, 0, 0.486)
+}
+
+
+
+
+
+
+

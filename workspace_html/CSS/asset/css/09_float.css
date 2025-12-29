@@ -1,0 +1,63 @@
+article img {
+    width: 100px;
+
+    /* 글씨가 그림을 피해서 나오도록함 */
+    float: right;
+}
+
+
+.box {
+    border: 1px solid red;
+
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+/* float의 레이어는 원래 있어야 하는 위치 기준으로 생김 */
+.box.left {
+    float: left;
+
+    border: 1px dashed blue;
+}
+.box.right {
+    float: right;
+
+    border: 1px dashed green;
+}
+
+.div3 {
+    border: 1px solid red;
+}
+
+/* CSS 활용해서 clear both */
+.clearFix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ham {
+    float: left;
+}
+.profile {
+    float: right;
+}
+/* .logo {
+    border: 1px solid red;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+} */
+.logo {
+    border: 1px solid red;
+    display: inline-block;
+}
+.clearFix {
+    text-align: center;
+}
+
+
+
+
+
