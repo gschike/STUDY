@@ -1,0 +1,249 @@
+body {margin: 0 auto;}
+
+.GNB {
+    /* border: 1px solid red; */
+
+    padding: 12px 12px;
+}
+.GNB-logo div {
+    display: inline;
+    padding: 7px 0 0 5px;
+    letter-spacing: -1px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+
+    vertical-align: top;
+}
+
+.main {
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: center;
+}
+.main-left {
+    /* border: 1px solid green; */
+
+    width: 641px;
+    box-sizing: border-box;
+    padding: 48px 12px 0;
+}
+.main-left-title {
+    font-size: 40px;
+    font-weight: 500;
+
+    margin-bottom: 16px;
+}
+.main-left-explain {
+    color: rgb(76, 82, 125);
+    font-size: 20px;
+    font-weight: 400;
+
+    margin-bottom: 24px;
+}
+
+.main-left-button button {
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    
+    width: 150px;
+    height: 50px;
+    line-height: 40px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    margin-right: 15px;
+}
+#main-left-button-buy {
+    background-color: rgb(229, 87, 19);
+    color: white;
+}
+#main-left-button-learn {
+    border: 2px solid rgb(229, 87, 19);
+    color: rgb(229, 87, 19);
+}
+
+
+.main-left-review {
+    color: rgb(76, 82, 125);
+    display: flex;
+    flex-wrap: wrap;
+
+    position: relative;
+}
+.main-left-review div {
+    background-color: white;
+}
+[class^=main-left-review-text] {
+    padding: 0 24px;
+    margin: 24px 0 40px 0;
+
+    border-left: 4px solid rgb(245, 167, 130);
+
+    font-style: italic;
+}
+[class^=main-left-review-profile] {
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    color: rgb(111, 117, 167);
+}
+[class^=main-left-review-profile] img {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    margin-right: 15px;
+}
+.main-left-review button {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+
+    margin-top: 40px;
+
+    background-color: rgb(76, 82, 125);
+    background-color: rgb(139, 145, 190);
+
+    border: none;
+    outline: none;
+    border-radius: 50%;
+
+    order: 10;
+
+    cursor: pointer;
+}
+
+.main-left-review-button-first {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-10px, 0px);
+}
+.main-left-review-button-second {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+}
+.main-left-review-button-third {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translate(10px, 0px);
+}
+
+.main-left-review-second, .main-left-review-third {
+    position: absolute;
+    top: 0;
+
+    opacity: 0;
+}
+.main-left-review button+div {
+    transition: all 0.5s;
+}
+.main-left-review button:hover+div {
+    opacity: 1;
+    z-index: 10;
+}
+
+
+
+.main-right {
+    text-align: center;
+}
+.main-right-book img {
+    width: 451px;
+    height: 634px;
+}
+.main-right {
+    position: relative;
+}
+.main-right-new {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(92, 179, 119);
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    padding-top: 34px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(10%, -20%);
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+}
+.main-right-see {
+    color: rgb(28, 30, 46);
+    text-decoration: underline rgba(28, 30, 46, 0.3);
+
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+.get {
+    padding: 110px 0;
+
+    text-align: center;
+    /* overflow: hidden; */
+}
+.get-title {
+    margin-bottom: 16px;
+
+    font-size: 40px;
+    font-weight: 700;
+}
+.get-explain {
+    width: 760px;
+    margin: 0 auto;
+
+    color: rgb(76, 82, 125);
+    font-size: 20px;
+    font-weight: 400;
+}
+.get-section {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.get-section > div {
+    padding: 24px;
+    width: 308px;
+}
+.get-section-svg {
+    height: 48px;
+}
+.get-section-title {
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+.get-section-explain {
+    color: rgb(76, 82, 125);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+

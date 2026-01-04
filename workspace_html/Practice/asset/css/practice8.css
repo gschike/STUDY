@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+}
+:root {
+    --maincolor : #6e52c7
+}
+
+.GNB {background-color: rgb(255, 255, 255); height: 70px; line-height: 70px; position: sticky; top: 0; text-align: center;}
+.GNB {position: relative;}
+.GNB div {display: inline-block;}
+.GNB img {vertical-align: middle; cursor: pointer;}
+.GNB .logo {padding: 0px 20px;}
+.GNB #logo {position: absolute; top: 0;  left: 0; margin: 15px;}
+.GNB .size-img img:hover {background-color: rgba(173, 216, 230, 0.397);}
+.GNB .size-img img {padding: 4px;}
+.GNB .X {
+    float: right;
+    margin-right: 20px;
+}
+.GNB #X:hover {background-color: rgba(173, 216, 230, 0.397);}
+.GMB img#X {padding: 4px;}
+
+.main {
+    /* border: 1px solid red; */
+    width: 1280px;
+    height: 863px;
+    position: relative;
+    margin: 0 auto;
+}
+.main .purple {
+    display: inline-block;
+    /* border: 1px solid red; */
+    background-color: var(--maincolor);
+
+    width: 60vw;
+    height: calc(100% - 80px);
+
+    position: absolute;
+    top: 80px;
+    left: calc(40%);
+}
+
+.img {
+    width: calc(740px);
+    height: calc(673px);
+    
+    background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/e1900cdaa5c15cecae8746b6/rtyy-min.jpg");
+    background-size: cover;
+    
+    position: absolute;
+    top: 160px;
+    left: calc(35% - 740px/2);
+}
+
+.text {
+    width: 495px;
+    height: 471px;
+
+    border: 1px solid pink;
+    background-color: white;
+    color: var(--maincolor);
+
+    text-align: right;
+    padding: 40px 40px;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 250px;
+    left: calc(75% - 495px/2);
+}
+.text div {
+    margin: 20px 0;
+}
+.text .first {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .3em;
+}
+.text .second {
+    font-size: 72px;
+    font-weight: 1000;
+    line-height: 1.2em;
+}
+.text .third {
+    font-size: 20px;
+}
+.text .third span {
+    border-bottom: 1px solid var(--maincolor);
+}
+
+.footer {
+    display: inline-block;
+    width: 100vw;
+    height: 254px;
+    background-color: #292c33;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+.footer>div {
+    /* border: 1px solid white; */
+    display: inline-block;
+    width: 262.5px;
+    height: 134px;
+    padding: 15px;
+    vertical-align: top;
+}
+.footer .headline {
+    font-weight: 700;
+    text-align: left;
+}
+.footer .Fex {
+    margin-top: 17px;
+    text-align: left;
+}
+
+.FNB {display: inline-block; width: 100vw; text-align: center; background-color: rgb(58, 58, 58); color: white; padding: 50px 0px; font-size: 14px; font-weight: 400;}
+.FNB span {color: rgb(161, 205, 255); text-decoration: underline; cursor: pointer;}
+
+
+
+
+
+
+

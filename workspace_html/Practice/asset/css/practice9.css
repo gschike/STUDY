@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+}
+
+.GNB {background-color: rgb(255, 255, 255); height: 70px; line-height: 70px; position: sticky; top: 0; text-align: center;}
+.GNB {position: relative;}
+.GNB div {display: inline-block;}
+.GNB img {vertical-align: middle; cursor: pointer;}
+.GNB .logo {padding: 0px 20px;}
+.GNB #logo {position: absolute; top: 0;  left: 0; margin: 15px;}
+.GNB .size-img img:hover {background-color: rgba(173, 216, 230, 0.397);}
+.GNB .size-img img {padding: 4px;}
+.GNB .X {
+    float: right;
+    margin-right: 20px;
+}
+.GNB #X:hover {background-color: rgba(173, 216, 230, 0.397);}
+.GMB img#X {padding: 4px;}
+
+.header {
+    height: 90px;
+    /* border: 1px solid red; */
+
+    padding: 0px 60px;
+    line-height: 87px;
+    box-sizing: border-box;
+}
+.header div {
+    display: inline-block;
+}
+.header .logo {
+    float: left;
+
+    font-size: 28px;
+}
+.header .ham {
+    margin-top: 10px;
+    float: right;
+}
+
+.main {
+    position: relative;
+    width: 1280px;
+    height: 863px;
+    margin: 0 auto;
+}
+.main .behind {
+    /* border: 1px solid blue; */
+    background-color: #e4d2c0;
+    width: 331px;
+    height: 100%;
+
+    position: absolute;
+    left: calc(50% - (331px/2));
+}
+
+
+.main .left {
+    display: inline-block;
+    /* border: 1px solid green; */
+
+    width: 585px;
+    position: absolute;
+    top: 40px;
+    left: calc(50% - (585px));
+
+    text-align: right;
+}
+.main .left .l1 {
+    display: inline-block;
+    /* border: 15px solid rgba(255, 0, 0, 0); */
+    width: 555px;
+    height: 470px;
+    margin: 15px;
+
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/4583c5e5778759d5bf354095/dfggdf-min.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center;
+}
+.main .left .l2 {
+    display: inline-block;
+    width: 222.5px;
+    height: 180px;
+    margin: 15px;
+
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/ea6de3a355c35c3fb5e2e8fb/gfgg.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center;
+}
+
+.main .right {
+    display: inline-block;
+    /* border: 1px solid blue; */
+
+    width: 585px;
+    position: absolute;
+    top: 40px;
+    left: calc(50%);
+
+    text-align: left;
+}
+
+.main .right .r1 {
+    display: inline-block;
+    width: 222.5px;
+    height: 180px;
+    margin: 15px;
+
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/fe2b4f4f73b2545cb746601b/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith_1150-148781.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center;
+}
+
+.main .right .r2 {
+    display: inline-block;
+    width: 555px;
+    height: 470px;
+    background-color: #292d33;
+    color: white;
+
+    padding: 40px 40px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+.main .right .r2 .big {
+    font-size: 48px;
+    line-height: 1.1em;
+    font-weight: 300;
+}
+
+.main .right .r2 .last {
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 40px;
+}
+
+.main .right .r2 .last span {
+    border-bottom: 1px solid white;
+}
+
+
+.FNB {width: 100vw; text-align: center; background-color: rgb(58, 58, 58); color: white; padding: 50px 0px; font-size: 14px; font-weight: 400;}
+.FNB .sample {
+    /* border: 1px solid white; */
+    width: 417px;
+    margin: 0 auto 70px;
+}
+
+.FNB .bottom {
+    font-size: 14px;
+    font-weight: 300;
+}
+.FNB .bottom span {color: rgb(255, 255, 255); text-decoration: underline; cursor: pointer;}
+
+
+
+
+
+

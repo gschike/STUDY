@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice9</title>
+    <style>
+        .content {
+            position: relative;
+        }
+        .box {
+            border: 1px solid red;
+            width: 49%;
+            height: 80vh;
+
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        .band {
+            width: 200px;
+            height: 80vh;
+
+            background-color: rgb(149, 255, 87);
+
+            position: absolute;
+            top: 0;
+            left: calc(50% - (200px/2));
+
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box left">
+            <div>좌상단</div>
+            <div>좌하단</div>
+        </div>
+        <div class="box right">
+            <div>우상단</div>
+            <div>우하단</div>
+        </div>
+        <div class="band"></div>
+    </div>
+</body>
+</html>

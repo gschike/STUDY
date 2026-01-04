@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        :root {
+            --maincolor : #6e52c7
+        }
+        .main {
+            position: relative;
+        }
+        .color {
+            width: 50%;
+            height: 863px;
+            background-color: var(--maincolor);
+
+            position: absolute;
+            top: 0;
+            left: 50%;
+        }
+        .img {
+            width: 740px;
+            height: 673px;
+            background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/e1900cdaa5c15cecae8746b6/rtyy-min.jpg");
+            background-size: cover;
+
+            position: absolute;
+            top: 83px;
+            left: 50%;
+            transform: translate(-65%, 0);
+        }
+        .text {
+            width: 415px;
+            height: 413px;
+            padding: 30px 40px;
+
+            background-color: white;
+
+            position: absolute;
+            left: 50%;
+            transform: translate(30%, 40%);
+
+            text-align: right;
+            color: var(--maincolor);
+        }
+        .text .up {
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: .2em;
+
+            margin-top: 40px;
+        }
+        .text .big {
+            font-size: 60px;
+            font-weight: 1000;
+        }
+
+        .text .last {
+            font-size: 20px;
+            line-height: 3em;
+            margin-bottom: 40px;
+        }
+        .text .last span {
+            border-bottom: 1px solid var(--maincolor);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="color">
+        </div>
+        <div class="img">
+        </div>
+        <div class="text">
+            <div class="up">
+                ABOUT US
+            </div>
+            <div class="big">
+                Fashion<br>Trends<br>2021
+            </div>
+            <div class="last">
+                Images from <span>Freepik</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

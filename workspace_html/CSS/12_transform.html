@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box {
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            color: white;
+            margin: 10px;
+        }
+
+        .translate {
+            /* relative 처럼 원래 자리에서 이동, 원래 자리 유지 */
+                /* relative와 다르게 % 사용 가능 */
+            transform: translate(50%, 50%);
+        }
+        .scale {
+            /* 1이 100%에 해당 */
+            /* 원래 있던 공간은 그대로 유지하기 때문에 다른 요소가 밀리진 않음 */
+            transform: scale(1.3);
+        }
+        .rotate {
+            /* 0도가 12시, 양수는 시계방향, 음수는 시계반대방향 */
+            transform: rotate(30deg);
+        }
+        .total {
+            transform: translate(50%, 50%) scale(1.3) rotate(-45deg);
+        }
+        .total2 {
+            /* 순서에 따라서 translate 위치 달라질 수 있음 */
+            transform: scale(1.3) rotate(-45deg) translate(50%, 50%);
+        }
+        .skew {
+            transform: skew(10deg, 10deg);
+        }
+
+        .parent {
+            border: 1px solid red;
+            width: 30%;
+            height: 30vh;
+
+            position: relative;
+        }
+        .child {
+            border: 1px solid blue;
+            width: 40%;
+            height: 40%;
+
+            /* position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px); */
+
+            /* translate를 활용하여 사이즈 계산, 상관 없이 중앙정렬 */
+            /* 창 크기가 바뀌어도 해당 모양을 유지할 수 있게 됨 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box {
+            /* transition: all 0.5s; */
+        }
+        .box:hover {
+            width: 200px;
+            background-color: red;
+            border-radius: 20px;
+
+            /* hover에 위치하면 hover에서 떼는 순간 확 바뀜 */
+            transition: all 0.5s;
+        }
+
+        .box2 {
+            border: 1px solid red;
+            height: 50vh;
+            
+            /* background-image 에 있는 거 주의 */
+            /* 방향 또는 각도 deg, 색 시작지점 끝지점, 시작지점 끝지점, ... */
+            background-image: linear-gradient(135deg, rgb(180, 135, 252) 20% 10%, rgb(255, 207, 135) 60%, rgb(153, 235, 180) 100%);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">비교</div>
+    <div class="box translate">translate</div>
+    <div class="box scale">scale</div>
+    <div class="box rotate">rotate</div>
+    <div class="box skew">skew</div>
+    <div class="box total">total</div>
+    <div class="box total2">total2</div>
+    <br><br><br><br>
+    
+    <!-- 세로 방향 중앙 정렬 -->
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+
+    <!-- transition -->
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+
+
+    <!-- gradient -->
+    <div class="box2"></div>
+
+</body>
+</html>

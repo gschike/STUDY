@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container {
+            border: 1px solid green;
+            height: 300px;
+
+            /* 부모 요소에 flex를 주면 자식 요소는 inline-block, height: 100%; */
+            display: flex;
+            /* display: inline-flex; */
+            /* flex는 block요소 / inline-flex는 inline-block
+            그런데 보통은 부모를 하나 더 주고 그 부모에 flex를 줘서 그 아래 flex들이 inline-block이 되도록 함 */
+
+            /* 메인축 변경 (row가 기본값) */
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* 너비를 줄이고 한 줄에 모든 아이템을 표시하기 위해 노력함 (nowrap이 기본값) */
+            flex-wrap: nowrap;
+            /* 너비를 유지하고 밑으로 떨어짐. 정확하게는 크로스 축 흐름대로  */
+            /* flex-wrap: wrap; */
+            /* 크로스축을 반대로 바꿈 */
+            /* flex-wrap: wrap-reverse; */
+
+            /* direction과 wrap을 합쳐서 flex-flow 축약형으로 적기도 함 */
+
+
+
+            /* 몰려있게 하는 것 start가 기본 값, 끝으로 몰리게 하려면 end */
+            /* direction은 메인축을 바꾸기 때문에 row-reverse 했을 때 순서가 바뀜. 하지만 end는 순서는 그대로 */
+            justify-content: flex-start;
+            /* justify-content: flex-end; */
+            /* 메인축의 가운데 정렬 : 메인축이 세로방향이면 세로방향으로 가운데 정렬됨 */
+            /* justify-content: center; */
+
+            /* 사이 공간을 n등분해서 정렬-양끝에 양쪽에 딱 붙음 : text-align: justify; 와 비슷한 효과 */
+            /* justify-content: space-between; */
+            /* 공간을 n등분해서 그 중앙에 요소 배치, item의 양쪽에 동일한 공간 배치 */
+            /* justify-content: space-around; */
+            /* 사이사이 공간이 모두 공평하게-양끝에 붙지 않음 */
+            /* justify-content: space-evenly; */
+
+
+
+            /* flex-wrap: wrap;   */
+
+            /* align- 는 크로스축에 대한 이야기 */
+
+            /* 한 줄에 대한 크로스 축의 이야기 */
+            /* 부모의 크기만큼 크로스 축으로 쭉 늘림 height, width 100%와 같음: stretch가 기본값 */
+            align-items: stretch;
+            /* 각 줄의 크로스축 스타트 방향에 대해서 */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+
+
+
+            /* 여러 줄에 대한 크로스 축의 이야기 */
+            /* 기본값은 stretch : 부모 크기에서 각 줄의 높이를 모두 균등하게 꽉 차게 함 */
+            align-content: stretch;
+            /* 모든 줄이 flex의 크로스 축에 대하여 */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+            /* align-content: space-evenly; */
+
+        }
+
+        /* caniuse 사이트를 참고하여 어느 브라우저에서 어떤 css가 통하는지 확인하면 좋음 */
+
+        .container .item {
+            border: 1px solid red;
+            width: 150px;
+            /* flex-basis: 100px; */
+            /* 플렉스가 더 우선순위가 높음 */
+
+            background-color: brown;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- item에 주는 order 속성 : 순서를 변경
+        0이 기본값 클수록 뒤로 배치됨 -->
+
+    <!-- flex-grow : 남는 공간과 태그를 가진 공간을 합쳐서 그로우의 숫자만큼 나누고, 해당하는 비율만큼 분배 
+        0이 기본값이고 음수는 값을 가지지 않음 -->
+    <!-- flex-shrink : 공간이 부족해서 줄어들 때 줄어드는 공간을 슈링크의 수만큼 나누고, 해당하는 비율만큼 더 줄어듦
+        1이 기본값이고 음수는 값을 가지지 않음 -->
+    <!-- flex-basis : width랑 똑같음 item의 너비 기본값을 지정. px, % 단위. 기본값은 auto -->
+        <!-- 셋을 합친 축약형을 flex로 사용하기도 하는데 잘 안 씀 -->
+
+    <!-- align-self : align-items보다 우선하여 개별 flex item을 정렬
+        auto가 기본값이고 start, end, center 등이 있음 -->
+    <div class="container">
+        <div class="item" style="align-self: start;">1</div>
+        <div class="item" style="order: -1;">2</div>
+        <div class="item">3</div>
+        <div class="item" style="flex-grow: 1; flex-shrink: 4;">4</div>
+        <div class="item" style="flex-grow: 3; flex-shrink: 2;">5</div>
+    </div>
+</body>
+</html>

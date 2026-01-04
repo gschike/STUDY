@@ -1,80 +1,184 @@
 body {
-    /* width: 100vw; */
-    margin: 0px;
+    margin: 0;
 }
-
 .back {
+    /* width: 100vw; */
+    width: 1280px;
     margin: 0 auto;
-    /* border: 1px solid red; */
-    background-color: lightgoldenrodyellow;
+    /* height: 300vh; */
 }
-
+:root {
+    --main-color : #FF9705;
+    --sub-color : #FFC675;
+}
 
 .GNB {
-    height: 70px;
-    /* border: 1px solid blue; */
-    background-color: rgb(231, 255, 231);
+    /* border: 1px solid purple; */
+    height: 90px;
+
+    text-align: center;
     position: sticky;
     top: 0;
+
+    background-color: white;
 }
-.GNB>div {
-    border: 1px solid pink;
+.GNB .logo {
+    /* border: 1px solid blue; */
+
+    height: 70px;
+    float: left;
+    margin: 10px 0px 0px 30px;
+}
+.GNB .ham{
+    /* border: 1px solid blue; */
+
+    float: right;
+    margin: 30px 40px 0px 0px;
+    cursor: pointer;
+}
+.GNB .search{
+    /* border: 1px solid blue; */
+
+    float: right;
+    margin: 30px 30px 0px 0px;
+    cursor: pointer;
+}
+
+.GNB .menu {
     display: inline-block;
+    /* border: 1px solid blue; */
+
+    margin-top: 30px;
+    text-align: top;
 }
-.GNB #logo {
-    width: 100px;
-    height: 50px;
-    vertical-align: center;
-}
-.GNB .menu [id] {
-    border: 1px solid pink;
+.GNB .menu {
     display: inline-block;
+    /* border: 1px solid red; */
+
+    list-style: none;
+    padding: 0;
+    position: relative;
     vertical-align: center;
+
+    cursor: pointer;
 }
-.GNB #hammenu {
-    width: 40px;
-    height: 40px;
+.GNB .menu>li {
+    display: inline-block;
+    /* border: 1px dashed green; */
+    width: 120px;
+    height: 30px;
+
     vertical-align: center;
+    margin: 0 20px;
+}
+.GNB .menu [id^=submenu] {
+    /* border: 1px solid green; */
+
+    list-style: none;
+    padding: 10px 0;
+}
+#submenu-board {
+    height: 90px;
+    
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    text-align: left;
+    padding: 15px;
+    background-color: white;
+    font-size: 14px;
+    line-height: 2em;
+
+    display: none;
+}
+
+.board:hover+#submenu-board, #submenu-board:hover {
+    display: block;
+}
+
+#submenu-crew {
+    height: 90px;
+
+    position: absolute;
+    top: 30px;
+    left: 330px;
+    text-align: left;
+    padding: 15px;
+    background-color: white;
+    font-size: 14px;
+    line-height: 2em;
+
+    display: none;
+}
+.crew:hover+#submenu-crew, #submenu-crew:hover {
+    display: block;
+}
+.menu svg {
+    /* border: 1px solid pink; */
+    vertical-align: bottom;
+    margin: 0 5px;
 }
 
 .main {
-    height: 100vw;
+    /* border: 1px solid red; */
+    height: 100vh;
+    
+    background-color: white;
+    padding: 30px;
 }
-
-.main .loginbox {
+.loginbox {
     display: inline-block;
-    border: 1px dashed blue;
-    width: 250px;
-    height: 190px;
-    margin: 40px;
+    border: 3px solid var(--main-color);
+    border-radius: 7px;
+
+    padding: 10px;
+    font-size: 14px;
     text-align: center;
 }
-.main .loginbox .loginbutton {
-    margin: 10px;
-    text-align: left;
-}
-
-/* display td 주기 */
-#ID, #PW {
+.ID {
+    /* border: 1px solid black; */
+    display: table;
+    margin: 5px auto;
+}   
+#ID {
+    /* border: 1px solid blue; */
     display: table-cell;
-    border: 1px solid blue;
-    width: 30px;
-    font-size: 14px;
+    padding-right: 17px;
 }
-#IDinput, #PWinput {
+#inputID {
     display: table-cell;
-    border: 1px solid blue;
-    font-size: 15px;
 }
-
-.main .loginbox .exbutton [id] {
-    display: inline-block;
-    border: 1px solid blue;
+.PW {
+    /* border: 1px solid black; */
+    display: table;
+    margin: 5px auto;
+}   
+#PW {
+    /* border: 1px solid blue; */
+    display: table-cell;
+    padding-right: 10px;
+}
+#inputPW {
+    display: table-cell;
+}
+.loginbox .button button {
     font-size: 12px;
-    padding: 3px 7px;
+    margin: 10px 0px 5px;
 }
 
 
 
 
+
+
+#totop {
+    /* border: 1px solid red; */
+    width: 40px;
+    height: 40px;
+
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+}
 

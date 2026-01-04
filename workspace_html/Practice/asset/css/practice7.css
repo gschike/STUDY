@@ -1,0 +1,148 @@
+body {
+    margin: 0px;
+}
+.back {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.left {
+    display: inline-block;
+    /* border: 1px solid blue; */
+    float: left;
+    position: relative;
+}
+
+[id^=l] {
+    display: inline-block;
+    border: 1px solid red;
+    vertical-align: top;
+    width: 70px;
+
+    position: absolute;
+}
+#l1 {
+    top: 0;
+    left: 0;
+}
+#l2 {
+    top: 70px;
+    left: 0;
+}
+#l3 {
+    top: 140px;
+    left: 0;
+}
+#l4 {
+    top: 210px;
+    left: 0;
+}
+#l5 {
+    top: 280px;
+    left: 0;
+}
+
+[id^=r] {
+    display: inline-block;
+    border: 1px solid green;
+    width: 500px;
+
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    
+    margin: 15px;
+    visibility: hidden;
+}
+
+#l1:hover+#r1, #r1:hover {
+    visibility: visible;
+}
+#l2:hover+#r2, #r2:hover {
+    visibility: visible;
+}
+#l3:hover+#r3, #r3:hover {
+    visibility: visible;
+}
+#l4:hover+#r4, #r4:hover {
+    visibility: visible;
+}
+#l5:hover+#r5, #r5:hover {
+    visibility: visible;
+}
+
+#r1 {
+    visibility: visible;
+}
+
+.right {
+    display: inline-block;
+    border: 1px solid purple;
+    width: 602.5px;
+    height: 700px;
+    position: absolute;
+    left: calc(45%);
+
+    margin: 0 40px;
+
+    vertical-align: top;
+}
+.right .shop {
+    /* border: 1px dashed blue; */
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+    padding: 5px;
+}
+.right .mainex {
+    display: inline-block;
+    position: relative;
+}
+.right .mainex div {
+    display: inline-block;
+    /* border: 1px dashed red; */
+    margin: 0 5px;
+}
+.right .button {
+    display: inline-block;
+    /* border: 1px dashed blue; */
+    position: absolute;
+    top: calc(50% - (35px/2));
+    right: 20px;
+}
+.right .button svg {
+    margin: 0 3px;
+}
+.right hr {
+    margin: 7px 0;
+}
+
+.right .price {
+    /* border: 1px solid red; */
+    font-size: 20px;
+    color: rgb(207, 65, 65);
+    font-weight: 700;
+    padding: 0px 10px;
+}
+.right .price svg {
+    /* border: 1px solid blue; */
+    vertical-align: bottom;
+
+    margin: 0 0 2px 3px;
+}
+.right .price .rocket {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.right .price .rocket span {
+    color: green;
+}
+.right .price .rocket svg {
+    margin-bottom: 3px;
+}
+
+
+

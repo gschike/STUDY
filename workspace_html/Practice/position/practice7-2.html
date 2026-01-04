@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice7</title>
+    <style>
+        /* div.item div img {
+            position: absolute;
+            top: 0px;
+            left: 60px;
+
+            display: none;
+        }
+        div.item img:hover+div img {
+            display: inline;
+        } */
+
+        .item div {
+            position: absolute;
+            top: 0;
+            left: 60px;
+            display: none;
+        }
+
+        .item {
+            /* border: 1px solid red; */
+            width: 48px;
+        }
+
+        .item:hover div {
+            display: inline;
+        }
+
+
+        ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        /* 형제태그 */
+        .item2 .big {
+            position: absolute;
+            top: 0;
+            left: 60px;
+            display: none;
+        }
+
+        .item2 .thumb:hover+.big {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+
+
+        <!-- 구조 1개로 해결 -->
+        <div class="item">
+            <img
+                src="https://thumbnail.coupangcdn.com/thumbnails/remote/48x48ex/image/retail/images/2025/07/23/12/1/1b2a4f85-9a71-4737-8513-8f16d11d1ac8.png">
+            <div>
+                <img
+                    src="https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/07/23/12/1/1b2a4f85-9a71-4737-8513-8f16d11d1ac8.png">
+            </div>
+        </div>
+        <div class="item">
+            <img
+                src="https://thumbnail.coupangcdn.com/thumbnails/remote/48x48ex/image/retail/images/2025/07/23/12/1/1b2a4f85-9a71-4737-8513-8f16d11d1ac8.png">
+            <div>
+                <img src="../../다운로드.jpg">
+            </div>
+        </div>
+        
+        
+        <!-- ul 활용 -->
+        <ul>
+            <li class="item">
+                <img
+                    src="https://thumbnail.coupangcdn.com/thumbnails/remote/48x48ex/image/retail/images/2025/07/23/12/1/1b2a4f85-9a71-4737-8513-8f16d11d1ac8.png">
+                <div>
+                    <img
+                        src="https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/07/23/12/1/1b2a4f85-9a71-4737-8513-8f16d11d1ac8.png">
+                </div>
+            </li>
+            <li class="item">
+                <img
+                    src="https://thumbnail.coupangcdn.com/thumbnails/remote/48x48ex/image/retail/images/2025/07/23/12/1/1b2a4f85-9a71-4737-8513-8f16d11d1ac8.png">
+                <div>
+                    <img src="../../다운로드.jpg">
+                </div>
+            </li>
+        </ul>
+
+
+        <!-- 형제 태그 -->
+        <div class="item2">
+            <img class="thumb"
+                src="https://thumbnail.coupangcdn.com/thumbnails/remote/48x48ex/image/retail/images/2025/07/23/12/1/1b2a4f85-9a71-4737-8513-8f16d11d1ac8.png">
+            <img class="big"
+                src="https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/07/23/12/1/1b2a4f85-9a71-4737-8513-8f16d11d1ac8.png">
+        </div>
+        <div class="item2">
+            <img class="thumb" src="https://thumbnail.coupangcdn.com/thumbnails/remote/48x48ex/image/retail/images/2025/07/23/12/1/1b2a4f85-9a71-4737-8513-8f16d11d1ac8.png">
+            <img class="big" src="../../다운로드.jpg">
+        </div>
+    </div>
+</body>
+
+</html>
