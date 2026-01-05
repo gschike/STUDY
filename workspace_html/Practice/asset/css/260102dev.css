@@ -140,7 +140,7 @@ ul {
     margin-right: 15px;
 }
 
-.main-left-review button {
+/* .main-left-review button {
     width: 10px;
     height: 10px;
     padding: 0;
@@ -157,9 +157,9 @@ ul {
     order: 10;
 
     cursor: pointer;
-}
+} */
 
-.main-left-review-button-first {
+/* .main-left-review-button-first {
     position: relative;
     bottom: 0;
     left: 50%;
@@ -177,23 +177,46 @@ ul {
     bottom: 0;
     left: 50%;
     transform: translate(10px, 0px);
-}
+} */
 
-.main-left-review-second,
-.main-left-review-third {
+.main-left-review-first, .main-left-review-second, .main-left-review-third {
     position: absolute;
-    top: 0;
+    top: 0px;
 
     opacity: 0;
 }
 
-.main-left-review button+div {
+.main-left-review input+div {
     transition: all 0.5s;
 }
 
-.main-left-review button:hover+div {
+.main-left-review input {
+    position: relative;
+    top: 280px;
+    left: 50%;
+    transform: translate(-100%, 0);
+
+    z-index: 999;
+}
+
+
+
+/* .main-left-review-first {
+    position: absolute;
+    top: 280px;
+    left: 50%;
+
+    transform: translate(-50px, 0);
+} */
+
+/* .main-left-review button:hover+div {
     opacity: 1;
     z-index: 10;
+} */
+
+
+[class^=main-left-review-button]:checked + [class^=main-left-review] {
+    opacity: 1;
 }
 
 
@@ -203,6 +226,7 @@ ul {
 }
 
 .main-right-book img {
+    
     width: 451px;
     height: 634px;
 }
@@ -706,6 +730,13 @@ ul {
     .main-left-button button {
         width: 80vw;
         margin-bottom: 15px;
+    }
+    .main-right-book img {
+        margin-top: 300px;
+    }
+    .main-right-new {
+        position: absolute;
+        top: 300px;
     }
 
     .get {
