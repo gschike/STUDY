@@ -25,6 +25,8 @@ public class VarTypeExam {
 		// 뒤에 l 또는 L을 붙여서 명시적인 long 타입임을 알려야 함. 붙이지 않으면 int로 생각됨
 		long l1 = 2200000000L;
 		long l2 = 30;
+		System.out.println("l1: "+l1);
+		System.out.println("l2: "+l2);
 		
 		
 		// String : 문자, 여러 자 가능, "" 안에
