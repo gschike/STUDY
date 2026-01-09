@@ -85,8 +85,37 @@ public class TypeCastingExam {
 		double dd = x*1.0 / 4; // 1.0 곱해서 double로 만들기
 		// double dd = (double)x / 4;
 		System.out.println("d: " + d + ", dd: " + dd);
+				
+
+
 		
+		// 문자를 숫자로 바꾸기
+		String s1 = "123";
+		int i12 = Integer.parseInt(s1);
+		System.out.println("i12: " + (i12 + 1));
 		
+//		String s2 = "123";
+//		int i13 = (int)s2; // Cannot cast from String to int : 지원하지 않음
+		
+//		String s3 = "123a";
+//		int i14 = Integer.parseInt (s3); // 에러 발생. 에러나 예외 발생 즉시 java 종료
+//		System.out.println(i14);
+//		// 에러메시지) NumberFormatException : 숫자 양식이 잘못됨
+		
+//		String s11 = "a";
+//		char c11 = Character.parseChar (s11);
+//		System.out.println("c11: " + (c11));
+//		
+		
+		// 숫자를 문자로 바꾸기
+		int i15 = 123;
+		String str = String.valueOf(i15); // 정석
+		System.out.println(str + 1); // 결과 : 1231
+		
+		String str1 = "" + i15; // 가장 쉬운 방법
+		System.out.println(str1 + 1); // 결과 : 1231
+	
+	
 	}
 
 }
