@@ -6,6 +6,15 @@ public class ForExam_03 {
 
 	public static void main(String[] args) {
 		
+		/* 조건식에 여러 개 통합 가능
+		 * 
+		 * for (int x=3, y=7; x<5; x++, y+=30)
+		 */
+		
+		
+		
+		
+		
 		int sum = 0;
 		for (int i=1; i<=100; i++) {
 			sum += i;
@@ -251,6 +260,7 @@ public class ForExam_03 {
 		System.out.printf("총합은 %d이고, 홀수는 %d개 입니다", sum, count);
 		
 		System.out.println();
+		System.out.println();
 		
 		
 		
@@ -273,7 +283,6 @@ public class ForExam_03 {
 			}
 			System.out.println("1부터 " + input + "까지의 총합: " +sum);
 		}
-		
 		
 		
 		System.out.println();
@@ -342,7 +351,6 @@ public class ForExam_03 {
 		
 		System.out.println();
 		
-		ajkdshfahlkjhl
 		/* 문제 5-3
 		 * 구구단 3단마다 옆으로 출력
 		 */
@@ -372,41 +380,34 @@ public class ForExam_03 {
 //		}
 
 		
+		finish = 3; // 한 줄에 몇개씩?
+		int stop = 9; // 몇단까지?
+		for (int start=2; start<=stop; start+=3) {
+			for (m=1; m<=9; m++) {
+				for (n=start; n<=start+(finish-1) && n<=stop; n++) { // 종료 조건 && 로 연결 가능!!!! 유레카!!!!!!!
+					int answer = n*m;
+					System.out.printf("%dx%d=%d ", n, m, answer);
+				}	// n end
+				System.out.println(); // 가로 3줄 엔터
+			}	// m end
+			System.out.println(); // (start+2)*9 엔터
+		}	// start end
 		
-//		for (l=2; l<=9; l+=3) {
-//			for (m=1; m<=9; m++) {
-//				for (n=l; n<=l+fin-1; n++) {
-//					int answer = n*m;
-//					System.out.printf("%dx%d=%d ", n, m, answer);
-//				}
-//				System.out.println();
-//			}
-//		}
 		
+		// 하나씩, 하나씩 반복 찾기
 		
-		for (m=1; m<=9; m++) {
-			for (n=2; n<=2+fin-1; n++) {
-				int answer = n*m;
-				System.out.printf("%dx%d=%d ", n, m, answer);
+		for (int j=2; j<=9; j+=3) {
+			for (int g=1; g<=9; g++) {
+				for (int h=j; h<=j+finish-1; h++) {
+					int answer = h*g;
+					if (h<=9) {
+						System.out.printf("%dx%d=%d ", h, g, answer);
+					}
+				}
+				System.out.println();
 			}
 			System.out.println();
 		}
-		for (m=1; m<=9; m++) {
-			for (n=5; n<=5+fin-1; n++) {
-				int answer = n*m;
-				System.out.printf("%dx%d=%d ", n, m, answer);
-			}
-			System.out.println();
-		}
-		for (m=1; m<=9; m++) {
-			for (n=8; n<=8+fin-1; n++) {
-				int answer = n*m;
-				System.out.printf("%dx%d=%d ", n, m, answer);
-			}
-			System.out.println();
-		}
-
-		
 
 		
 	
@@ -420,7 +421,7 @@ public class ForExam_03 {
 		
 		for (int dice1=1; dice1<=6; dice1++) {
 			for (int dice2=1; dice2<=6; dice2++) {
-				System.out.printf("[%d, %d]", dice1, dice2);
+				System.out.printf("[%d, %d]", dice2, dice1);
 			}
 			System.out.println();
 		}
@@ -436,18 +437,19 @@ public class ForExam_03 {
 		System.out.println("--- 문제 7. 주사위 2개 굴려서 합 별로 출력 ---");
 		System.out.println();
 		
-		for (i=1; i<=12; i++) { // 합이 1부터 12까지
+		// 비효율적인 방법이긴 함. 합 2를 구하기 위해서 36번씩 돌아서, 도합 400번 이상 돌아감
+		for (i=2; i<=12; i++) { // 합이 1부터 12까지
 			System.out.println("두 주사위의 합이 " + i + "일 때");
 			for (int dice1=1; dice1<=6; dice1++) { // 주사위1 1부터 6까지
 				for (int dice2=1; dice2<=6; dice2++) { // 주사위2 1부터 6까지
 					sum = dice1 + dice2; // 두 주사위의 합
 					if (sum == i) {
 						System.out.printf("[%d, %d] ", dice1, dice2);
-					} // if
-				} // dice2
-			} // dice1
+					} // if end
+				} // dice2 end
+			} // dice1 end
 			System.out.println();
-		} // i
+		} // i end
 		
 		System.out.println();
 		
@@ -459,20 +461,90 @@ public class ForExam_03 {
 		System.out.println("--- 문제 8. 주사위 2개 조합, 중복 제거 ---");
 		System.out.println();
 		
+//		for (i=2; i<=12; i++) { // 합이 2부터 12까지
+//			System.out.println("두 주사위의 합이 " + i + "일 때");
+//			for (int dice1=1; dice1<=6; dice1++) { // 주사위1 1부터 6까지
+//				for (int dice2=dice1; dice2<=6; dice2++) { // 주사위2 주사위1부터 6까지
+//					sum = dice1 + dice2; // 두 주사위의 합
+//					if (sum == i) {
+//						System.out.printf("[%d, %d] ", dice1, dice2);
+//					} // if end
+//				} // dice2 end
+//			} // dice1 end
+//			System.out.println();
+//		} // i end
+//		
+//		System.out.println();
 		
-		for (i=1; i<=12; i++) { // 합이 1부터 12까지
-			System.out.println("두 주사위의 합이 " + i + "일 때");
-			for (int dice1=1; dice1<=6; dice1++) { // 주사위1 1부터 6까지
-				for (int dice2=1; dice2<=6; dice2++) { // 주사위2 1부터 6까지
-					sum = dice1 + dice2; // 두 주사위의 합
-					if (sum == i) {
-						System.out.printf("[%d, %d] ", dice1, dice2);
-					} // if
-				} // dice2
-			} // dice1
+		
+		for (int dice1=1; dice1<=6; dice1++) {
+			for (int dice2=dice1; dice2<=6; dice2++) {
+				System.out.printf("[%d, %d]", dice1, dice2);
+			}
 			System.out.println();
-		} // i
+		}
 		
+		System.out.println();
+
+		
+		
+		/* 문제 9
+		 * 피라미드 만들기
+		 */
+		System.out.println("--- 문제 9. 피라미드 ---");
+		System.out.println();
+		
+		for (i=1; i<=4; i++) {
+			for (n=3; n>=i; n--) {
+				System.out.print("-");
+			} // n end (left)
+			for (m=1; m<2*i; m++) {
+				System.out.print("*");
+			} // m end
+//			for (l=6; l>=2*i; l--) {
+//				System.out.print("-");
+//			} // l end (right)
+//			for (m=1; m<2*i&&m<7; m++) {
+//				System.out.print("*");
+			} // m end
+			
+			System.out.println();
+		} // i end
+		
+		System.out.println();
+
+		
+		/* 문제 10
+		 * border 만들기
+		 */
+		System.out.println("--- 문제 10. border ---");
+		System.out.println();
+		
+		System.out.print("border: ");
+		Scanner sBorder = new Scanner(System.in);
+		int border = sBorder.nextInt();
+		
+		for (i=1; i<=border; i++) { // 위에 한 줄
+			System.out.print("*");
+		} 
+		System.out.println();
+		for (n=3; n<=border; n++) {
+			System.out.print("*");
+			for (m=1; m<=border-2; m++) {
+				System.out.print(" ");
+			} // m end (space)
+			System.out.print("*");
+			System.out.println();
+		} // n end
+		if (border>=2) {
+			for (i=1; i<=border; i++) { // 밑에 한 줄
+				System.out.print("*");
+			} 
+		}
+		
+		
+		
+		System.out.println();
 		
 		
 		
@@ -558,7 +630,7 @@ public class ForExam_03 {
 //		} // lotto end
 		
 
-		int random1 = (int)((Math.random()*45)+1);
+		int random1 = (int)((Math.random()*45)+1); // random1 고정
 		System.out.println("random1: " + random1);
 		int random2 = 0;
 		int random3 = 0;
@@ -566,14 +638,14 @@ public class ForExam_03 {
 		int random5 = 0;
 		int random6 = 0;
 		
-		for (i=1; i<=5;) {
-			int random = (int)((Math.random()*45)+1);
-			if (i==1  && random != random1) {
-				random2 = random;
-				i++;
-				System.out.println("random2: " + random2);
+		for (i=1; i<6;) {
+			int random = (int)((Math.random()*45)+1); // random으로 뽑기
+			if (i==1  && random != random1) { // 첫번째 뽑은, 랜덤이 랜덤1과 다를 때
+				random2 = random; // 랜덤2에 랜덤 덮어쓰고
+				i++; // 순서 넘어가기
+				System.out.println("random2: " + random2); // 랜덤 2 출력
 			}
-			if (i==2 && random != random1 && random != random2) {
+			if (i==2 && random != random1 && random != random2) { // 두번째 뽑은, 랜덤이랜덤 1과 랜덤2와 다를 때
 				random3 = random;
 				i++;
 				System.out.println("random3: " + random3);
@@ -594,6 +666,7 @@ public class ForExam_03 {
 				System.out.println("random6: " + random6);
 			}
 		}
+		
 		
 		
 		

@@ -660,11 +660,8 @@ public class IfExam_01 {
 		Scanner sY13 = new Scanner(System.in);
 		int y13 = sY13.nextInt();		
 		
-		int x1_13 = 10;
-		int x2_13 = 90;
-
-		int y1_13 = 20;
-		int y2_13 = 100;
+		int x1_13 = 10, x2_13 = 90;
+		int y1_13 = 20, y2_13 = 100;
 		
 		if (x13>=x1_13 && x13<=x2_13 && y13>=y1_13 && y13<=y2_13) {
 			System.out.println("사각형 사이에 위치함");
@@ -674,6 +671,29 @@ public class IfExam_01 {
 		
 		System.out.println();
 		
+		
+		
+		// 모두 && 일 때, false를 찾으면 끝남
+
+		/* if (false && true) {
+		 * 
+		 * }
+		 * 
+		 * 
+		 * => false
+		 *  :: 이미 false를 만났기 때문에 조건은 끝남. && 는 false를 찾아다니며, false이면 끝, false가 발견 안 되면 실행
+		 */
+		
+		// 모두 || 일 때, true를 찾으면 끝남
+		
+		/* if (true || false) {
+		 * 
+		 * }
+		 * 
+		 * 
+		 * => true
+		 *  :: 이미 true 를 만났기 때문에 조건은 끝남. || 는 true를 찾아다니며, true이면 끝, true가 발견 안 되면 실행
+		 */
 		
 		
 	} //
