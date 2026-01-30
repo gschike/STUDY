@@ -1,0 +1,641 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": -1,
+    "zoomLevel": 1,
+    "show": 431,
+    "database": 8,
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "h57vifqcTSzq7CcltQuiB",
+      "GBxj8Gi6K1t4QV-vrtyyi",
+      "Q3q8AWqSnILCaHbjCidvG",
+      "UPMPT6ptn4tB8vLzV14Ja"
+    ],
+    "relationshipIds": [
+      "wmxweEwCuJo6oVe-wtUSI",
+      "F-GvMT3iWBCu3mtWUby10",
+      "n3ESMYi4Py2nhQAaRiyh1"
+    ],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "h57vifqcTSzq7CcltQuiB": {
+        "id": "h57vifqcTSzq7CcltQuiB",
+        "name": "hotel",
+        "comment": "호텔",
+        "columnIds": [
+          "Aum6nSi20VC0XD9MOYXxF",
+          "5hbrcBrmhjb_LDPUS_nC0",
+          "7-FPG7ORcTEdQu824IVcS",
+          "CKOOoOQAUkxc_7gHX5qfB"
+        ],
+        "seqColumnIds": [
+          "Aum6nSi20VC0XD9MOYXxF",
+          "5hbrcBrmhjb_LDPUS_nC0",
+          "7-FPG7ORcTEdQu824IVcS",
+          "CKOOoOQAUkxc_7gHX5qfB"
+        ],
+        "ui": {
+          "x": 72,
+          "y": 218,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769675131962,
+          "createAt": 1769673833495
+        }
+      },
+      "GBxj8Gi6K1t4QV-vrtyyi": {
+        "id": "GBxj8Gi6K1t4QV-vrtyyi",
+        "name": "room",
+        "comment": "방",
+        "columnIds": [
+          "tdpdLyaamt2ZqC4UPShnn",
+          "9sH_q9L7aidQY-1u55LSo",
+          "H6CvGMJbVZqn5jNJ4v6P1"
+        ],
+        "seqColumnIds": [
+          "tdpdLyaamt2ZqC4UPShnn",
+          "Nxac3-OYw0-MkePG86KRJ",
+          "9sH_q9L7aidQY-1u55LSo",
+          "H6CvGMJbVZqn5jNJ4v6P1",
+          "aJGcA-hKIYF5bQP_qg4eL"
+        ],
+        "ui": {
+          "x": 62,
+          "y": 541,
+          "zIndex": 8,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769675150614,
+          "createAt": 1769674028372
+        }
+      },
+      "Q3q8AWqSnILCaHbjCidvG": {
+        "id": "Q3q8AWqSnILCaHbjCidvG",
+        "name": "user",
+        "comment": "회원",
+        "columnIds": [
+          "cNpCqUKZnqe2pmzuMVi3D",
+          "W8-BcMNaL_Rx8w-WN78Vu",
+          "EXQkO4WrMfGS-MvAv7S_Z",
+          "QTrzAZLmS72Jtmz_MHwP0"
+        ],
+        "seqColumnIds": [
+          "cNpCqUKZnqe2pmzuMVi3D",
+          "W8-BcMNaL_Rx8w-WN78Vu",
+          "EXQkO4WrMfGS-MvAv7S_Z",
+          "QTrzAZLmS72Jtmz_MHwP0"
+        ],
+        "ui": {
+          "x": 641,
+          "y": 209,
+          "zIndex": 28,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769675250407,
+          "createAt": 1769674925510
+        }
+      },
+      "UPMPT6ptn4tB8vLzV14Ja": {
+        "id": "UPMPT6ptn4tB8vLzV14Ja",
+        "name": "예약",
+        "comment": "reservation",
+        "columnIds": [
+          "5sCmxMRpgKH43mvLPIaxC",
+          "3_UCg8vsNRcQJ2lL7fcKD",
+          "0n55YEoohaIKIy-raVASH",
+          "I-XOu9LTXmpp21pl__a90",
+          "CsP7jcFlSdw9CKzpumxSU"
+        ],
+        "seqColumnIds": [
+          "5sCmxMRpgKH43mvLPIaxC",
+          "zq-kldvUrTdymkL3v59sy",
+          "3_UCg8vsNRcQJ2lL7fcKD",
+          "0n55YEoohaIKIy-raVASH",
+          "I-XOu9LTXmpp21pl__a90",
+          "CsP7jcFlSdw9CKzpumxSU"
+        ],
+        "ui": {
+          "x": 636,
+          "y": 497,
+          "zIndex": 41,
+          "widthName": 60,
+          "widthComment": 61,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769675162836,
+          "createAt": 1769675038176
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "Aum6nSi20VC0XD9MOYXxF": {
+        "id": "Aum6nSi20VC0XD9MOYXxF",
+        "tableId": "h57vifqcTSzq7CcltQuiB",
+        "name": "hotel_id",
+        "comment": "호텔id",
+        "dataType": "sequence",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769673985514,
+          "createAt": 1769673970483
+        }
+      },
+      "5hbrcBrmhjb_LDPUS_nC0": {
+        "id": "5hbrcBrmhjb_LDPUS_nC0",
+        "tableId": "h57vifqcTSzq7CcltQuiB",
+        "name": "name",
+        "comment": "호텔이름",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769673998984,
+          "createAt": 1769673986087
+        }
+      },
+      "7-FPG7ORcTEdQu824IVcS": {
+        "id": "7-FPG7ORcTEdQu824IVcS",
+        "tableId": "h57vifqcTSzq7CcltQuiB",
+        "name": "adress",
+        "comment": "호텔주소",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769674008624,
+          "createAt": 1769673998987
+        }
+      },
+      "CKOOoOQAUkxc_7gHX5qfB": {
+        "id": "CKOOoOQAUkxc_7gHX5qfB",
+        "tableId": "h57vifqcTSzq7CcltQuiB",
+        "name": "tel",
+        "comment": "전화번호",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769674018562,
+          "createAt": 1769674008625
+        }
+      },
+      "tdpdLyaamt2ZqC4UPShnn": {
+        "id": "tdpdLyaamt2ZqC4UPShnn",
+        "tableId": "GBxj8Gi6K1t4QV-vrtyyi",
+        "name": "room_id",
+        "comment": "방id",
+        "dataType": "sequence",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769674055167,
+          "createAt": 1769674038210
+        }
+      },
+      "Nxac3-OYw0-MkePG86KRJ": {
+        "id": "Nxac3-OYw0-MkePG86KRJ",
+        "tableId": "GBxj8Gi6K1t4QV-vrtyyi",
+        "name": "",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769674055702,
+          "createAt": 1769674055702
+        }
+      },
+      "9sH_q9L7aidQY-1u55LSo": {
+        "id": "9sH_q9L7aidQY-1u55LSo",
+        "tableId": "GBxj8Gi6K1t4QV-vrtyyi",
+        "name": "hotel_id",
+        "comment": "호텔id",
+        "dataType": "sequence",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769674070365,
+          "createAt": 1769674070364
+        }
+      },
+      "H6CvGMJbVZqn5jNJ4v6P1": {
+        "id": "H6CvGMJbVZqn5jNJ4v6P1",
+        "tableId": "GBxj8Gi6K1t4QV-vrtyyi",
+        "name": "capacity",
+        "comment": "숙박 가능 인원",
+        "dataType": "number(1)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 81,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769674126737,
+          "createAt": 1769674077148
+        }
+      },
+      "cNpCqUKZnqe2pmzuMVi3D": {
+        "id": "cNpCqUKZnqe2pmzuMVi3D",
+        "tableId": "Q3q8AWqSnILCaHbjCidvG",
+        "name": "user_id",
+        "comment": "회원id",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769674951609,
+          "createAt": 1769674938400
+        }
+      },
+      "W8-BcMNaL_Rx8w-WN78Vu": {
+        "id": "W8-BcMNaL_Rx8w-WN78Vu",
+        "tableId": "Q3q8AWqSnILCaHbjCidvG",
+        "name": "pw",
+        "comment": "pw",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769674963099,
+          "createAt": 1769674952200
+        }
+      },
+      "QTrzAZLmS72Jtmz_MHwP0": {
+        "id": "QTrzAZLmS72Jtmz_MHwP0",
+        "tableId": "Q3q8AWqSnILCaHbjCidvG",
+        "name": "tel",
+        "comment": "전화번호",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769674973384,
+          "createAt": 1769674963304
+        }
+      },
+      "aJGcA-hKIYF5bQP_qg4eL": {
+        "id": "aJGcA-hKIYF5bQP_qg4eL",
+        "tableId": "GBxj8Gi6K1t4QV-vrtyyi",
+        "name": "room_resv",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769675020482,
+          "createAt": 1769675013222
+        }
+      },
+      "5sCmxMRpgKH43mvLPIaxC": {
+        "id": "5sCmxMRpgKH43mvLPIaxC",
+        "tableId": "UPMPT6ptn4tB8vLzV14Ja",
+        "name": "resv_id",
+        "comment": "예약번호",
+        "dataType": "sequence",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769675064654,
+          "createAt": 1769675046184
+        }
+      },
+      "zq-kldvUrTdymkL3v59sy": {
+        "id": "zq-kldvUrTdymkL3v59sy",
+        "tableId": "UPMPT6ptn4tB8vLzV14Ja",
+        "name": "",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769675069780,
+          "createAt": 1769675061204
+        }
+      },
+      "3_UCg8vsNRcQJ2lL7fcKD": {
+        "id": "3_UCg8vsNRcQJ2lL7fcKD",
+        "tableId": "UPMPT6ptn4tB8vLzV14Ja",
+        "name": "user_id",
+        "comment": "회원id",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769675079973,
+          "createAt": 1769675079972
+        }
+      },
+      "0n55YEoohaIKIy-raVASH": {
+        "id": "0n55YEoohaIKIy-raVASH",
+        "tableId": "UPMPT6ptn4tB8vLzV14Ja",
+        "name": "room_id",
+        "comment": "방id",
+        "dataType": "sequence",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769675088769,
+          "createAt": 1769675088768
+        }
+      },
+      "I-XOu9LTXmpp21pl__a90": {
+        "id": "I-XOu9LTXmpp21pl__a90",
+        "tableId": "UPMPT6ptn4tB8vLzV14Ja",
+        "name": "start_date",
+        "comment": "예약시작날짜",
+        "dataType": "date",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 74,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769675162834,
+          "createAt": 1769675093370
+        }
+      },
+      "CsP7jcFlSdw9CKzpumxSU": {
+        "id": "CsP7jcFlSdw9CKzpumxSU",
+        "tableId": "UPMPT6ptn4tB8vLzV14Ja",
+        "name": "fin_date",
+        "comment": "예약종료날짜",
+        "dataType": "date",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 74,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769675173539,
+          "createAt": 1769675162836
+        }
+      },
+      "EXQkO4WrMfGS-MvAv7S_Z": {
+        "id": "EXQkO4WrMfGS-MvAv7S_Z",
+        "tableId": "Q3q8AWqSnILCaHbjCidvG",
+        "name": "name",
+        "comment": "회원이름",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769675242147,
+          "createAt": 1769675231352
+        }
+      }
+    },
+    "relationshipEntities": {
+      "wmxweEwCuJo6oVe-wtUSI": {
+        "id": "wmxweEwCuJo6oVe-wtUSI",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "h57vifqcTSzq7CcltQuiB",
+          "columnIds": [
+            "Aum6nSi20VC0XD9MOYXxF"
+          ],
+          "x": 254.5,
+          "y": 370,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "GBxj8Gi6K1t4QV-vrtyyi",
+          "columnIds": [
+            "9sH_q9L7aidQY-1u55LSo"
+          ],
+          "x": 255,
+          "y": 541,
+          "direction": 4
+        },
+        "meta": {
+          "updateAt": 1769674070365,
+          "createAt": 1769674070365
+        }
+      },
+      "F-GvMT3iWBCu3mtWUby10": {
+        "id": "F-GvMT3iWBCu3mtWUby10",
+        "identification": false,
+        "relationshipType": 8,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "Q3q8AWqSnILCaHbjCidvG",
+          "columnIds": [
+            "cNpCqUKZnqe2pmzuMVi3D"
+          ],
+          "x": 823.5,
+          "y": 361,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "UPMPT6ptn4tB8vLzV14Ja",
+          "columnIds": [
+            "3_UCg8vsNRcQJ2lL7fcKD"
+          ],
+          "x": 825.5,
+          "y": 497,
+          "direction": 4
+        },
+        "meta": {
+          "updateAt": 1769675079973,
+          "createAt": 1769675079973
+        }
+      },
+      "n3ESMYi4Py2nhQAaRiyh1": {
+        "id": "n3ESMYi4Py2nhQAaRiyh1",
+        "identification": false,
+        "relationshipType": 8,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "GBxj8Gi6K1t4QV-vrtyyi",
+          "columnIds": [
+            "tdpdLyaamt2ZqC4UPShnn"
+          ],
+          "x": 448,
+          "y": 605,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "UPMPT6ptn4tB8vLzV14Ja",
+          "columnIds": [
+            "0n55YEoohaIKIy-raVASH"
+          ],
+          "x": 636,
+          "y": 585,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1769675088769,
+          "createAt": 1769675088769
+        }
+      }
+    },
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  }
+}

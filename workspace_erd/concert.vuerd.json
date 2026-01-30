@@ -1,0 +1,1353 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -200,
+    "scrollLeft": -152.2935,
+    "zoomLevel": 0.79,
+    "show": 431,
+    "database": 4,
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "cEtTK9mEz9LQUIkoXN1wg",
+      "uokipVamRSsvfueHAiqV-",
+      "N574Txr7yUTEdT2NOecXw",
+      "0IZC1yDE5wbPW44zg52V9",
+      "ITec2SJOJLG_RRBmwmYmt",
+      "CCxmosEbdRSIrwYgv9qXf"
+    ],
+    "relationshipIds": [
+      "3mRwB4DPc19AhzfmF3g32",
+      "noNQ_xzBzeMN5XntpaaXG",
+      "4NxkDVcID6e2HUzzD7M4Q",
+      "iccfZDrQEWBuvBUY22TGn",
+      "EH97jPWcj89CwLEQuieWv",
+      "S3Str8PWnbQSu2iGpCiYc",
+      "KxqacvVXiqur7A_MqyMVL"
+    ],
+    "indexIds": [],
+    "memoIds": [
+      "914y8Uc_qGVnrYXuqh7Gd"
+    ]
+  },
+  "collections": {
+    "tableEntities": {
+      "cEtTK9mEz9LQUIkoXN1wg": {
+        "id": "cEtTK9mEz9LQUIkoXN1wg",
+        "name": "concert",
+        "comment": "공연",
+        "columnIds": [
+          "LRl2GpnxBEw8mZqPiy_Hm",
+          "AidHvhvcERvkmTIm4FzDe",
+          "L4J1HeCdTZVek8jce613N",
+          "8oN7LgjV5oBpjhsD1dEWH",
+          "X4G8Mj1QDRrESo9jLhY3t"
+        ],
+        "seqColumnIds": [
+          "LRl2GpnxBEw8mZqPiy_Hm",
+          "AidHvhvcERvkmTIm4FzDe",
+          "L4J1HeCdTZVek8jce613N",
+          "8oN7LgjV5oBpjhsD1dEWH",
+          "X4G8Mj1QDRrESo9jLhY3t",
+          "8W1x0VImAKtOXJTB9FcD4",
+          "UyoaJbmDs8LmcL2hNVnt7"
+        ],
+        "ui": {
+          "x": 44.2126,
+          "y": 518.5508,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769737664108,
+          "createAt": 1769735733433
+        }
+      },
+      "uokipVamRSsvfueHAiqV-": {
+        "id": "uokipVamRSsvfueHAiqV-",
+        "name": "stadium",
+        "comment": "공연장",
+        "columnIds": [
+          "g6LJ6HsrGVJbf8mGHkyLu",
+          "_YALcOKxTlxLqAEzzBNvc",
+          "gOFJgBKvS4zIU2FYjip-L",
+          "Nzlud3qVwOQaM6uRsW-BK"
+        ],
+        "seqColumnIds": [
+          "g6LJ6HsrGVJbf8mGHkyLu",
+          "_YALcOKxTlxLqAEzzBNvc",
+          "gOFJgBKvS4zIU2FYjip-L",
+          "Nzlud3qVwOQaM6uRsW-BK"
+        ],
+        "ui": {
+          "x": 56.3292,
+          "y": 205.5823,
+          "zIndex": 28,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769737669336,
+          "createAt": 1769735820329
+        }
+      },
+      "ggYZSDY_KCsedbHoW_Rui": {
+        "id": "ggYZSDY_KCsedbHoW_Rui",
+        "name": "",
+        "comment": "",
+        "columnIds": [],
+        "seqColumnIds": [],
+        "ui": {
+          "x": 201,
+          "y": 100,
+          "zIndex": 46,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769735936663,
+          "createAt": 1769735936663
+        }
+      },
+      "N574Txr7yUTEdT2NOecXw": {
+        "id": "N574Txr7yUTEdT2NOecXw",
+        "name": "hall",
+        "comment": "공연홀",
+        "columnIds": [
+          "v_9uax4q54mIrbpbNihae",
+          "S1xASKdWRssQcggfN0YVw",
+          "3V0AtE0DWL7HLWZQoin4q",
+          "lz6lp4ck7IKoBkzOS0AFw"
+        ],
+        "seqColumnIds": [
+          "v_9uax4q54mIrbpbNihae",
+          "S1xASKdWRssQcggfN0YVw",
+          "3V0AtE0DWL7HLWZQoin4q",
+          "lz6lp4ck7IKoBkzOS0AFw"
+        ],
+        "ui": {
+          "x": 610.7975,
+          "y": 216.8342,
+          "zIndex": 52,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769737655978,
+          "createAt": 1769735974208
+        }
+      },
+      "0IZC1yDE5wbPW44zg52V9": {
+        "id": "0IZC1yDE5wbPW44zg52V9",
+        "name": "seats",
+        "comment": "자리",
+        "columnIds": [
+          "zDJ8q_XlmO5C4hK-TkJpg",
+          "jXfQb_o9CHvIo7_-1jZvI",
+          "xBygBCiUKO0dOO3fKeAVa"
+        ],
+        "seqColumnIds": [
+          "zDJ8q_XlmO5C4hK-TkJpg",
+          "jXfQb_o9CHvIo7_-1jZvI",
+          "xBygBCiUKO0dOO3fKeAVa"
+        ],
+        "ui": {
+          "x": 588.4001,
+          "y": 520.9552,
+          "zIndex": 78,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769737666366,
+          "createAt": 1769736114153
+        }
+      },
+      "ITec2SJOJLG_RRBmwmYmt": {
+        "id": "ITec2SJOJLG_RRBmwmYmt",
+        "name": "user",
+        "comment": "회원",
+        "columnIds": [
+          "XYK-2j5ikklAPW0aKuz8M",
+          "k2iERb-ckg749vDV0TXFG",
+          "7srBRotxRn7gKzse6PFch"
+        ],
+        "seqColumnIds": [
+          "XYK-2j5ikklAPW0aKuz8M",
+          "k2iERb-ckg749vDV0TXFG",
+          "7srBRotxRn7gKzse6PFch"
+        ],
+        "ui": {
+          "x": 65,
+          "y": 789.038,
+          "zIndex": 95,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769737663592,
+          "createAt": 1769736209657
+        }
+      },
+      "CCxmosEbdRSIrwYgv9qXf": {
+        "id": "CCxmosEbdRSIrwYgv9qXf",
+        "name": "reservation",
+        "comment": "예약 관리",
+        "columnIds": [
+          "deH5TmWy_tdWPIXMC4XFM",
+          "XtXjjEzsDRLLJo8hz_wqc",
+          "x9JygUDIlG8ko5yi76nYf",
+          "cWMPYRgF8GdHsOdEDFjMx"
+        ],
+        "seqColumnIds": [
+          "7bFZeAn3yH3atuHSslVgi",
+          "deH5TmWy_tdWPIXMC4XFM",
+          "XtXjjEzsDRLLJo8hz_wqc",
+          "x9JygUDIlG8ko5yi76nYf",
+          "cWMPYRgF8GdHsOdEDFjMx",
+          "hBfpuArV5S5T6e5EVvc0n",
+          "86-5aU3-7htsEmVEZNkhF"
+        ],
+        "ui": {
+          "x": 633,
+          "y": 779,
+          "zIndex": 101,
+          "widthName": 61,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769737516026,
+          "createAt": 1769736247013
+        }
+      },
+      "94XGqUZvDxNzkLN1Bg3nc": {
+        "id": "94XGqUZvDxNzkLN1Bg3nc",
+        "name": "",
+        "comment": "",
+        "columnIds": [],
+        "seqColumnIds": [],
+        "ui": {
+          "x": 204,
+          "y": 299,
+          "zIndex": 106,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769736277205,
+          "createAt": 1769736277205
+        }
+      },
+      "U0ral6nW92oIs8bCJ2zIP": {
+        "id": "U0ral6nW92oIs8bCJ2zIP",
+        "name": "",
+        "comment": "",
+        "columnIds": [],
+        "seqColumnIds": [
+          "n4dV3Arim4jgC7R2k264g",
+          "GbDFvhNGM4wwPafSv3CAh",
+          "BLDipf50jgr2DW7BJ5vQc",
+          "je5S9WtZOEeu32fSQ8kMk",
+          "fLCVxlanatkYY1u_GZ_mX",
+          "2ggFr1hneCb2X1Oiz_aXX",
+          "HuvPstvWAxau8rXe1oHKE"
+        ],
+        "ui": {
+          "x": 248.5408,
+          "y": 43.617,
+          "zIndex": 172,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769737508687,
+          "createAt": 1769736992919
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "LRl2GpnxBEw8mZqPiy_Hm": {
+        "id": "LRl2GpnxBEw8mZqPiy_Hm",
+        "tableId": "cEtTK9mEz9LQUIkoXN1wg",
+        "name": "concert_id",
+        "comment": "공연id",
+        "dataType": "sequence",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737638307,
+          "createAt": 1769735745719
+        }
+      },
+      "AidHvhvcERvkmTIm4FzDe": {
+        "id": "AidHvhvcERvkmTIm4FzDe",
+        "tableId": "cEtTK9mEz9LQUIkoXN1wg",
+        "name": "name",
+        "comment": "공연이름",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769735787817,
+          "createAt": 1769735774944
+        }
+      },
+      "L4J1HeCdTZVek8jce613N": {
+        "id": "L4J1HeCdTZVek8jce613N",
+        "tableId": "cEtTK9mEz9LQUIkoXN1wg",
+        "name": "date",
+        "comment": "날짜 (unique)",
+        "dataType": "date",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 73,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736862441,
+          "createAt": 1769735787819
+        }
+      },
+      "g6LJ6HsrGVJbf8mGHkyLu": {
+        "id": "g6LJ6HsrGVJbf8mGHkyLu",
+        "tableId": "uokipVamRSsvfueHAiqV-",
+        "name": "stadium_id",
+        "comment": "공연장 id",
+        "dataType": "sequence",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769735849704,
+          "createAt": 1769735833800
+        }
+      },
+      "_YALcOKxTlxLqAEzzBNvc": {
+        "id": "_YALcOKxTlxLqAEzzBNvc",
+        "tableId": "uokipVamRSsvfueHAiqV-",
+        "name": "name",
+        "comment": "공연장 이름",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 65,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769735865489,
+          "createAt": 1769735846416
+        }
+      },
+      "gOFJgBKvS4zIU2FYjip-L": {
+        "id": "gOFJgBKvS4zIU2FYjip-L",
+        "tableId": "uokipVamRSsvfueHAiqV-",
+        "name": "location",
+        "comment": "공연장 위치",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 65,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769735874169,
+          "createAt": 1769735865492
+        }
+      },
+      "Nzlud3qVwOQaM6uRsW-BK": {
+        "id": "Nzlud3qVwOQaM6uRsW-BK",
+        "tableId": "uokipVamRSsvfueHAiqV-",
+        "name": "tel",
+        "comment": "공연장 전화번호",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 89,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769735881306,
+          "createAt": 1769735874172
+        }
+      },
+      "8oN7LgjV5oBpjhsD1dEWH": {
+        "id": "8oN7LgjV5oBpjhsD1dEWH",
+        "tableId": "cEtTK9mEz9LQUIkoXN1wg",
+        "name": "stadium_id",
+        "comment": "공연장 id (unique)",
+        "dataType": "sequence",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 98,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736861705,
+          "createAt": 1769735946393
+        }
+      },
+      "v_9uax4q54mIrbpbNihae": {
+        "id": "v_9uax4q54mIrbpbNihae",
+        "tableId": "N574Txr7yUTEdT2NOecXw",
+        "name": "hall_id",
+        "comment": "홀 id",
+        "dataType": "sequence",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769735995305,
+          "createAt": 1769735983121
+        }
+      },
+      "S1xASKdWRssQcggfN0YVw": {
+        "id": "S1xASKdWRssQcggfN0YVw",
+        "tableId": "N574Txr7yUTEdT2NOecXw",
+        "name": "name",
+        "comment": "공연홀 이름",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 65,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736008999,
+          "createAt": 1769735995688
+        }
+      },
+      "3V0AtE0DWL7HLWZQoin4q": {
+        "id": "3V0AtE0DWL7HLWZQoin4q",
+        "tableId": "N574Txr7yUTEdT2NOecXw",
+        "name": "수용인원",
+        "comment": "홀 수용인원",
+        "dataType": "number(6)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 65,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736027652,
+          "createAt": 1769736009000
+        }
+      },
+      "lz6lp4ck7IKoBkzOS0AFw": {
+        "id": "lz6lp4ck7IKoBkzOS0AFw",
+        "tableId": "N574Txr7yUTEdT2NOecXw",
+        "name": "stadium_id",
+        "comment": "공연장 id",
+        "dataType": "sequence",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736039477,
+          "createAt": 1769736039477
+        }
+      },
+      "X4G8Mj1QDRrESo9jLhY3t": {
+        "id": "X4G8Mj1QDRrESo9jLhY3t",
+        "tableId": "cEtTK9mEz9LQUIkoXN1wg",
+        "name": "hall_id",
+        "comment": "홀 id (unique)",
+        "dataType": "sequence",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 74,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736861449,
+          "createAt": 1769736054298
+        }
+      },
+      "zDJ8q_XlmO5C4hK-TkJpg": {
+        "id": "zDJ8q_XlmO5C4hK-TkJpg",
+        "tableId": "0IZC1yDE5wbPW44zg52V9",
+        "name": "seats_id",
+        "comment": "자리id",
+        "dataType": "sequence",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736135511,
+          "createAt": 1769736121020
+        }
+      },
+      "jXfQb_o9CHvIo7_-1jZvI": {
+        "id": "jXfQb_o9CHvIo7_-1jZvI",
+        "tableId": "0IZC1yDE5wbPW44zg52V9",
+        "name": "seats_num",
+        "comment": "공연홀 별 자리번호 (uniq)",
+        "dataType": "NUMERIC",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 139,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737515015,
+          "createAt": 1769736135881
+        }
+      },
+      "xBygBCiUKO0dOO3fKeAVa": {
+        "id": "xBygBCiUKO0dOO3fKeAVa",
+        "tableId": "0IZC1yDE5wbPW44zg52V9",
+        "name": "hall_id",
+        "comment": "홀 id (uniq)",
+        "dataType": "sequence",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 61,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737515045,
+          "createAt": 1769736181259
+        }
+      },
+      "XYK-2j5ikklAPW0aKuz8M": {
+        "id": "XYK-2j5ikklAPW0aKuz8M",
+        "tableId": "ITec2SJOJLG_RRBmwmYmt",
+        "name": "user_id",
+        "comment": "회원 id",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736223729,
+          "createAt": 1769736214085
+        }
+      },
+      "k2iERb-ckg749vDV0TXFG": {
+        "id": "k2iERb-ckg749vDV0TXFG",
+        "tableId": "ITec2SJOJLG_RRBmwmYmt",
+        "name": "pw",
+        "comment": "pw",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736230906,
+          "createAt": 1769736224071
+        }
+      },
+      "7srBRotxRn7gKzse6PFch": {
+        "id": "7srBRotxRn7gKzse6PFch",
+        "tableId": "ITec2SJOJLG_RRBmwmYmt",
+        "name": "name",
+        "comment": "회원 이름",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736237832,
+          "createAt": 1769736231503
+        }
+      },
+      "deH5TmWy_tdWPIXMC4XFM": {
+        "id": "deH5TmWy_tdWPIXMC4XFM",
+        "tableId": "CCxmosEbdRSIrwYgv9qXf",
+        "name": "resv_id",
+        "comment": "예약 id",
+        "dataType": "sequence",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736267974,
+          "createAt": 1769736256276
+        }
+      },
+      "7bFZeAn3yH3atuHSslVgi": {
+        "id": "7bFZeAn3yH3atuHSslVgi",
+        "tableId": "CCxmosEbdRSIrwYgv9qXf",
+        "name": "",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736272321,
+          "createAt": 1769736268384
+        }
+      },
+      "XtXjjEzsDRLLJo8hz_wqc": {
+        "id": "XtXjjEzsDRLLJo8hz_wqc",
+        "tableId": "CCxmosEbdRSIrwYgv9qXf",
+        "name": "user_id",
+        "comment": "회원 id",
+        "dataType": "VARCHAR",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736300623,
+          "createAt": 1769736300623
+        }
+      },
+      "cWMPYRgF8GdHsOdEDFjMx": {
+        "id": "cWMPYRgF8GdHsOdEDFjMx",
+        "tableId": "CCxmosEbdRSIrwYgv9qXf",
+        "name": "seats_id",
+        "comment": "자리id (unique)",
+        "dataType": "sequence",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 83,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737515306,
+          "createAt": 1769736305209
+        }
+      },
+      "x9JygUDIlG8ko5yi76nYf": {
+        "id": "x9JygUDIlG8ko5yi76nYf",
+        "tableId": "CCxmosEbdRSIrwYgv9qXf",
+        "name": "concert_id",
+        "comment": "공연id (unique)",
+        "dataType": "sequence",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 83,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737634017,
+          "createAt": 1769736344776
+        }
+      },
+      "hBfpuArV5S5T6e5EVvc0n": {
+        "id": "hBfpuArV5S5T6e5EVvc0n",
+        "tableId": "CCxmosEbdRSIrwYgv9qXf",
+        "name": "hall_id",
+        "comment": "홀 id",
+        "dataType": "sequence",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736906053,
+          "createAt": 1769736906052
+        }
+      },
+      "86-5aU3-7htsEmVEZNkhF": {
+        "id": "86-5aU3-7htsEmVEZNkhF",
+        "tableId": "CCxmosEbdRSIrwYgv9qXf",
+        "name": "seats_num",
+        "comment": "공연홀 별 자리번호",
+        "dataType": "NUMERIC",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 105,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769736906053,
+          "createAt": 1769736906053
+        }
+      },
+      "GbDFvhNGM4wwPafSv3CAh": {
+        "id": "GbDFvhNGM4wwPafSv3CAh",
+        "tableId": "U0ral6nW92oIs8bCJ2zIP",
+        "name": "",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737507793,
+          "createAt": 1769737005234
+        }
+      },
+      "fLCVxlanatkYY1u_GZ_mX": {
+        "id": "fLCVxlanatkYY1u_GZ_mX",
+        "tableId": "U0ral6nW92oIs8bCJ2zIP",
+        "name": "",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737507268,
+          "createAt": 1769737011218
+        }
+      },
+      "n4dV3Arim4jgC7R2k264g": {
+        "id": "n4dV3Arim4jgC7R2k264g",
+        "tableId": "U0ral6nW92oIs8bCJ2zIP",
+        "name": "date",
+        "comment": "날짜 (unique)",
+        "dataType": "date",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 73,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737036689,
+          "createAt": 1769737036688
+        }
+      },
+      "BLDipf50jgr2DW7BJ5vQc": {
+        "id": "BLDipf50jgr2DW7BJ5vQc",
+        "tableId": "U0ral6nW92oIs8bCJ2zIP",
+        "name": "hall_id",
+        "comment": "홀 id (unique)",
+        "dataType": "sequence",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 74,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737048757,
+          "createAt": 1769737048757
+        }
+      },
+      "je5S9WtZOEeu32fSQ8kMk": {
+        "id": "je5S9WtZOEeu32fSQ8kMk",
+        "tableId": "U0ral6nW92oIs8bCJ2zIP",
+        "name": "hall_id",
+        "comment": "홀 id",
+        "dataType": "sequence",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737058875,
+          "createAt": 1769737058875
+        }
+      },
+      "8W1x0VImAKtOXJTB9FcD4": {
+        "id": "8W1x0VImAKtOXJTB9FcD4",
+        "tableId": "cEtTK9mEz9LQUIkoXN1wg",
+        "name": "slot_id",
+        "comment": "",
+        "dataType": "sequence",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737502296,
+          "createAt": 1769737168821
+        }
+      },
+      "UyoaJbmDs8LmcL2hNVnt7": {
+        "id": "UyoaJbmDs8LmcL2hNVnt7",
+        "tableId": "cEtTK9mEz9LQUIkoXN1wg",
+        "name": "",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737504193,
+          "createAt": 1769737170539
+        }
+      },
+      "2ggFr1hneCb2X1Oiz_aXX": {
+        "id": "2ggFr1hneCb2X1Oiz_aXX",
+        "tableId": "U0ral6nW92oIs8bCJ2zIP",
+        "name": "hall_id",
+        "comment": "홀 id",
+        "dataType": "sequence",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737431161,
+          "createAt": 1769737431161
+        }
+      },
+      "HuvPstvWAxau8rXe1oHKE": {
+        "id": "HuvPstvWAxau8rXe1oHKE",
+        "tableId": "U0ral6nW92oIs8bCJ2zIP",
+        "name": "seats_num",
+        "comment": "공연홀 별 자리번호",
+        "dataType": "NUMERIC",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 105,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1769737431162,
+          "createAt": 1769737431161
+        }
+      }
+    },
+    "relationshipEntities": {
+      "EH97jPWcj89CwLEQuieWv": {
+        "id": "EH97jPWcj89CwLEQuieWv",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "uokipVamRSsvfueHAiqV-",
+          "columnIds": [
+            "g6LJ6HsrGVJbf8mGHkyLu"
+          ],
+          "x": 253.32920000000001,
+          "y": 357.58230000000003,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "cEtTK9mEz9LQUIkoXN1wg",
+          "columnIds": [
+            "8oN7LgjV5oBpjhsD1dEWH"
+          ],
+          "x": 245.7126,
+          "y": 518.5508,
+          "direction": 4
+        },
+        "meta": {
+          "updateAt": 1769736045625,
+          "createAt": 1769735946393
+        }
+      },
+      "3mRwB4DPc19AhzfmF3g32": {
+        "id": "3mRwB4DPc19AhzfmF3g32",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "uokipVamRSsvfueHAiqV-",
+          "columnIds": [
+            "g6LJ6HsrGVJbf8mGHkyLu"
+          ],
+          "x": 450.3292,
+          "y": 281.58230000000003,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "N574Txr7yUTEdT2NOecXw",
+          "columnIds": [
+            "lz6lp4ck7IKoBkzOS0AFw"
+          ],
+          "x": 610.7975,
+          "y": 254.8342,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1769736039477,
+          "createAt": 1769736039477
+        }
+      },
+      "S3Str8PWnbQSu2iGpCiYc": {
+        "id": "S3Str8PWnbQSu2iGpCiYc",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "N574Txr7yUTEdT2NOecXw",
+          "columnIds": [
+            "v_9uax4q54mIrbpbNihae"
+          ],
+          "x": 610.7975,
+          "y": 330.8342,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "cEtTK9mEz9LQUIkoXN1wg",
+          "columnIds": [
+            "X4G8Mj1QDRrESo9jLhY3t"
+          ],
+          "x": 447.2126,
+          "y": 562.5508,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1769736054298,
+          "createAt": 1769736054298
+        }
+      },
+      "noNQ_xzBzeMN5XntpaaXG": {
+        "id": "noNQ_xzBzeMN5XntpaaXG",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "N574Txr7yUTEdT2NOecXw",
+          "columnIds": [
+            "v_9uax4q54mIrbpbNihae"
+          ],
+          "x": 795.7975,
+          "y": 368.8342,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "0IZC1yDE5wbPW44zg52V9",
+          "columnIds": [
+            "xBygBCiUKO0dOO3fKeAVa"
+          ],
+          "x": 810.4001,
+          "y": 520.9552,
+          "direction": 4
+        },
+        "meta": {
+          "updateAt": 1769736181260,
+          "createAt": 1769736181260
+        }
+      },
+      "4NxkDVcID6e2HUzzD7M4Q": {
+        "id": "4NxkDVcID6e2HUzzD7M4Q",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "ITec2SJOJLG_RRBmwmYmt",
+          "columnIds": [
+            "XYK-2j5ikklAPW0aKuz8M"
+          ],
+          "x": 430,
+          "y": 853.038,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "CCxmosEbdRSIrwYgv9qXf",
+          "columnIds": [
+            "XtXjjEzsDRLLJo8hz_wqc"
+          ],
+          "x": 633,
+          "y": 893,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1769736300623,
+          "createAt": 1769736300623
+        }
+      },
+      "KxqacvVXiqur7A_MqyMVL": {
+        "id": "KxqacvVXiqur7A_MqyMVL",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "0IZC1yDE5wbPW44zg52V9",
+          "columnIds": [
+            "zDJ8q_XlmO5C4hK-TkJpg"
+          ],
+          "x": 810.4001,
+          "y": 648.9552,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "CCxmosEbdRSIrwYgv9qXf",
+          "columnIds": [
+            "cWMPYRgF8GdHsOdEDFjMx"
+          ],
+          "x": 827,
+          "y": 779,
+          "direction": 4
+        },
+        "meta": {
+          "updateAt": 1769736305209,
+          "createAt": 1769736305209
+        }
+      },
+      "iccfZDrQEWBuvBUY22TGn": {
+        "id": "iccfZDrQEWBuvBUY22TGn",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "cEtTK9mEz9LQUIkoXN1wg",
+          "columnIds": [
+            "LRl2GpnxBEw8mZqPiy_Hm"
+          ],
+          "x": 447.2126,
+          "y": 650.5508,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "CCxmosEbdRSIrwYgv9qXf",
+          "columnIds": [
+            "x9JygUDIlG8ko5yi76nYf"
+          ],
+          "x": 633,
+          "y": 817,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1769736344776,
+          "createAt": 1769736344776
+        }
+      },
+      "9ycokBJc8l3UXlWnKMEB9": {
+        "id": "9ycokBJc8l3UXlWnKMEB9",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "0IZC1yDE5wbPW44zg52V9",
+          "columnIds": [
+            "xBygBCiUKO0dOO3fKeAVa",
+            "jXfQb_o9CHvIo7_-1jZvI"
+          ],
+          "x": 802.2609,
+          "y": 584.4489,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "CCxmosEbdRSIrwYgv9qXf",
+          "columnIds": [
+            "hBfpuArV5S5T6e5EVvc0n",
+            "86-5aU3-7htsEmVEZNkhF"
+          ],
+          "x": 838,
+          "y": 779,
+          "direction": 4
+        },
+        "meta": {
+          "updateAt": 1769736906053,
+          "createAt": 1769736906053
+        }
+      },
+      "JmfIaAEYOUfRRf5iS7Xjm": {
+        "id": "JmfIaAEYOUfRRf5iS7Xjm",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "N574Txr7yUTEdT2NOecXw",
+          "columnIds": [
+            "v_9uax4q54mIrbpbNihae"
+          ],
+          "x": 796.2553,
+          "y": 268.2554,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "U0ral6nW92oIs8bCJ2zIP",
+          "columnIds": [
+            "je5S9WtZOEeu32fSQ8kMk"
+          ],
+          "x": 791.7961,
+          "y": 410.6383,
+          "direction": 4
+        },
+        "meta": {
+          "updateAt": 1769737058875,
+          "createAt": 1769737058875
+        }
+      },
+      "fQfecARfFSlIiYgEny4FY": {
+        "id": "fQfecARfFSlIiYgEny4FY",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "U0ral6nW92oIs8bCJ2zIP",
+          "columnIds": [
+            "GbDFvhNGM4wwPafSv3CAh"
+          ],
+          "x": 602.7961,
+          "y": 474.6383,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "cEtTK9mEz9LQUIkoXN1wg",
+          "columnIds": [
+            "8W1x0VImAKtOXJTB9FcD4"
+          ],
+          "x": 406.6809,
+          "y": 421.7659,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1769737168821,
+          "createAt": 1769737168821
+        }
+      },
+      "vkRsLCobLLItaDVDNGNn9": {
+        "id": "vkRsLCobLLItaDVDNGNn9",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "0IZC1yDE5wbPW44zg52V9",
+          "columnIds": [
+            "xBygBCiUKO0dOO3fKeAVa",
+            "jXfQb_o9CHvIo7_-1jZvI"
+          ],
+          "x": 1202.434,
+          "y": 454.95320000000004,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "U0ral6nW92oIs8bCJ2zIP",
+          "columnIds": [
+            "2ggFr1hneCb2X1Oiz_aXX",
+            "HuvPstvWAxau8rXe1oHKE"
+          ],
+          "x": 1012.7961,
+          "y": 486.6383,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1769737431162,
+          "createAt": 1769737431162
+        }
+      }
+    },
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {
+      "AWMHKtldDRjzTDP1IGbCj": {
+        "id": "AWMHKtldDRjzTDP1IGbCj",
+        "value": "복",
+        "ui": {
+          "x": 183.4909574468085,
+          "y": 148.93617021276594,
+          "zIndex": 131,
+          "width": 116,
+          "height": 100,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769737522682,
+          "createAt": 1769736662099
+        }
+      },
+      "914y8Uc_qGVnrYXuqh7Gd": {
+        "id": "914y8Uc_qGVnrYXuqh7Gd",
+        "value": "각 테이블 별 unique는 모두 복합 unique 처리\n- concert table : unique (date, stdium_id, hall_id)\n- seats table : unique (seats_num, hall_id)\n- reservation : unique (concert_id, seats_id)",
+        "ui": {
+          "x": 405.8386,
+          "y": 53.6864,
+          "zIndex": 213,
+          "width": 279,
+          "height": 100,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1769737673833,
+          "createAt": 1769737533954
+        }
+      }
+    }
+  }
+}
